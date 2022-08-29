@@ -838,17 +838,36 @@ type=command,ID="/give @p dangerzone:apple_seed{display:{Name:'{"text":"apple ja
 
 group(type=item,ID=diamond;type=entity,ID=pig,NBTTag=(CustomName="Technoblade"))
 
-
 // add more stuff
+
+type=command,ID="give @p chaosawakens:attitude_adjusters{display:{Name:'{"text":"It REAL hammer Time"}' 1}
+
+type=command,ID="give @p chaosawakens:big_hammer{display:{Name:'{"text":"It hammer Time"}'}} 1"
 
 type=command,ID="/give chaosawakens:ray_gun 1"
 
 // robot destroyer
 type=command,ID="/give chaosawakens:ray_gun 20"
 
+type=command,ID="/give chaosawakens:nightmare_sword 1"
+
+type=command,ID="/give chaosawakens:experience_sword 1"
+
+type=command,ID="/give chaosawakens:poison_sword 1"
+
+type=command,ID="/give chaosawakens:rat_sword 1"
+
+type=command,ID="/give chaosawakens:fairy_sword 1"
+
+type=command,ID="/give chaosawakens:royal_guardian_sword 1"
+
+type=command,ID="/give chaosawakens:big_bertha 1"
+
+type=command,ID="/give chaosawakens:slayer_chainsaw 1"
+
+type=command,ID="/give chaosawakens:queen_scale_battle_axe 1"
 
 /lighting god
-
 type=command,ID="/give chaosawakens:lighting_staff 20"
 
 type=command,ID="/give dangerzone:cheese"
@@ -878,3 +897,35 @@ type=command,ID="/give @p dangerzone:cake_sword{display:{Name:'{"text":"Your mom
 type=command,ID="/give @p dangerzone:dead_rainbow_ant{display:{Name:'{"text":"Fried ants"}'}} 1"
 
 type=command,ID="type=item,ID=dangerzone:technoblade_spawn_egg 100;commandSender=Technoblade,ID="TECHNOBLADE NEVER DIES"
+
+/ armor
+
+/ ultimate armor
+group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)
+
+/ cat eyes item
+group(type=item,ID=chaosawakens:cats_eye_sword;type=item,ID=chaosawakens:cats_eye_shovel,type=item,ID=chaosawakens:cats_eye_pickaxe,type=item,ID=chaosawakens:cats_eye_axe,type=item,ID=chaosawakens:cats_eye_hoe)
+
+/ ruby armor
+group(type=item,ID=chaosawakens:ruby_helmet;type=item,ID=chaosawakens:ruby_chestplate,type=item,ID=chaosawakens:ruby_leggings,type=item,ID=chaosawakens:ruby_boots,type=item,ID=chaosawakens:ruby_sword)
+
+/ruby items
+group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe,type=item,ID=chaosawakens:ruby_shovel,type=item,ID=chaosawakens:pickaxe,type=item,ID=chaosawakens:ruby_hoe)
+
+/ cats eye armor
+group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings,type=item,ID=chaosawakens:cats_eye_chestplate,type=item,ID=chaosawakens:cats_eye_helmet,type=item,ID=chaosawakens:cats_eye_hoe)
+
+/ pink tormalane  items
+group(type=item,ID=chaosawakens:pink_tourmaline_sword;type=item,ID=chaosawakens:pink_tourmaline_axe,type=item,ID=chaosawakens:pink_tourmaline_shovel,type=item,ID=chaosawakens:pink_tourmaline_pickaxe,type=item,ID=chaosawakens:pink_tourmaline_hoe)
+
+/ pink tormalane armor
+group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings,type=item,ID=chaosawakens:pink_tourmaline_chestplate,type=item,ID=chaosawakens:pink_tourmaline_helmet,type=item,ID=chaosawakens:pink_tourmaline_hoe)
+
+/ultimate armor
+group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)
+
+/ lapis armor
+group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings,type=item,ID=chaosawakens:lapis_chestplate,type=item,ID=chaosawakens:lapis_helmet,type=item,ID=chaosawakens:lapis_hoe)
+
+/ lapis tools
+group(type=item,ID=chaosawakens:lapis_sword;type=item,ID=chaosawakens:lapis_sword_shovel,type=item,ID=chaosawakens:lapis_sword_pickaxe,type=item,ID=chaosawakens:lapis_sword_axe,type=item,ID=chaosawakens:lapis_sword_hoe,type=item)

@@ -1,0 +1,26 @@
+/ instant health + regeneration
+group(type=effect,ID=instant_health,range=4,amplifier=3;type=effect,ID=10,range=4,amplifier=1,duration=300;type=particle,ID=splashpotion,potion=healing;type=particle,ID=heart,size=(1.5,0.5,1.5),particleAmount=300)@luck=2
+
+/ poison
+group(type=effect,ID=poison,range=4,duration=30;type=particle,ID=splashpotion,potion=poison;type=difficulty,ID=hard;type=entity,ID=cave_spider;type=item,ID=#randList(rotten_flesh,spider_eye,fermented_spider_eye),posOffset=#circleOffset(0.0,2.0),amount=30)@luck=-2
+
+/ creative mode potion
+type=effect,ID=resistence,range=5,duration=30@lucky=2
+
+
+/fairy potion
+type=effect,ID=regeneration,range=5,duration=30@lucky=2
+
+/imunity potion
+type=effect,ID=instant_health,range=5,duration=200@lucky=2
+
+/diamond gear
+group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=diamond_hoe)@luck=2
+
+
+type=particle,ID=splashpotion,potion=strength@luck=1
+
+type=particle,ID=splashpotion,potion=instant_damage@luck=1
+
+type=enity,ID=wither@luck=-1
+

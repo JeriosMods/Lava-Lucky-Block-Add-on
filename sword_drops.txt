@@ -1,0 +1,4 @@
+/ Nothing
+type=nothing@luck=0@chance=0.1
+
+type=@luck=0@chance=0.1

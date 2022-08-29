@@ -1,0 +1,4 @@
+block_id=lava_lucky_block
+sword_id=lava_lucky_sword
+bow_id=lava_lucky_bow
+potion_id=lava_lucky_potion

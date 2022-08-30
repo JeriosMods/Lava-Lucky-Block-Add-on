@@ -1,6 +1,6 @@
 ID=house,file=house.schematicatic
 
-ID=lavapool1,file=lavapool1.schematic
+ID=lavapool1,file=lavapool1.nbt
 
 ID=valcanowithlava,file=valcanowithlava.nbt
 
@@ -10,19 +10,17 @@ ID=picdiamond,file=pickaxeddiamond.schematicatic
 
 ID=magmapixelart,file=magmapixelart.schematic
 
-ID=lavabucketpixelart,file=lavabucketpixelart.schematic
+ID=lavabucketpixelart,file=lavabucketpixelart.nbt
 
 ID=fryingpanlavano,file=fryingpanlavano.schematic
 
-ID=lavaandfryingpanfilledallthewayup,file=lavaandfryingpanfilledallthewayup.schematic
+ID=lavaandfryingpanfilledallthewayup,file=lavaandfryingpanfilledallthewayup.nbt
 
 Id=bigdiamond,file=bigdiamond.nbt
 
-ID=valcanowithlava,file=valcanowithlava.schematic
+ID=slime,file=slime.nbt
 
-ID=slime,file=slime.schematic
-
-ID=pickaxediamond,file=pickaxediamond.schematic
+ID=pickaxediamond,file=pickaxediamond.nbt
 
 
 ID=magmapixelart.schematic,file=magmapixelart.nbt
@@ -46,13 +44,11 @@ ID=housegood,file=housegood.schematic
 
 ID=housebad,file=housebad.schematic
 
-ID=goodenderchest,file=goodenderchest.schematic
+/ ID=goodenderchest,file=goodenderchest.schematic
 
 ID=bigjungle,file=bigjungle.nbt
 
-ID=diamondhoe,file=diamondhoe.schematic
-
-ID=diamondhoe,file=diamondhoe.schematic
+/ ID=diamondhoe,file=diamondhoe.nbt
 
 ID=campfire,file=campfire.nbt
 

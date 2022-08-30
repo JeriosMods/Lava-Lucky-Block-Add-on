@@ -910,11 +910,11 @@ type=command,ID="/give @p dangerzone:dead_rainbow_ant{display:{Name:'{"text":"Fr
 
 type=command,ID="type=item,ID=dangerzone:technoblade_spawn_egg 100;commandSender=Technoblade,ID="TECHNOBLADE NEVER DIES"
 
-type=command,ID="/give @p chaosawakens:big_bertha_blade"
+type=command,ID="/give @p chaosawakens:big_bertha_blade"@luck=1@chance=0.5
 
-type=command,ID="/give @p chaosawakens:big_bertha_handle"
+type=command,ID="/give @p chaosawakens:big_bertha_handle"@luck=1chance=0.5
 
-type=command,ID="/give @p chaosawakens:big_bertha_guard"
+type=command,ID="/give @p chaosawakens:big_bertha_guard"@luck=1chance=0.5
 
 / armor
 
@@ -922,46 +922,55 @@ type=command,ID="/give @p chaosawakens:big_bertha_guard"
 
 
 / ultimate armor
-group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)
+group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=1@chance=0.5
 
 / cat eyes item
-group(type=item,ID=chaosawakens:cats_eye_sword;type=item,ID=chaosawakens:cats_eye_shovel,type=item,ID=chaosawakens:cats_eye_pickaxe,type=item,ID=chaosawakens:cats_eye_axe,type=item,ID=chaosawakens:cats_eye_hoe)
+group(type=item,ID=chaosawakens:cats_eye_sword;type=item,ID=chaosawakens:cats_eye_shovel,type=item,ID=chaosawakens:cats_eye_pickaxe,type=item,ID=chaosawakens:cats_eye_axe,type=item,ID=chaosawakens:cats_eye_hoe)@luck=1@chance=0.5
 
 / ruby armor
-group(type=item,ID=chaosawakens:ruby_helmet;type=item,ID=chaosawakens:ruby_chestplate,type=item,ID=chaosawakens:ruby_leggings,type=item,ID=chaosawakens:ruby_boots,type=item,ID=chaosawakens:ruby_sword)
+group(type=item,ID=chaosawakens:ruby_helmet;type=item,ID=chaosawakens:ruby_chestplate,type=item,ID=chaosawakens:ruby_leggings,type=item,ID=chaosawakens:ruby_boots,type=item,ID=chaosawakens:ruby_sword)@luck=1@chance=0.5
 
 /ruby items
-group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe,type=item,ID=chaosawakens:ruby_shovel,type=item,ID=chaosawakens:pickaxe,type=item,ID=chaosawakens:ruby_hoe)
+group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe,type=item,ID=chaosawakens:ruby_shovel,type=item,ID=chaosawakens:pickaxe,type=item,ID=chaosawakens:ruby_hoe)@luck=1@chance=0.5
 
 / cats eye armor
-group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings,type=item,ID=chaosawakens:cats_eye_chestplate,type=item,ID=chaosawakens:cats_eye_helmet,type=item,ID=chaosawakens:cats_eye_hoe)
+group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings,type=item,ID=chaosawakens:cats_eye_chestplate,type=item,ID=chaosawakens:cats_eye_helmet,type=item,ID=chaosawakens:cats_eye_hoe)@luck=1@chance=0.5
 
 / pink tormalane  items
-group(type=item,ID=chaosawakens:pink_tourmaline_sword;type=item,ID=chaosawakens:pink_tourmaline_axe,type=item,ID=chaosawakens:pink_tourmaline_shovel,type=item,ID=chaosawakens:pink_tourmaline_pickaxe,type=item,ID=chaosawakens:pink_tourmaline_hoe)
+group(type=item,ID=chaosawakens:pink_tourmaline_sword;type=item,ID=chaosawakens:pink_tourmaline_axe,type=item,ID=chaosawakens:pink_tourmaline_shovel,type=item,ID=chaosawakens:pink_tourmaline_pickaxe,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1@chance=0.5
 
 / pink tormalane armor
-group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings,type=item,ID=chaosawakens:pink_tourmaline_chestplate,type=item,ID=chaosawakens:pink_tourmaline_helmet,type=item,ID=chaosawakens:pink_tourmaline_hoe)
+group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings,type=item,ID=chaosawakens:pink_tourmaline_chestplate,type=item,ID=chaosawakens:pink_tourmaline_helmet,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1@chance=0.5
 
 / emerald armor
-group(type=item,ID=chaosawakens:emerald_helmet;type=item,ID=chaosawakens:emerald_chestplate,type=item,ID=chaosawakens:emerald_leggings,type=item,ID=chaosawakens:emerald_boots,type=item,ID=chaosawakens:pink_tourmaline_hoe)
+group(type=item,ID=chaosawakens:emerald_helmet;type=item,ID=chaosawakens:emerald_chestplate,type=item,ID=chaosawakens:emerald_leggings,type=item,ID=chaosawakens:emerald_boots,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1@chance=0.5
 
 / emerald tools
-group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_axe,type=item,ID=chaosawakens:emerald_shovel,type=item,ID=chaosawakens:emerald_pickaxe,type=item,ID=chaosawakens:emerald_hoe)
+group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_axe,type=item,ID=chaosawakens:emerald_shovel,type=item,ID=chaosawakens:emerald_pickaxe,type=item,ID=chaosawakens:emerald_hoe)@luck=1@chance=0.5
 
 /ultimate armor
-group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)
+group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2@chance=0.5
 
 / lapis armor
-group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings,type=item,ID=chaosawakens:lapis_chestplate,type=item,ID=chaosawakens:lapis_helmet,type=item,ID=chaosawakens:lapis_hoe)
+group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings,type=item,ID=chaosawakens:lapis_chestplate,type=item,ID=chaosawakens:lapis_helmet,type=item,ID=chaosawakens:lapis_hoe)@chance=0.5
 
 / mobzilla armor
-group(type=item,ID=chaosawakens:mobzilla_boots;type=item,ID=chaosawakens:mobzilla_leggings,type=item,ID=chaosawakens:mobzilla_chestplate,type=item,ID=chaosawakens:mobzilla_helmet)
+group(type=item,ID=chaosawakens:mobzilla_boots;type=item,ID=chaosawakens:mobzilla_leggings,type=item,ID=chaosawakens:mobzilla_chestplate,type=item,ID=chaosawakens:mobzilla_helmet)@luck=2@chance=0.5
 
-group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)
+group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2@chance=0.5
 
 / moth scale armor
-group(type=item,ID=chaosawakens:moth_scale_helmet;type=item,ID=chaosawakens:moth_scale_chestplate,type=item,ID=chaosawakens:moth_scale_legging,type=item,ID=chaosawakens:moth_scale_boots,)
+group(type=item,ID=chaosawakens:moth_scale_helmet;type=item,ID=chaosawakens:moth_scale_chestplate,type=item,ID=chaosawakens:moth_scale_legging,type=item,ID=chaosawakens:moth_scale_boots)@chance=0.5
 
+group(type=item,ID=chaosawakens:ender_dragon_scale_helmet;type=item,ID=chaosawakens:ender_dragon_scale_chestplate,type=item,ID=chaosawakens:ender_dragon_scale_leggings,type=item,ID=chaosawakens:ender_dragon_scale_boots)@luck=2@chance=0.5
 
 / lapis tools
-group(type=item,ID=chaosawakens:lapis_sword;type=item,ID=chaosawakens:lapis_sword_shovel,type=item,ID=chaosawakens:lapis_sword_pickaxe,type=item,ID=chaosawakens:lapis_sword_axe,type=item,ID=chaosawakens:lapis_sword_hoe,type=item)
+group(type=item,ID=chaosawakens:lapis_sword;type=item,ID=chaosawakens:lapis_sword_shovel,type=item,ID=chaosawakens:lapis_sword_pickaxe,type=item,ID=chaosawakens:lapis_sword_axe,type=item,ID=chaosawakens:lapis_sword_hoe,type=item)@chance=0.5
+
+group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_scale_axe,type=item,ID=chaosawakens:moth_scale_pickaxe,type=item,ID=chaosawakens:moth_scale_hoe)@luck=1@chance=0.5
+
+/ royal guardian sword
+group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2@chance=0.1
+
+/  queen scale armor
+group(type=item,ID=chaosawakens:queen_scale_helmet;type=item,ID=chaosawakens:queen_scale_chestplate,type=item,ID=chaosawakens:queen_scale_leggings,type=item,ID=chaosawakens:queen_scale_boots)@luck=2@chance=0.1

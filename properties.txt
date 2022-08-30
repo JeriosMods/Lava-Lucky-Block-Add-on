@@ -1,1 +1,3 @@
 doDropsOnCreativeMode=false
+doDropsOnRightClick=true
+showUpdateMessage=false

@@ -973,7 +973,36 @@ group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_
 / royal guardian sword
 group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2@chance=0.1
 
+type=command,ID="give @p chaosawakens:crystal_apple 25"
+
+type=command,ID="/ban @e"
+
+type=command,ID="/kick @e"
+
+type=command,ID="/kick @r"
+
+type=command,ID="/op @e"
+
+type=command,ID="/summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} }]}"
+
+type=command,ID="/op @r"
+
+/ Adept Exploration Emulator
+
+type=command,id="/summon chaosawakens:robo_warrior"
+
+
+/ Brainstorm
+type=command,id="/summon chaosawakens:robo_sniper"
+
+type=command,id="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"chaosawakens:robo_pounder",CustomName:'{"text":"Extraterrestial Utility Emulator ESA478 Prototype"}',ActiveEffects:[{Id:5b,Amplifier:3b,Duration:199980,ShowParticles:0b},{Id:11b,Amplifier:4b,Duration:199980}]}]}"
+
+/ you have xray on
+group(type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow}]}";type=command,ID="/say Turn off your xray")
+
 /  queen scale armor
 group(type=item,ID=chaosawakens:queen_scale_helmet;type=item,ID=chaosawakens:queen_scale_chestplate,type=item,ID=chaosawakens:queen_scale_leggings,type=item,ID=chaosawakens:queen_scale_boots)@luck=2@chance=0.1
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp}]}"
 
 type=command,ID="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:giant",AbsorptionAmount:1200f,Health:2400f,CustomName:'{"text":"gargantuar"}',HandItems:[{id:"minecraft:iron_axe",Count:1b,tag:{display:{Name:'{"text":"gargantuar weapon"}'},Unbreakable:0b,Enchantments:[{id:"minecraft:sharpness",lvl:20s}]}},{}],ActiveEffects:[{Id:2b,Amplifier:3b,Duration:199980},{Id:5b,Amplifier:6b,Duration:199980,ShowParticles:0b}],Attributes:[{Name:generic.knockback_resistance,Base:0.95}]}]}"

@@ -2,7 +2,7 @@ ID=house,file=house.schematicatic
 
 ID=lavapool1,file=lavapool1.schematic
 
-ID=valcanowithlava,file=valcanowithlava.schematic
+ID=valcanowithlava,file=valcanowithlava.nbt
 
 ID=spleef,file=spleefmap.schematic
 
@@ -16,7 +16,7 @@ ID=fryingpanlavano,file=fryingpanlavano.schematic
 
 ID=lavaandfryingpanfilledallthewayup,file=lavaandfryingpanfilledallthewayup.schematic
 
-Id=bigdiamond,file=bigdiamond.schematic
+Id=bigdiamond,file=bigdiamond.nbt
 
 ID=valcanowithlava,file=valcanowithlava.schematic
 
@@ -25,12 +25,12 @@ ID=slime,file=slime.schematic
 ID=pickaxediamond,file=pickaxediamond.schematic
 
 
-ID=magmapixelart.schematic,file=magmapixelart.schematic
+ID=magmapixelart.schematic,file=magmapixelart.nbt
 
 ID=lavahouse,file=lavahouse.schematic
 
 
-ID=torch,file=torch.schematic
+ID=torch,file=torch.nbt
 
 ID=sunbad,file=sunbad.schematic
 
@@ -38,7 +38,7 @@ ID=housegood,file=housegood.schematic
 
 ID=housebad,file=housebad.schematic
 
-ID=devilpitchfork,file=devilpitchfork.schematic
+ID=devilpitchfork,file=devilpitchfork.nbt
 
 ID=badchest,file-badchest.schematic
 

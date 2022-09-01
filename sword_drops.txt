@@ -1,7 +1,6 @@
 / Nothing
-type=nothing@luck=0@chance=0.1
 
-type=@luck=0@chance=0.1
+type=command,ID="setblock ~ ~2 ~ anvil replace"
 
 type=command,ID="summon tnt ~ ~ ~ {Fuse:30}"
 

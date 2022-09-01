@@ -5,6 +5,8 @@ type=entity,ID=LuckyProjectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=la
 
 type=command,ID="summon ender_pearl ~ ~ ~"
 
+type=command,ID="setblock ~ ~1 ~ anvil replace"
+
 type=command,ID="summon tnt ~ ~ ~ {Fuse:2}"
 
 type=command,ID="summon evoker_fangs ~ ~ ~"

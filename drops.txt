@@ -799,7 +799,7 @@ type=command,ID="/summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redsto
 /nuke
 type=command,ID="/summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redstone_block"},Time:1,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:command_block"},TileEntityData:{Command:" /give @p snowball{display:{Name:'{\"text\":\"Nuke\"}'},deadlynuke} 1"},Time:1,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:repeating_command_block"},TileEntityData:{Command:"execute as @e [nbt={Item:{tag:{deadlynuke}}}] at @s run summon creeper ~ ~ ~ {ExplosionRadius:100b,Fuse:0}"},Time:1}]}]}"@luck=3
 
-type=command,ID="/give @p iron_sword{display:{Name:'{"text":"Royal guardian sword"}'},Enchantments:[{id:"minecraft:unbreaking",lvl:25s}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:750,Operation:0,UUID:[I;-718972128,1688750819,-2084472672,1145555104]}]} 1"@luck=2@chance=0.01
+type=command,ID="/give @p iron_sword{display:{Name:'{"text":"Royal guardian sword dagger"}'},Enchantments:[{id:"minecraft:unbreaking",lvl:25s}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:250,Operation:0,UUID:[I;-718972128,1688750819,-2084472672,1145555104]}]} 1"@luck=2@chance=0.01
 
 type=command,ID="/give @p iron_shovel{display:{Name:'{"text":"Sliver spoon "}'}} 1"@luck=0
 

@@ -1047,8 +1047,14 @@ type=command,ID="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:gian
 
 type=command,ID="give @p chaosawakens:seafood_patty 15"
 
-/ type=command,ID="summon ~ ~1 ~ witherstormmod:wither_storm"
+type=command,ID="summon ~ ~1 ~ witherstormmod:wither_storm"
 
-/ type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_zombie"
+type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_zombie"
 
-/ type=command,ID="summon ~ ~1 ~ mutantbeasts:spider_pig"
+type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_endermen"
+
+type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_skeleton"
+
+type=command,ID="summon ~ ~1 ~ mutantbeasts:spider_pig"
+
+type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"

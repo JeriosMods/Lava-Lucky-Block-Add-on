@@ -2,3 +2,11 @@
 type=nothing@luck=0@chance=0.1
 
 type=@luck=0@chance=0.1
+
+type=command,ID="summon tnt ~ ~ ~ {Fuse:30}"
+
+group(type=effect,ID=poison,range=4,duration=30;type=particle,ID=splashpotion,potion=poison;type=difficulty,ID=hard;type=entity,ID=cave_spider;type=item,ID=#randList(rotten_flesh,spider_eye,fermented_spider_eye),posOffset=#circleOffset(0.0,2.0),amount=30)@luck=-2
+
+type=entity,ID="flowing_lava"
+
+type=command,ID="summon llama_spit ~ ~ ~ {Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit"}]}]}]}"

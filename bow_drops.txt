@@ -13,7 +13,9 @@ type=command,ID="summon vex ~ ~ ~"
 
 group(type=structure,ID=lavaandfryingpanfilledallthewayup;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)
 
-group(type=slime,ID=lavaandfryingpanfilledallthewayup;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)
+group(type=structure,ID=slime;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)
+
+group(type=structure,ID=magmapixelart;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)
 
 
 

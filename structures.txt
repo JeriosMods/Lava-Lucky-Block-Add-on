@@ -8,7 +8,7 @@ ID=spleef,file=spleefmap.schematic
 
 ID=picdiamond,file=pickaxeddiamond.schematicatic
 
-ID=magmapixelart,file=magmapixelart.schematic
+ID=magmapixelart,file=magmapixelart.nbt
 
 ID=lavabucketpixelart,file=lavabucketpixelart.nbt
 

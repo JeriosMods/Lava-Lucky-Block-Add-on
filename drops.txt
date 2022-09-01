@@ -1057,4 +1057,8 @@ type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_skeleton"
 
 type=command,ID="summon ~ ~1 ~ mutantbeasts:spider_pig"
 
+/ type=command,ID="give @p inventorypets:blaze_pet"
+
+/ type=command,ID="give @p inventorypets:creeper_pet"
+
 type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"

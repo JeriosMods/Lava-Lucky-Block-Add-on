@@ -9,4 +9,16 @@ group(type=effect,ID=poison,range=4,duration=30;type=particle,ID=splashpotion,po
 
 type=entity,ID="flowing_lava"
 
+type=command,ID="summon iron_golem ~ ~ ~"
+
+type=command,ID="summon boat ~ ~ ~ {Type:"oak"}"
+
+type=command,ID="summon ender_pearl ~ ~ ~"
+
+type=command,ID="summon evoker_fangs ~ ~ ~"
+
+type=command,ID="summon vex ~ ~ ~"
+
+type=command,ID="summon creeper ~ ~ ~ {CustomName:'{"text":"Creeper aw man"}'}"
+
 type=command,ID="summon llama_spit ~ ~ ~ {Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit"}]}]}]}"

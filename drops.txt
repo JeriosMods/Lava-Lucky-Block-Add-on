@@ -291,7 +291,9 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trought (if it is your first day playing Minecraft (If you like SEE through stuff the game)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=firt,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=wooden_hoe,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=cobblestone,amount=25,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=0
 
 
-/ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trought ( if you like flowers (If you like SEE through stuff the game)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=firt,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=wooden_hoe,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=cobblestone,amount=25,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=0
+/group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trought ( if you like flowers (If you like SEE through stuff the game)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=dirt,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=wooden_hoe,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=cobblestone,amount=25,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=0
+
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trought (if you like cute squids (If you like SEE through stuff the game)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=dirt,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=inc_sacks,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=dangerzone:attack_squid,amount=25,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=0
 
 
 / Doom Wish
@@ -831,6 +833,8 @@ type=command,ID="/give @p milk_bucket{display:{Name:'{"text":"Cuphead"}'}} 1"
 / custom items
 
 type=command,ID="/give @p dangerzone:blt 64"
+
+type=command,ID="give @p green_dye{display:{Name:'{"text":"Weed"}'}} 1"
 
 type=command,ID="/give @p dangerzone:butter 64"
 

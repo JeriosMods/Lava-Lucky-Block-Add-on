@@ -1068,8 +1068,52 @@ type=command,ID="summon ~ ~1 ~ mutantbeasts:spider_pig"
 
 type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher}]}"
 
-/ type=command,ID="give @p inventorypets:blaze_pet"
+type=command,ID="give @p inventorypets:pet_blaze 1"
 
-/ type=command,ID="give @p inventorypets:creeper_pet"
+type=command,ID="give @p inventorypets:pet_creeper 1"
+
+type=command,ID="give @p inventorypets:pet_iron_golem 1"
+
+
+type=command,ID="give @p inventorypets:pet_anvil 1"
+
+
+
+type=command,ID="give @p inventorypets:pet_bed 1"
+
+
+type=command,ID="give @p inventorypets:pet_chest 1"
+
+type=command,ID="give @p inventorypets:pet_pacman 1"
+
+type=command,ID="give @p inventorypets:pet_house 1"
+
+type=command,ID="give @p inventorypets:pet_cheetah 1"
+
+type=command,ID="give @p inventorypets:pet_chest 1"
+
+type=command,ID="give @p inventorypets:pet_shield 1"
+
+type=command,ID="give @p inventorypets:pet_moon 1"
+
+type=command,ID="give @p inventorypets:pet_slime 1"
+
+type=command,ID="give @p inventorypets:pet_sun 1"
+
+type=command,ID="give @p inventorypets:pet_wither 1"
+
+type=command,ID="give @p inventorypets:pet_blackhole 1"
+
+type=command,ID="give @p inventorypets:pet_chicken 1"
+
+type=command,ID="give @p inventorypets:pet_brewing_stand 1"
+
+type=command,ID="give @p inventorypets:pet_brewing_clould 1"
+
+type=command,ID="give @p inventorypets:pet_brewing_christmas 1"
+
+/ decompiler and add new invtory pets item
+
+type=command,ID=" give @p op_scythes:rainbow_scythe 1"
 
 type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"

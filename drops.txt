@@ -660,7 +660,33 @@ type=command,ID="/playsound block.anvil.hit master @p"@luck=0
 type=fill,ID=gold_blocks,size=(3,3,3)@luck=1
 
 / 3x3 diamond
-type=fill,ID=diamond_blocks,size=(3,3,3)@luck=1
+type=fill,ID=diamond_blocks,size=(3,3,3)@luck=1more_tools:rainbow_sword
+
+type=command,ID="/give @p more_tools:rainbow_sword 1"
+
+type=command,ID="/give @p more_tools:nuclear_sythe 1"
+
+type=command,ID="/give @p more_tools:infinite_powers 1"
+
+type=command,ID="/give @p more_tools:herobrine_sword 1"
+
+type=command,ID="/give @p more_tools:hacker_sword 1"
+
+type=command,ID="/give @p more_tools:galaxy_sword 1"
+
+type=command,ID="/give @p more_tools:fire_sword 1"
+
+type=command,ID="/give @p more_tools:epic_sword 1"
+
+type=command,ID="/give @p more_tools:diamond_matter_sword 1"
+
+type=command,ID="/give @p more_tools:death_sword 1"
+
+type=command,ID="/give @p more_tools:crystal_sword 1"
+
+type=command,ID="/give @p more_tools:cloud_sword 1"
+
+type=command,ID="/give @p more_tools:axolotl_sword 1"
 
 /enchament table
 type=item,ID=enchantment_table@luck=1
@@ -1117,3 +1143,17 @@ type=command,ID="give @p inventorypets:pet_brewing_christmas 1"
 type=command,ID=" give @p op_scythes:rainbow_scythe 1"
 
 type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"
+
+/  add Twilight Forest
+
+type=command,ID="give @p twlightforest:ender_bow 1"
+
+type=command,ID="summon twlightforest:yeti_alpha"
+
+type=command,ID="summon twlightforest:hydra"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"

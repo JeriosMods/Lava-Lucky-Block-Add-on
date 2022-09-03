@@ -13,6 +13,8 @@ type=command,ID="/give @p egg{display:{Name:'{"text":"Dr Keith Rowley"}'}} 1"@lu
 
 type=command,ID="/give @p dangerzone:salt 30"
 
+type=command,ID="give @p pufferfish{display:{Name:'{"text":"Pink pufferfish"}'},CustomModelData:1} 1"
+
 type=command,ID="/summon area_effect_cloud ~ ~10 ~ {Passengers:[{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile}]}"
 
 type=command,ID="/summon dangerzone:mermaid ~ ~ ~ {CustomName:'{"text":"Human Fish"}'} "
@@ -1145,6 +1147,10 @@ type=command,ID=" give @p op_scythes:rainbow_scythe 1"
 type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"
 
 /  add Twilight Forest
+
+type=command,ID="give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:1} 1"
+
+type=command,ID="summon twlightforest:yeti"
 
 type=command,ID="give @p twlightforest:ender_bow 1"
 

@@ -1150,16 +1150,43 @@ type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"
 
 type=command,ID="give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:1} 1"
 
-type=command,ID="summon twlightforest:yeti"
+type=command,ID="summon twilightforest:yeti"
 
-type=command,ID="give @p twlightforest:ender_bow 1"
+type=command,ID="give @p twilightforest:ender_bow 1"
 
-type=command,ID="summon twlightforest:yeti_alpha"
+type=command,ID="summon twilightforest:yeti_alpha"
 
-type=command,ID="summon twlightforest:hydra"
+type=command,ID="summon twilightforest:hydra"
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"
+type=command,ID="give @p twilightforest:twilight_scepter 1"
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"
+type=command,ID="give @p twilightforest:lifedrain_scepter 1"
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"
+type=command,ID="give @p twilightforest:seeker_bow 1"
+
+type=command,ID="give @p twilightforest:steeleaf 1"
+
+group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@chance=0.5
+
+group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)@chance=0.5
+
+group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)@chance=0.5
+
+
+type=command,ID=" give @p twilightforest:diamond_minotaur_axe 1"
+
+type=command,ID="give @p twilightforest:triple_bow 1"
+
+type=command,ID=" give @p twilightforest:ice_bow 1"
+
+type=command,ID=" give @p twilightforest:ice_bomb{display:{Name:'{"text":"Ice cubes"}'}} 35"
+
+type=command,ID=" give @p twilightforest:experiment_115{display:{Name:'{"text":"CAKE"}'}} 35"
+
+type=command,ID=" give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"

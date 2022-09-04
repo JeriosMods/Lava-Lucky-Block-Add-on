@@ -1148,19 +1148,43 @@ type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"
 
 /  add Twilight Forest
 
+type=command,ID="summon ~ ~1 ~ twilightforest:minoshroom"
+
+type=command,ID="summon ~ ~1 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}}]}"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:bighorn_sheep ~ ~ ~ {CustomName:'{"text":"butt headder"}'}"
+
+type=command,ID="summon ~ ~1 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}}]}"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:lich" 
+
 type=command,ID=" give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Enchanted Golden Heart Totem"}'}} 1"
 
 type=command,ID=" give @p twilightforest:charm_of_life_1{display:{Name:'{"text":"Heart Totem"}'}} 1"
 
 type=command,ID="give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:1} 1"
 
-type=command,ID="summon twilightforest:yeti"
+type=command,ID="summon~ ~1 ~ twilightforest:yeti"
+
+type=command,ID="summon~ ~1 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:death_tome"
+
+type=command,ID="summon twilightforest:tower_golem  ~ ~1 ~"
+
+type=command,ID="summon twilightforest:troll  ~ ~1 ~"
+
+type=command,ID="summon twilightforest:goblin_knight_upper  ~ ~1 ~"
+
+type=command,ID="summon twilightforest:goblin_knight_lower  ~ ~1 ~"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:bunny"
 
 type=command,ID="give @p twilightforest:ender_bow 1"
 
-type=command,ID="summon twilightforest:yeti_alpha"
+type=command,ID="summon ~ ~1 ~ twilightforest:yeti_alpha"
 
-type=command,ID="summon twilightforest:hydra"
+type=command,ID="summon ~ ~1 ~ twilightforest:hydra"
 
 type=command,ID="give @p twilightforest:twilight_scepter 1"
 

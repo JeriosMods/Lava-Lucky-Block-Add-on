@@ -133,15 +133,15 @@ type=command,ID=" /give @p lavaluckyblockutil:lava_bazaka"@luck=1.9
 
 type=command,id="/give @p lavaluckyblockutil:lava_knife"@luck=1
 
-type=command,id="/give @p lavaluckyblockutil:flaming_hotcheetos"@luck=1@chance=0.25
+type=command,id="/give @p lavaluckyblockutil:flaming_hotcheetos"@luck=1
 
-type=command,id="/give @p lavaluckyblockutil:spicy_diritos"@luck=1@chance=0.25
+type=command,id="/give @p lavaluckyblockutil:spicy_diritos"@luck=1
 
-type=command,id="/give @p lavaluckyblockutil:spicy_ramen"@luck=1@chance=0.25
+type=command,id="/give @p lavaluckyblockutil:spicy_ramen"@luck=1
 
 type=command,id="/give @p lavaluckyblockutil:throwable_fire"@luck=1
 
-type=command,id="/give @p lavaluckyblockutil:trinidad_morugascorpionpepper"@luck=5@chance=0.01
+type=command,id="/give @p lavaluckyblockutil:trinidad_morugascorpionpepper"@luck=5
 
 type=command,id="/give @p lavaluckyblockutil:fire_armor_helmet"@luck=1
 
@@ -284,10 +284,10 @@ type=item,ID=cake,amount=10@luck=0
 /p cake 10
 type=item,ID=cake,amount=10@luck=0
 
-type=message,ID="Hello,  hi if your are  Popoularmmos what is the challange games world seed? please type in /seed"@luck=0@chance=1
+type=message,ID="Hello,  hi if your are  Popoularmmos what is the challange games world seed? please type in /seed"@luck=0
 
 
-type=message,ID="Ok, #p Ok i am putting your brain down as a block huh that is strange it is an air block?"@luck=0@chance=1
+type=message,ID="Ok, #p Ok i am putting your brain down as a block huh that is strange it is an air block?"@luck=0
 
 / normal wishing wells
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$bYour wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=1,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=diamond,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=emerald,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=dye,damage=4,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=2
@@ -365,7 +365,7 @@ type=fill,ID=lava,size=(258,258,258)@luck=-2
 type=sound,ID=mob.pig.say,volume=9.0@lucky=-2
 
 /wither
-type=entity,ID=Wither,amount=100@luck=-2@chance=0.1
+type=entity,ID=Wither,amount=100@luck=-2
 
 type=command,ID-"/give @p brown_dye{display:{Name:'{"text":"Poop"}'}} 1"@luck=0
 
@@ -490,7 +490,8 @@ type=command,ID="/give @p diamond_hoe{display:{Name:'{"text":"Blue palak hoe"}'}
 
 /pink palyouk hoe
 
-type=command,ID="/give @p diamond_hoe{display:{Name:'{"text":"pink palak hoe"}',Lore:['{"text":"#girlpower"}']},CustomModelData:3432,Enchantments:[{id:"minecraft:sharpness",lvl:30s}]} 1"@luck=2@chance=0.4
+type=command,ID="/give @p diamond_hoe{display:{Name:'{"text":"pink palak hoe"}',Lore:['{"text":"#girlpower"}']},CustomModelData:3432,Enchantments:[{id:"minecraft:sharpness",lvl:30s}]} 1"@luck=2
+type=command,ID="/give @p diamond_hoe{display:{Name:'{"text":"pink palak hoe"}',Lore:['{"text":"#girlpower"}']},CustomModelData:3432,Enchantments:[{id:"minecraft:sharpness",lvl:30s}]} 1"@luck=2
 
 /diamond ore
 type=item,ID=diamond_ore,amount=12@luck=1
@@ -702,7 +703,7 @@ type=effect,ID=strength,amplifier=2@luck=-1
 
 /exploding 
 
-type=command,ID="/give @p diamond_sword{display:{Lore:['{"text":"Sword of the lava gods "}']},Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:feather_falling",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:respiration",lvl:10s},{id:"minecraft:aqua_affinity",lvl:10s},{id:"minecraft:thorns",lvl:10s},{id:"minecraft:depth_strider",lvl:10s},{id:"minecraft:frost_walker",lvl:10s},{id:"minecraft:sharpness",lvl:10s},{id:"minecraft:smite",lvl:10s},{id:"minecraft:bane_of_arthropods",lvl:10s},{id:"minecraft:knockback",lvl:10s},{id:"minecraft:fire_aspect",lvl:10s},{id:"minecraft:looting",lvl:10s},{id:"minecraft:sweeping",lvl:10s},{id:"minecraft:efficiency",lvl:10s},{id:"minecraft:silk_touch",lvl:10s},{id:"minecraft:unbreaking",lvl:10s},{id:"minecraft:fortune",lvl:10s},{id:"minecraft:power",lvl:10s},{id:"minecraft:punch",lvl:10s},{id:"minecraft:flame",lvl:10s},{id:"minecraft:infinity",lvl:10s},{id:"minecraft:luck_of_the_sea",lvl:10s},{id:"minecraft:lure",lvl:10s},{id:"minecraft:loyalty",lvl:10s},{id:"minecraft:impaling",lvl:10s},{id:"minecraft:riptide",lvl:10s},{id:"minecraft:channeling",lvl:10s},{id:"minecraft:mending",lvl:10s},{id:"minecraft:vanishing_curse",lvl:10s},{id:"minecraft:multishot",lvl:10s},{id:"minecraft:piercing",lvl:10s},{id:"minecraft:quick_charge",lvl:10s},{id:"minecraft:soul_speed",lvl:10s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:30,Operation:0,UUID:[I;0,30852,0,101839]},{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:100,Operation:0,UUID:[I;0,77954,0,155467]},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.1,Operation:0,UUID:[I;0,71885,0,110195]},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:50,Operation:0,UUID:[I;0,34814,0,129143]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:100,Operation:0,UUID:[I;0,12636,0,156096]},{AttributeName:"generic.armor",Name:"generic.armor",Amount:100,Operation:0,UUID:[I;0,10084,0,100084]},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:100,Operation:0,UUID:[I;0,70667,0,180244]}]} 1"@luck=2@chance=0.1
+type=command,ID="/give @p diamond_sword{display:{Lore:['{"text":"Sword of the lava gods "}']},Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:feather_falling",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:respiration",lvl:10s},{id:"minecraft:aqua_affinity",lvl:10s},{id:"minecraft:thorns",lvl:10s},{id:"minecraft:depth_strider",lvl:10s},{id:"minecraft:frost_walker",lvl:10s},{id:"minecraft:sharpness",lvl:10s},{id:"minecraft:smite",lvl:10s},{id:"minecraft:bane_of_arthropods",lvl:10s},{id:"minecraft:knockback",lvl:10s},{id:"minecraft:fire_aspect",lvl:10s},{id:"minecraft:looting",lvl:10s},{id:"minecraft:sweeping",lvl:10s},{id:"minecraft:efficiency",lvl:10s},{id:"minecraft:silk_touch",lvl:10s},{id:"minecraft:unbreaking",lvl:10s},{id:"minecraft:fortune",lvl:10s},{id:"minecraft:power",lvl:10s},{id:"minecraft:punch",lvl:10s},{id:"minecraft:flame",lvl:10s},{id:"minecraft:infinity",lvl:10s},{id:"minecraft:luck_of_the_sea",lvl:10s},{id:"minecraft:lure",lvl:10s},{id:"minecraft:loyalty",lvl:10s},{id:"minecraft:impaling",lvl:10s},{id:"minecraft:riptide",lvl:10s},{id:"minecraft:channeling",lvl:10s},{id:"minecraft:mending",lvl:10s},{id:"minecraft:vanishing_curse",lvl:10s},{id:"minecraft:multishot",lvl:10s},{id:"minecraft:piercing",lvl:10s},{id:"minecraft:quick_charge",lvl:10s},{id:"minecraft:soul_speed",lvl:10s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:30,Operation:0,UUID:[I;0,30852,0,101839]},{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:100,Operation:0,UUID:[I;0,77954,0,155467]},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.1,Operation:0,UUID:[I;0,71885,0,110195]},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:50,Operation:0,UUID:[I;0,34814,0,129143]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:100,Operation:0,UUID:[I;0,12636,0,156096]},{AttributeName:"generic.armor",Name:"generic.armor",Amount:100,Operation:0,UUID:[I;0,10084,0,100084]},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:100,Operation:0,UUID:[I;0,70667,0,180244]}]} 1"@luck=2
 
 
 /op lava wolf
@@ -803,7 +804,7 @@ type=command,ID="/effect give @p nausea 3600 1 true"
 type=command,ID="/give @p shield{display:{Name:'{"text":"Titanium shield "}',Lore:['{"text":"A shield that is almost impossible to break"}']},Enchantments:[{id:"minecraft:unbreaking",lvl:30s}]} 1"@luck=0
 
 /ipod
-type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x10 explode","color":"red","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:10}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x15 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:15}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x100 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:100}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~1 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 1"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 1"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http://minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https://bit.ly/3G33PfT"]}}"@luck=+5@chance=0.1
+type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x10 explode","color":"red","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:10}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x15 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:15}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x100 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~1 ~ {ExplosionPower:100}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~1 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 1"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 1"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http://minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https://bit.ly/3G33PfT"]}}"@luck=+5
 
 /orespawn bee
 / type=command,ID="/summon bee ~ ~1 ~ {AngerTime:199980,CustomName:'{"text":"Big Mama bee"}',Attributes:[{Name:generic.max_health,Base:80},{Name:generic.attack_damage,Base:12},{Name:generic.armor,Base:5},{Name:generic.armor_toughness,Base:5}]}"@luck=-1
@@ -832,7 +833,7 @@ type=command,ID="/summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redsto
 /nuke
 type=command,ID="/summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redstone_block"},Time:1,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:command_block"},TileEntityData:{Command:" /give @p snowball{display:{Name:'{\"text\":\"Nuke\"}'},deadlynuke} 1"},Time:1,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:repeating_command_block"},TileEntityData:{Command:"execute as @e [nbt={Item:{tag:{deadlynuke}}}] at @s run summon creeper ~ ~ ~ {ExplosionRadius:100b,Fuse:0}"},Time:1}]}]}"@luck=3
 
-type=command,ID="/give @p iron_sword{display:{Name:'{"text":"Royal guardian sword dagger"}'},Enchantments:[{id:"minecraft:unbreaking",lvl:25s}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:250,Operation:0,UUID:[I;-718972128,1688750819,-2084472672,1145555104]}]} 1"@luck=2@chance=0.01
+type=command,ID="/give @p iron_sword{display:{Name:'{"text":"Royal guardian sword dagger"}'},Enchantments:[{id:"minecraft:unbreaking",lvl:25s}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:250,Operation:0,UUID:[I;-718972128,1688750819,-2084472672,1145555104]}]} 1"@luck=2
 
 type=command,ID="/give @p iron_shovel{display:{Name:'{"text":"Sliver spoon "}'}} 1"@luck=0
 
@@ -964,11 +965,11 @@ type=command,ID="/give @p dangerzone:dead_rainbow_ant{display:{Name:'{"text":"Fr
 
 type=command,ID="type=item,ID=dangerzone:technoblade_spawn_egg 100;commandSender=Technoblade,ID="TECHNOBLADE NEVER DIES"
 
-type=command,ID="/give @p chaosawakens:big_bertha_blade"@luck=1@chance=0.5
+type=command,ID="/give @p chaosawakens:big_bertha_blade"@luck=1
 
-type=command,ID="/give @p chaosawakens:big_bertha_handle"@luck=1chance=0.5
+type=command,ID="/give @p chaosawakens:big_bertha_handle"@luck=1
 
-type=command,ID="/give @p chaosawakens:big_bertha_guard"@luck=1chance=0.5
+type=command,ID="/give @p chaosawakens:big_bertha_guard"@luck=1
 
 / armor
 
@@ -976,61 +977,61 @@ type=command,ID="/give @p chaosawakens:big_bertha_guard"@luck=1chance=0.5
 
 
 / ultimate armor
-group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=1
 
 / cat eyes item
-group(type=item,ID=chaosawakens:cats_eye_sword;type=item,ID=chaosawakens:cats_eye_shovel,type=item,ID=chaosawakens:cats_eye_pickaxe,type=item,ID=chaosawakens:cats_eye_axe,type=item,ID=chaosawakens:cats_eye_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:cats_eye_sword;type=item,ID=chaosawakens:cats_eye_shovel,type=item,ID=chaosawakens:cats_eye_pickaxe,type=item,ID=chaosawakens:cats_eye_axe,type=item,ID=chaosawakens:cats_eye_hoe)@luck=1
 
 / ruby armor
-group(type=item,ID=chaosawakens:ruby_helmet;type=item,ID=chaosawakens:ruby_chestplate,type=item,ID=chaosawakens:ruby_leggings,type=item,ID=chaosawakens:ruby_boots,type=item,ID=chaosawakens:ruby_sword)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:ruby_helmet;type=item,ID=chaosawakens:ruby_chestplate,type=item,ID=chaosawakens:ruby_leggings,type=item,ID=chaosawakens:ruby_boots,type=item,ID=chaosawakens:ruby_sword)@luck=1
 
 /ruby items
-group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe,type=item,ID=chaosawakens:ruby_shovel,type=item,ID=chaosawakens:pickaxe,type=item,ID=chaosawakens:ruby_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe,type=item,ID=chaosawakens:ruby_shovel,type=item,ID=chaosawakens:pickaxe,type=item,ID=chaosawakens:ruby_hoe)@luck=1
 
 / cats eye armor
-group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings,type=item,ID=chaosawakens:cats_eye_chestplate,type=item,ID=chaosawakens:cats_eye_helmet,type=item,ID=chaosawakens:cats_eye_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings,type=item,ID=chaosawakens:cats_eye_chestplate,type=item,ID=chaosawakens:cats_eye_helmet,type=item,ID=chaosawakens:cats_eye_hoe)@luck=1
 
 / pink tormalane  items
-group(type=item,ID=chaosawakens:pink_tourmaline_sword;type=item,ID=chaosawakens:pink_tourmaline_axe,type=item,ID=chaosawakens:pink_tourmaline_shovel,type=item,ID=chaosawakens:pink_tourmaline_pickaxe,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:pink_tourmaline_sword;type=item,ID=chaosawakens:pink_tourmaline_axe,type=item,ID=chaosawakens:pink_tourmaline_shovel,type=item,ID=chaosawakens:pink_tourmaline_pickaxe,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1
 
 / pink tormalane armor
-group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings,type=item,ID=chaosawakens:pink_tourmaline_chestplate,type=item,ID=chaosawakens:pink_tourmaline_helmet,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings,type=item,ID=chaosawakens:pink_tourmaline_chestplate,type=item,ID=chaosawakens:pink_tourmaline_helmet,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1
 
 / emerald armor
-group(type=item,ID=chaosawakens:emerald_helmet;type=item,ID=chaosawakens:emerald_chestplate,type=item,ID=chaosawakens:emerald_leggings,type=item,ID=chaosawakens:emerald_boots,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:emerald_helmet;type=item,ID=chaosawakens:emerald_chestplate,type=item,ID=chaosawakens:emerald_leggings,type=item,ID=chaosawakens:emerald_boots,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=1
 
 / emerald tools
-group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_axe,type=item,ID=chaosawakens:emerald_shovel,type=item,ID=chaosawakens:emerald_pickaxe,type=item,ID=chaosawakens:emerald_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_axe,type=item,ID=chaosawakens:emerald_shovel,type=item,ID=chaosawakens:emerald_pickaxe,type=item,ID=chaosawakens:emerald_hoe)@luck=1
 
 /ultimate items
-group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2@chance=0.5
+group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
 
 / saphire items
-group(type=item,ID=dangerzone:saphire_sword;type=item,ID=dangerzone:saphire_shovel,type=item,ID=dangerzone:saphire_pickaxe,type=item,ID=dangerzone:saphire_axe,type=item,ID=dangerzone:saphire_hoe)@luck=2@chance=0.5
+group(type=item,ID=dangerzone:saphire_sword;type=item,ID=dangerzone:saphire_shovel,type=item,ID=dangerzone:saphire_pickaxe,type=item,ID=dangerzone:saphire_axe,type=item,ID=dangerzone:saphire_hoe)@luck=2
 
-group(type=item,ID=dangerzone:sapphire_boots;type=item,ID=dangerzone:saphire_leggings,type=item,ID=dangerzone:saphire_chestplate,type=item,ID=dangerzone:saphire_helmet,type=item,ID=dangerzone:saphire)@luck=2@chance=0.5
+group(type=item,ID=dangerzone:sapphire_boots;type=item,ID=dangerzone:saphire_leggings,type=item,ID=dangerzone:saphire_chestplate,type=item,ID=dangerzone:saphire_helmet,type=item,ID=dangerzone:saphire)@luck=2
 
 
 / lapis armor
-group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings,type=item,ID=chaosawakens:lapis_chestplate,type=item,ID=chaosawakens:lapis_helmet,type=item,ID=chaosawakens:lapis_hoe)@chance=0.5
+group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings,type=item,ID=chaosawakens:lapis_chestplate,type=item,ID=chaosawakens:lapis_helmet,type=item,ID=chaosawakens:lapis_hoe)
 
 / mobzilla armor
-group(type=item,ID=chaosawakens:mobzilla_boots;type=item,ID=chaosawakens:mobzilla_leggings,type=item,ID=chaosawakens:mobzilla_chestplate,type=item,ID=chaosawakens:mobzilla_helmet)@luck=2@chance=0.5
+group(type=item,ID=chaosawakens:mobzilla_boots;type=item,ID=chaosawakens:mobzilla_leggings,type=item,ID=chaosawakens:mobzilla_chestplate,type=item,ID=chaosawakens:mobzilla_helmet)@luck=2
 
-group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2@chance=0.5
+group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
 
 / moth scale armor
-group(type=item,ID=chaosawakens:moth_scale_helmet;type=item,ID=chaosawakens:moth_scale_chestplate,type=item,ID=chaosawakens:moth_scale_legging,type=item,ID=chaosawakens:moth_scale_boots)@chance=0.5
+group(type=item,ID=chaosawakens:moth_scale_helmet;type=item,ID=chaosawakens:moth_scale_chestplate,type=item,ID=chaosawakens:moth_scale_legging,type=item,ID=chaosawakens:moth_scale_boots)
 
-group(type=item,ID=chaosawakens:ender_dragon_scale_helmet;type=item,ID=chaosawakens:ender_dragon_scale_chestplate,type=item,ID=chaosawakens:ender_dragon_scale_leggings,type=item,ID=chaosawakens:ender_dragon_scale_boots)@luck=2@chance=0.5
+group(type=item,ID=chaosawakens:ender_dragon_scale_helmet;type=item,ID=chaosawakens:ender_dragon_scale_chestplate,type=item,ID=chaosawakens:ender_dragon_scale_leggings,type=item,ID=chaosawakens:ender_dragon_scale_boots)@luck=2
 
 / lapis tools
-group(type=item,ID=chaosawakens:lapis_sword;type=item,ID=chaosawakens:lapis_sword_shovel,type=item,ID=chaosawakens:lapis_sword_pickaxe,type=item,ID=chaosawakens:lapis_sword_axe,type=item,ID=chaosawakens:lapis_sword_hoe,type=item)@chance=0.5
+group(type=item,ID=chaosawakens:lapis_sword;type=item,ID=chaosawakens:lapis_sword_shovel,type=item,ID=chaosawakens:lapis_sword_pickaxe,type=item,ID=chaosawakens:lapis_sword_axe,type=item,ID=chaosawakens:lapis_sword_hoe,type=item)
 
-group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_scale_axe,type=item,ID=chaosawakens:moth_scale_pickaxe,type=item,ID=chaosawakens:moth_scale_hoe)@luck=1@chance=0.5
+group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_scale_axe,type=item,ID=chaosawakens:moth_scale_pickaxe,type=item,ID=chaosawakens:moth_scale_hoe)@luck=1
 
 / royal guardian sword
-group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2@chance=0.1
+group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2
 
 type=command,ID="give @p chaosawakens:crystal_apple 25"
 
@@ -1076,7 +1077,7 @@ type=command,id="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"chaosawakens:r
 group(type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow}]}";type=command,ID="/say Turn off your xray")
 
 /  queen scale armor
-group(type=item,ID=chaosawakens:queen_scale_helmet;type=item,ID=chaosawakens:queen_scale_chestplate,type=item,ID=chaosawakens:queen_scale_leggings,type=item,ID=chaosawakens:queen_scale_boots)@luck=2@chance=0.1
+group(type=item,ID=chaosawakens:queen_scale_helmet;type=item,ID=chaosawakens:queen_scale_chestplate,type=item,ID=chaosawakens:queen_scale_leggings,type=item,ID=chaosawakens:queen_scale_boots)@luck=2
 
 type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp}]}"
 
@@ -1214,15 +1215,15 @@ type=command,ID="give @p twilightforest:cooked_venison{display:{Name:'{"text":"D
 
 type=command,ID="give @p twilightforest:charm_of_keeping_3{display:{Name:'{"text":"Invitory keeps"}'}} 1"
 
-group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@chance=0.5
+group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)
 
-group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)@chance=0.5
+group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)
 
-group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)@chance=0.5
+group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)
 
-group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:steeleaf_chestplate,type=item,ID=twilightforest:steeleaf_leggings,type=item,ID=twilightforest:steeleaf_boots)@chance=0.5
+group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:steeleaf_chestplate,type=item,ID=twilightforest:steeleaf_leggings,type=item,ID=twilightforest:steeleaf_boots)
 
-group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)@chance=0.5
+group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)
 
 
 type=command,ID=" give @p twilightforest:diamond_minotaur_axe 1"

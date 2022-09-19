@@ -13,6 +13,8 @@ type=command,ID="/give @p egg{display:{Name:'{"text":"Dr Keith Rowley"}'}} 1"@lu
 
 type=command,ID="/give @p dangerzone:salt 30"
 
+type=command,ID="give @p pufferfish{display:{Name:'{"text":"Pink pufferfish"}'},CustomModelData:1} 1"
+
 type=command,ID="/summon area_effect_cloud ~ ~10 ~ {Passengers:[{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile}]}"
 
 type=command,ID="/summon dangerzone:mermaid ~ ~ ~ {CustomName:'{"text":"Human Fish"}'} "
@@ -85,7 +87,7 @@ type=command,ID="/give @p bone_meal{display:{Name:'{"text":"Salt"}'}} 1"@luck=0
 type=command,ID="/give @p cooked_chicken{display:{Name:'{"text":"Spicy Chicken"}'}} 1"@luck=0
 
 /lava
-group(Id=lava_bucket,amount=100)@luck=2@chance=4
+group(Id=lava_bucket,amount=100)
 
 /flint and steel
 type=item,ID=minecraft:flint_and_steel@lucky=0
@@ -176,7 +178,7 @@ type=command,ID="/summon lycanitesmobs:volcan ~ ~ ~ {CustomName:'{"text":"Mutant
 type=command,ID="/summon lycanitesmobs:afrit ~ ~ ~ {CustomName:'{"text":"Mutant crying obsidan"}'}"@Luck=1
 
 /tnt
-group(Id=tnt,amount=100)@luck=2@chance=4
+group(Id=tnt,amount=100)@luck=2
 
 /bob 
 group(type=difficulty,ID=hard;type=entity,ID=Zombie,NBTTag=(HandItems=[(id=diamond_sword,Count=1,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=1,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName="$9$lBob",CustomNameVisible=true))@luck=-2
@@ -288,7 +290,7 @@ type=message,ID="Hello,  hi if your are  Popoularmmos what is the challange game
 type=message,ID="Ok, #p Ok i am putting your brain down as a block huh that is strange it is an air block?"@luck=0@chance=1
 
 / normal wishing wells
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$bYour wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=1,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=diamond,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=emerald,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=dye,damage=4,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=2@chance=0.5
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$bYour wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=1,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=diamond,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=emerald,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=dye,damage=4,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=2
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like potatoes)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=potato,amount=128,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=baked_potato,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);ID=poisonous_potato,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2))"]))@luck=1
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 1 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your death wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20)"]))@luck=-2
 
@@ -754,7 +756,7 @@ type=command,ID="/summon giant ~ ~ ~ {Health:25000f,Passengers:[{id:"minecraft:z
 /spiderzilla
 type=command,ID="/summon spider ~ ~ ~ {Health:12000f,Passengers:[{id:"minecraft:zombie"}],CustomName:'{"text":"Spiderzilla"}',Attributes:[{Name:generic.armor,Base:20}]}"@luck=-5
 
-type=command,ID="/summon ender_dragon ~ ~ ~ {Health:7000f,CustomName:'{"text":"The King"}',HandItems:[{id:"minecraft:netherite_sword",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:50s},{id:"minecraft:smite",lvl:10s},{id:"minecraft:bane_of_arthropods",lvl:10s},{id:"minecraft:knockback",lvl:10s},{id:"minecraft:fire_aspect",lvl:10s},{id:"minecraft:looting",lvl:10s},{id:"minecraft:sweeping",lvl:50s},{id:"minecraft:unbreaking",lvl:600s}]}},{}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:feather_falling",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:thorns",lvl:10s},{id:"minecraft:unbreaking",lvl:100s}]}},{id:"minecraft:netherite_leggings",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:thorns",lvl:10s},{id:"minecraft:unbreaking",lvl:10s}]}},{id:"minecraft:netherite_chestplate",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_helmet",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:unbreaking",lvl:10s}]}}],Attributes:[{Name:generic.armor,Base:20},{Name:generic.armor_toughness,Base:20}]}@luck=-5"
+type=command,ID="/summon ender_dragon ~ ~ ~ {Health:7000f,CustomName:'{"text":"The Ender Dragon King"}',HandItems:[{id:"minecraft:netherite_sword",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:sharpness",lvl:50s},{id:"minecraft:smite",lvl:10s},{id:"minecraft:bane_of_arthropods",lvl:10s},{id:"minecraft:knockback",lvl:10s},{id:"minecraft:fire_aspect",lvl:10s},{id:"minecraft:looting",lvl:10s},{id:"minecraft:sweeping",lvl:50s},{id:"minecraft:unbreaking",lvl:600s}]}},{}],ArmorItems:[{id:"minecraft:netherite_boots",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:feather_falling",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:thorns",lvl:10s},{id:"minecraft:unbreaking",lvl:100s}]}},{id:"minecraft:netherite_leggings",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:thorns",lvl:10s},{id:"minecraft:unbreaking",lvl:10s}]}},{id:"minecraft:netherite_chestplate",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_helmet",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:10s},{id:"minecraft:fire_protection",lvl:10s},{id:"minecraft:blast_protection",lvl:10s},{id:"minecraft:projectile_protection",lvl:10s},{id:"minecraft:unbreaking",lvl:10s}]}}],Attributes:[{Name:generic.armor,Base:20},{Name:generic.armor_toughness,Base:20}]}@luck=-5"
 
 / Titianium sword
 type=command,ID="/give @p netherite_sword{display:{Name:'{"text":"Titianium sword"}',Lore:['{"text":"It is super hard to break"}']},Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:unbreaking",lvl:50s}]} 1"@luck=-1
@@ -1146,14 +1148,97 @@ type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"
 
 /  add Twilight Forest
 
-type=command,ID="give @p twlightforest:ender_bow 1"
+type=command,ID="summon ~ ~1 ~ twilightforest:minoshroom"
 
-type=command,ID="summon twlightforest:yeti_alpha"
+type=command,ID="summon ~ ~1 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}}]}"
 
-type=command,ID="summon twlightforest:hydra"
+type=command,ID="summon ~ ~1 ~ twilightforest:bighorn_sheep ~ ~ ~ {CustomName:'{"text":"butt headder"}'}"
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twlightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"
+type=command,ID="summon ~ ~1 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}}]}"
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twlightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"
+type=command,ID="summon ~ ~1 ~ twilightforest:lich" 
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twlightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"
+type=command,ID=" give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Enchanted Golden Heart Totem"}'}} 1"
+
+type=command,ID=" give @p twilightforest:charm_of_life_1{display:{Name:'{"text":"Heart Totem"}'}} 1"
+
+type=command,ID="give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:1} 1"
+
+type=command,ID="summon~ ~1 ~ twilightforest:yeti"
+
+type=command,ID="summon~ ~1 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:death_tome"
+
+type=command,ID="summon twilightforest:tower_golem  ~ ~1 ~"
+
+type=command,ID="summon twilightforest:troll  ~ ~1 ~"
+
+type=command,ID="summon twilightforest:goblin_knight_upper  ~ ~1 ~"
+
+type=command,ID="summon twilightforest:goblin_knight_lower  ~ ~1 ~"
+
+type=command,ID="summon twilightforest:skeleton_druid ~ ~1 ~"
+
+type=command,ID="summon twilightforest:slime_beetle ~ ~1 ~"
+
+type=command,ID="summon twilightforest:swarm_spider ~ ~1 ~"
+
+type=command,ID="summon twilightforest:wraith ~ ~1 ~"
+
+type=command,ID="summon twilightforest:ur_ghast ~ ~1 ~"
+
+type=command,ID="summon twilightforest:stable_ice_core ~ ~1 ~"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:bunny"
+
+type=command,ID="give @p twilightforest:ender_bow 1"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:minotaur"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:yeti_alpha"
+
+type=command,ID="summon ~ ~1 ~ twilightforest:hydra"
+
+type=command,ID="give @p twilightforest:twilight_scepter 1"
+
+type=command,ID="give @p twilightforest:lifedrain_scepter 1"
+
+type=command,ID="give @p twilightforest:seeker_bow 1"
+
+type=command,ID="give @p twilightforest:steeleaf 19"
+
+type=command,ID="give @p twilightforest:zombie_scepter 5"
+
+type=command,ID="give @p twilightforest:cooked_venison{display:{Name:'{"text":"Deer meat"}'}} 15"
+
+type=command,ID="give @p twilightforest:charm_of_keeping_3{display:{Name:'{"text":"Invitory keeps"}'}} 1"
+
+group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@chance=0.5
+
+group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)@chance=0.5
+
+group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)@chance=0.5
+
+group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:steeleaf_chestplate,type=item,ID=twilightforest:steeleaf_leggings,type=item,ID=twilightforest:steeleaf_boots)@chance=0.5
+
+group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)@chance=0.5
+
+
+type=command,ID=" give @p twilightforest:diamond_minotaur_axe 1"
+
+type=command,ID="give @p twilightforest:triple_bow 1"
+
+type=command,ID=" give @p twilightforest:ice_bow 1"
+
+type=command,ID=" give @p twilightforest:ice_bomb{display:{Name:'{"text":"Ice cubes"}'}} 35"
+
+type=command,ID=" give @p twilightforest:experiment_115{display:{Name:'{"text":"CAKE"}'}} 35"
+
+type=command,ID=" give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"
+
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"

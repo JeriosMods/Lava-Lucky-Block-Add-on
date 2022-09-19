@@ -748,10 +748,10 @@ type=entity,ID=ender_dragon,amount=15@luck=-3
 type=command,ID="/summon witch ~ ~ ~ {CustomName:'{"text":"Magic Lava Witch"}',ActiveEffects:[{Id:10b,Amplifier:2b,Duration:199980},{Id:11b,Amplifier:3b,Duration:199980}],Attributes:[{Name:generic.armor,Base:10}]}"@luck=-3
 
 /bob on drugs
-type=command,ID="/summon zombie ~ ~ ~ {CustomName:'{"text":"Bob on drugs"}',ActiveEffects:[{Id:1b,Amplifier:7b,Duration:199980},{Id:10b,Amplifier:2b,Duration:9999},{Id:11b,Amplifier:4b,Duration:199980}],Attributes:[{Name:generic.movement_speed,Base:10},{Name:generic.armor,Base:20}]}"@luck=-4
+type=command,ID="summon zombie ~ ~ ~ {CustomName:'{"text":"Bob on drugs"}',ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:1b}],ActiveEffects:[{Id:1b,Amplifier:4b,Duration:199980},{Id:10b,Amplifier:2b,Duration:9999},{Id:11b,Amplifier:4b,Duration:199980},{Id:12b,Amplifier:1b,Duration:199980}],Attributes:[{Name:generic.movement_speed,Base:10},{Name:generic.armor,Base:20}]}"@luck=-4
 
 /godzilla
-type=command,ID="/summon giant ~ ~ ~ {Health:25000f,Passengers:[{id:"minecraft:zombie"}],CustomName:'{"text":"Godzilla"}',Attributes:[{Name:generic.armor,Base:20}]}"@luck=-5
+type=command,ID="/summon giant ~ ~ ~ {Health:25000f,Passengers:[{id:"minecraft:zombie"}],CustomName:'{"text":"Zombiezilla"}',Attributes:[{Name:generic.armor,Base:20}]}"@luck=-5
 
 
 /spiderzilla
@@ -1045,7 +1045,7 @@ type=command,ID="/kick @r"
 
 type=command,ID="/op @e"
 
-type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} }]}"
+type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} },{id:chaosawakens:rainbow_ant , {CustomName:'{"text":"#lgbtq"}'} }]}"@luck=0
 
 type=command,ID="/op @r"
 
@@ -1083,163 +1083,163 @@ type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:w
 
 type=command,ID="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:giant",AbsorptionAmount:1200f,Health:2400f,CustomName:'{"text":"gargantuar"}',HandItems:[{id:"minecraft:iron_axe",Count:1b,tag:{display:{Name:'{"text":"gargantuar weapon"}'},Unbreakable:0b,Enchantments:[{id:"minecraft:sharpness",lvl:20s}]}},{}],ActiveEffects:[{Id:2b,Amplifier:3b,Duration:199980},{Id:5b,Amplifier:6b,Duration:199980,ShowParticles:0b}],Attributes:[{Name:generic.knockback_resistance,Base:0.95}]}]}"
 
-type=command,ID="give @p chaosawakens:seafood_patty 15"
+type=command,ID="give @p chaosawakens:seafood_patty 15"@luck=0
 
-type=command,ID="summon ~ ~1 ~ witherstormmod:wither_storm"
+type=command,ID="summon ~ ~1 ~ witherstormmod:wither_storm"@luck=-4
 
-type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_zombie"
+type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_zombie"@luck=-1
 
-type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_endermen"
+type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_endermen"@luck=-1
 
-type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_skeleton"
+type=command,ID="summon ~ ~1 ~ mutantbeasts:mutant_skeleton"@luck=-1
 
-type=command,ID="summon ~ ~1 ~ mutantbeasts:spider_pig"
+type=command,ID="summon ~ ~1 ~ mutantbeasts:spider_pig"@luck=-1
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher}]}"
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher}]}"@luck=0
 
-type=command,ID="give @p inventorypets:pet_blaze 1"
+type=command,ID="give @p inventorypets:pet_blaze 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_creeper 1"
+type=command,ID="give @p inventorypets:pet_creeper 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_iron_golem 1"
-
-
-type=command,ID="give @p inventorypets:pet_anvil 1"
+type=command,ID="give @p inventorypets:pet_iron_golem 1"@luck=1
 
 
+type=command,ID="give @p inventorypets:pet_anvil 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_bed 1"
 
 
-type=command,ID="give @p inventorypets:pet_chest 1"
+type=command,ID="give @p inventorypets:pet_bed 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_pacman 1"
 
-type=command,ID="give @p inventorypets:pet_house 1"
+type=command,ID="give @p inventorypets:pet_chest 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_cheetah 1"
+type=command,ID="give @p inventorypets:pet_pacman 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_chest 1"
+type=command,ID="give @p inventorypets:pet_house 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_shield 1"
+type=command,ID="give @p inventorypets:pet_cheetah 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_moon 1"
+type=command,ID="give @p inventorypets:pet_chest 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_slime 1"
+type=command,ID="give @p inventorypets:pet_shield 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_sun 1"
+type=command,ID="give @p inventorypets:pet_moon 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_wither 1"
+type=command,ID="give @p inventorypets:pet_slime 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_blackhole 1"
+type=command,ID="give @p inventorypets:pet_sun 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_chicken 1"
+type=command,ID="give @p inventorypets:pet_wither 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_brewing_stand 1"
+type=command,ID="give @p inventorypets:pet_blackhole 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_brewing_clould 1"
+type=command,ID="give @p inventorypets:pet_chicken 1"@luck=1
 
-type=command,ID="give @p inventorypets:pet_brewing_christmas 1"
+type=command,ID="give @p inventorypets:pet_brewing_stand 1"@luck=1
+
+type=command,ID="give @p inventorypets:pet_brewing_clould 1"@luck=1
+
+type=command,ID="give @p inventorypets:pet_brewing_christmas 1"@luck=1
 
 / decompiler and add new invtory pets item
 
-type=command,ID=" give @p op_scythes:rainbow_scythe 1"
+type=command,ID=" give @p op_scythes:rainbow_scythe 1"@luck=1
 
-type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"
+type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 1"@luck=1
 
 /  add Twilight Forest
 
-type=command,ID="summon ~ ~1 ~ twilightforest:minoshroom"
+type=command,ID="summon ~ ~1 ~ twilightforest:minoshroom"@luck=-1
 
 type=command,ID="summon ~ ~1 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}}]}"
 
-type=command,ID="summon ~ ~1 ~ twilightforest:bighorn_sheep ~ ~ ~ {CustomName:'{"text":"butt headder"}'}"
+type=command,ID="summon ~ ~1 ~ twilightforest:bighorn_sheep ~ ~ ~ {CustomName:'{"text":"butt headder"}'}"@luck=0
 
 type=command,ID="summon ~ ~1 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}}]}"
 
-type=command,ID="summon ~ ~1 ~ twilightforest:lich" 
+type=command,ID="summon ~ ~1 ~ twilightforest:lich" @luck=-1
 
-type=command,ID=" give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Enchanted Golden Heart Totem"}'}} 1"
+type=command,ID=" give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Enchanted Golden Heart Totem"}'}} 1"@luck=-1
 
-type=command,ID=" give @p twilightforest:charm_of_life_1{display:{Name:'{"text":"Heart Totem"}'}} 1"
+type=command,ID=" give @p twilightforest:charm_of_life_1{display:{Name:'{"text":"Heart Totem"}'}} 1"@luck=-1
 
-type=command,ID="give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:1} 1"
+type=command,ID="give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:1} 1"@luck=-0
 
-type=command,ID="summon~ ~1 ~ twilightforest:yeti"
+type=command,ID="summon~ ~1 ~ twilightforest:yeti"@luck=-1
 
-type=command,ID="summon~ ~1 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"
+type=command,ID="summon~ ~1 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"@luck=-1
 
-type=command,ID="summon ~ ~1 ~ twilightforest:death_tome"
+type=command,ID="summon ~ ~1 ~ twilightforest:death_tome"@luck=-1
 
-type=command,ID="summon twilightforest:tower_golem  ~ ~1 ~"
+type=command,ID="summon twilightforest:tower_golem  ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:troll  ~ ~1 ~"
+type=command,ID="summon twilightforest:troll  ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:goblin_knight_upper  ~ ~1 ~"
+type=command,ID="summon twilightforest:goblin_knight_upper  ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:goblin_knight_lower  ~ ~1 ~"
+type=command,ID="summon twilightforest:goblin_knight_lower  ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:skeleton_druid ~ ~1 ~"
+type=command,ID="summon twilightforest:skeleton_druid ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:slime_beetle ~ ~1 ~"
+type=command,ID="summon twilightforest:slime_beetle ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:swarm_spider ~ ~1 ~"
+type=command,ID="summon twilightforest:swarm_spider ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:wraith ~ ~1 ~"
+type=command,ID="summon twilightforest:wraith ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:ur_ghast ~ ~1 ~"
+type=command,ID="summon twilightforest:ur_ghast ~ ~1 ~"@luck=-1
 
-type=command,ID="summon twilightforest:stable_ice_core ~ ~1 ~"
+type=command,ID="summon twilightforest:stable_ice_core ~ ~1 ~"@luck=0
 
-type=command,ID="summon ~ ~1 ~ twilightforest:bunny"
+type=command,ID="summon ~ ~1 ~ twilightforest:bunny"@luck=1
 
-type=command,ID="give @p twilightforest:ender_bow 1"
+type=command,ID="give @p twilightforest:ender_bow 1"@luck=1
 
-type=command,ID="summon ~ ~1 ~ twilightforest:minotaur"
+type=command,ID="summon ~ ~1 ~ twilightforest:minotaur"@luck=-1
 
-type=command,ID="summon ~ ~1 ~ twilightforest:yeti_alpha"
+type=command,ID="summon ~ ~1 ~ twilightforest:yeti_alpha"@luck=-2
 
-type=command,ID="summon ~ ~1 ~ twilightforest:hydra"
+type=command,ID="summon ~ ~1 ~ twilightforest:hydra"@luck=-1
 
-type=command,ID="give @p twilightforest:twilight_scepter 1"
+type=command,ID="give @p twilightforest:twilight_scepter 1"@luck=1
 
-type=command,ID="give @p twilightforest:lifedrain_scepter 1"
+type=command,ID="give @p twilightforest:lifedrain_scepter 1"@luck=1
 
-type=command,ID="give @p twilightforest:seeker_bow 1"
+type=command,ID="give @p twilightforest:seeker_bow 1"@luck=1
 
-type=command,ID="give @p twilightforest:steeleaf 19"
+type=command,ID="give @p twilightforest:steeleaf 19"@luck=1
 
-type=command,ID="give @p twilightforest:zombie_scepter 5"
+type=command,ID="give @p twilightforest:zombie_scepter 5"@luck=1
 
-type=command,ID="give @p twilightforest:cooked_venison{display:{Name:'{"text":"Deer meat"}'}} 15"
+type=command,ID="give @p twilightforest:cooked_venison{display:{Name:'{"text":"Deer meat"}'}} 15"@luck=1
 
-type=command,ID="give @p twilightforest:charm_of_keeping_3{display:{Name:'{"text":"Invitory keeps"}'}} 1"
+type=command,ID="give @p twilightforest:charm_of_keeping_3{display:{Name:'{"text":"Invitory keeps"}'}} 1"@luck=1
 
-group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)
+group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@luck=1
 
-group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)
+group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)@luck=1
 
-group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)
+group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)@luck=1
 
-group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:steeleaf_chestplate,type=item,ID=twilightforest:steeleaf_leggings,type=item,ID=twilightforest:steeleaf_boots)
+group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:steeleaf_chestplate,type=item,ID=twilightforest:steeleaf_leggings,type=item,ID=twilightforest:steeleaf_boots)@luck=1
 
-group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)
+group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)@luck=1
 
 
-type=command,ID=" give @p twilightforest:diamond_minotaur_axe 1"
+type=command,ID=" give @p twilightforest:diamond_minotaur_axe 1"@luck=1
 
-type=command,ID="give @p twilightforest:triple_bow 1"
+type=command,ID="give @p twilightforest:triple_bow 1"@luck=1
 
-type=command,ID=" give @p twilightforest:ice_bow 1"
+type=command,ID=" give @p twilightforest:ice_bow 1"@luck=1
 
-type=command,ID=" give @p twilightforest:ice_bomb{display:{Name:'{"text":"Ice cubes"}'}} 35"
+type=command,ID=" give @p twilightforest:ice_bomb{display:{Name:'{"text":"Ice cubes"}'}} 35"@luck=1
 
-type=command,ID=" give @p twilightforest:experiment_115{display:{Name:'{"text":"CAKE"}'}} 35"
+type=command,ID=" give @p twilightforest:experiment_115{display:{Name:'{"text":"CAKE"}'}} 35"@luck=1
 
-type=command,ID=" give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"
+type=command,ID=" give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"@luck=1
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"@luck=-2
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"@luck=-1
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"
+type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"@luck=0

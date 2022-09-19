@@ -729,17 +729,17 @@ type=command,ID="/summon elder_guardian ~ ~ ~ {Passengers:[{id:"minecraft:elder_
 
 
 /flashes suit chestplate
-/ type=command,ID="/give @p leather_chestplate{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:100,Operation:0,UUID:[I;-1985111854,-360691936,-1237661957,-1892404153]}]} 1"@luck=0
+/ type=command,ID="/give @p leather_chestplate{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:18,Operation:0,UUID:[I;-1985111854,-360691936,-1237661957,-1892404153]}]} 1"@luck=0
 
 /flash leggins
-/ type=command,ID="/give @p leather_leggings{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:100,Operation:0,UUID:[I;-1985111852,-360691935,-1237661933,-1892404149]}]} 1"@luck=0
+/ type=command,ID="/give @p leather_leggings{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:9,Operation:0,UUID:[I;-1985111852,-360691935,-1237661933,-1892404149]}]} 1"@luck=0
 
 /flash helmet
-/ type=command,ID="/give @p leather_helmet{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:100,Operation:0,UUID:[I;-1985111856,-360691938,-1237661939,-1892404141]}]} 1"@luck=0
+/ type=command,ID="/give @p leather_helmet{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:6,Operation:0,UUID:[I;-1985111856,-360691938,-1237661939,-1892404141]}]} 1"@luck=0
 
-/flash boots
+/flash boots 12
 
-/ type=command,ID="/give @p leather_boots{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:100,Operation:0,UUID:[I;-1985111851,-360691930,-1237661934,-1892404144]}]} 1"@luck=0
+/ type=command,ID="give @p leather_boots{display:{Name:'{"text":"Flash\'s suit"}',color:16711680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:12,Operation:0,UUID:[I;-1985111851,-360691930,-1237661934,-1892404144]}]} 1"@luck=0
 
 /ender dragon
 type=entity,ID=ender_dragon,amount=15@luck=-3

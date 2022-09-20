@@ -1,1 +1,1 @@
-ggg,glg,ggg,g,lava_bucket,l,lucky:lava_lucky_block
+ppp,plp,ppp,i,minecraft:lava_bucket,l,lucky:lava_lucky_block

@@ -1,157 +1,37 @@
 StopTheRepostingLicence by Brandonbr1 <http://github.com/Brandonbr1>
-Version 1.0.0
-====================================================================
+Version 2.0.0
 
 Copyright (c) 2022 <Brandonbr1>
 
-https://api.stopmodreposts.org/sites.txt is made by the StopModReposts team 
+Almost everyone may distribute,modify,copy the mod under the following conditions except if you are on the list at  https://api.stopmodreposts.org/sites.txt:
 
-This StopTheRepostingLicence Licence follows the following terms and conditions:
+1.You must provide attribution the author of the mod in any form possible no matter what that includes code,youtube videos,blogs etc.
 
-----------------
-0 Definitions:
-----------------
+2.If source code is public you may only use 60% of the provided source code.
 
-Definitions are here so you don't use other ones which are  or one that doesn't exist in the Wikipedia/Dictionary
------------------------------------------------------------------------------------------------------------------
-"Back porting" = porting a mod to an older version of Minecraft
+3. You are allowed to contribute to the mod in any way via pull requests(if available) and by submitting any pull requests
+the author gets all rights to use the code in any project they please.
 
-"Porting" = porting a mod to a newer version of Minecraft 
+4.All Assets of the Mod are distributed under Attribution-NonCommercial-ShareAlike 4.0 International unless the author says an assets is under a diffrent License
 
-"Website" = A bunch of websites pages typically built with code or a website builder to display content; it often or not has a domain name sometimes a subdomain name, that is registered to a domain name service. Original text from: https://www.google.com/search?q=website+definition&oq=website+defini&aqs reworded by Brandonbr1
+5.You are not giving premission to anything in releation to the mod if you are on the list at https://api.stopmodreposts.org/sites.txt NO MATTER WHAT NO EXECEPTIONS
+this includes using code,using textures,using models(it overrides term 4 if it follows the quota),using sounds,compiling the code and publising it!
 
-"Source code" = The code of the computer program make with computer instructions and as it's most bare bone form it has only 1 and 0.
+6.You may port the mod if there is no activity for the another on any socal media platform for the past 3 years
+then you may port it but you must put the mod under this licence,credit the author and 
+you have to say that this is a port and that you did not make the original mod
 
-"Mod" = Modifing the game to add new content by modifing the game in a way so it adds things into the game some  in the game to the game typically done with forge or fabric can be indepedently or by a team. Original text from: https://en.m.wikipedia.org/wiki/Minecraft_modding reworded by Brandonbr1 
+7.You may make addons for the under any licence you want however that author may takedown an addon
+with no reason provided from the author
 
-"Decompile" = using a decompiler tool to get the source code .jar file which you can not get with any normal means.
+8. Don't be a doucebag be just be a gentlement!
 
-"Modpack" = A list of mods consisting of more that one mod used so you can download all of the mods easily and quickly.
+The definition of gentlement is: Someone who is calm,nice and polite towards everone any anyone they meet someone who is liked by everyone.
+The definition of doucebag is: Someone who is considered a jerk and is hated by everyone else around them.
 
-"Assets" = The art,sound and models of the Mod.
+LILABILITY OF THE MOD
 
-"Minecraft" = A 3D sandbox game consisting of cubes to build things out of and items that do many functions, crafting to get set items and block and Combat to fight mobs or other players in the game via multiplayer.
-
-"Compiling" = using the source code and then making the file into .jar where it can be read by anyone with the JRE.
-
-"Binary" = the .jar file that comes out when the mod is released.
-
-"Author" = The person who made all/almost all of the mod and they have full rights towards the mod.
-
-"Publish" = make the mod available to the public to see .
-
-"Examine" = looking at the source code but never releasing it.
-
-"Contributing" = helping the mod by writing code for the mod but he is not an author.
-
-"ads services" = what is shown to the user for other companies to show their products.
-
-"paid url shortener" = means A url shortener that when the put into the url shortener, shortens the link and also gives the person using it money.
-
-"Copyright" = A law that gives the owner rights to the mod.
-
-"LIABILITY" = What the author of the mod can be held accountable for.
-
-"Attribution" = giving credit to the author, the mods name and providing a link to the mod.
-
-"Clearly visible" = It is visible to the user and not put in some inconvenient spot where almost no average person will find it like in the main file that people are reading or typical the first things the the user will see.
-
-"User" = You a person who is veiwing the mod.
-
-"Staff Coder" = someone who works for the mod official and codes for the mod.
-
-"Coder" = someone from the outside coding the mod who do not work for the mod officially.
-
-"Library/dependence" = An external mod that is needed for the mod to work or make things run better in the mod.
-
-"Add-on" = something that uses the base mod and adds on top of it by creating another mod that intrageates with the mod.
-
-"mods name" = The name of the Minecraft mod.
-
-"Snippet" = A small section of code.
-
-"Modding API" = A Minecraft API that helps make Minecraft modding easy and is uses in almost any mod like forge,fabric,quilt etc.
-
-"Content farms" = A company or person who posts lots of mods in a ridiculous amount time and has stolen content of mods which are illegal and it also favors the alrgothims for search engines like Google so that I gets very high on the list when you search for the mod on search engines.
-
-"Ad farms" = putting a lot of ads on the website to make lots of money to the point where a lot of the content on the website are ads
--------------------------------
-Section 1 COMMERCIAL USES TERMS:
--------------------------------
-
- a. When posting a YouTube video or sites like YouTube you must give Attribution to the author and by linking to original is required to be given somewhere and it has to be clearly visible for the users to see.
- 
- b. You must not use the mod for any commerical purposes.
- 
- c. There must be a copy of This license text somewhere and it must be clearly visible for the user see.
- 
- d. do not use the mod's name in your article anywhere if you are at:https://api.stopmodreposts.org/sites.txt.
- 
- e. You must not make any sort of content farms or ad farms when publishing a blog about it you may have 3 ads on the page before it is considered an ad farm.
- 
------------------------------
-Section 2 PERSONAL USES TERMS:
------------------------------
- a.Any person/coder may use all of the source code that the mod provides but you may not publish the mod for people to  publicly download you may use or showcase it in something like a YouTube video.
- 
- b. You may showcase the mod on your YouTube channel following all the rules of Section 1 a. 
- 
------------------------------
-Section 3 DISTRIBUTION TERMS:
------------------------------
- a. the mod may not be on any other websites unless all the rules listed are followed
- 
- b.You may use the mod in any Modpacks but the mod in the modpack may only be distrubuted on the websites curseforge.com and technicpack.net unless you have premission from the author else if the mod is on any other website then the author may take the modpack down
-
-   
- c. You may not use any paid url shortener that gives you any form of currency, when using the mod in a Modpack or using it source code,but you may use ad services assuming it does not become an ad farm 
- 
- d. you may use this mod as a libary/dependence but the mod has to be downloaded separately and not be in the actually mod download.
- 
- e. Your mod must not have the same name as the original it is under a  wordmark and is also trademarked.
- 
- f. You may port the mod to another mod loader but if you are on the list at:https://api.stopmodreposts.org/sites.txt then perms a banned from porting to a new 
- 
- modloader and the author can takedown the mod to the ported version whith no reason provided for any user.
- 
- g.you may port the mod to a newer or backport it to an older version of mineceaft or to a new mod loader but you may not use it for commerical purposes or make money off the author without premission from the author first.
- 
- h. The Mod's legal stuff follows the law of the country in which they where born in.
-
- i. The author may takedown the ported/backported mod at any time with no reason provided from the author.
-
-----------------------------  
-Section 4 MODIFICATION TERMS:
-----------------------------
-
- a. You may not use all the source code of the mod you may only use 60% of the source code and if you do use more than 60% of the source code for the mod then contact with the author must be made and you have to state what changes you made and the code requires that the author and Mod name are credited and linked it also must be clearly visible where you put the author or Mods name.
- 
- b. You may take code snippets from the mods code without attribution required.
- 
- c. There must be a copy of the license somewhere and it must be "clearly visible" for the users to see.
-
- d. the author may takedown take down the mod at any time with no reason provided on any site. 
-
- e. All assets,sounds and other media types of the mod are Provided Under Attribution-NonCommercial-ShareAlike 4.0 International:https://creativecommons.org/licenses/by-nc-sa/4.0/.
-
- f. You may Decompile the mod but you must not publish the source code to some website like Github where people can publicly see it like GitHub or any other site where you can see the original source code.
-   
- g. If there is no public source code then The user may examine the source code but must never publish it to the public on a public website like GitHub where everybody can see it or use it in her mod unless all the other terms are is followed.
-
- h.if there is a public repository like GitHub then: You may contribute to the mod by doing Pull requests(code), documentation,submitting art to the mod/ or submitting ideas for the mod and by doing any of those things list the author of the mod gets full rights to use the code/or what was submitted, to be able to use in other projects/ or whatever the author wants to use it in.
-
- i. You may use the add-on as inspiration from the mod but it must not be too close to the original mod and if the author thinks it is too close to the original mod then he has rights to take it down from any website(s) that he see the add-on is on.
-
- j. You must clarify that it is an addon for the Mod that you are making it for.
-
- k.you may put the add-on under any license assuming that you follow the terms for the add-on rules
-
- l. if the website is on the list at https://api.stopmodreposts.org/sites.txt you are simply banned from the community and anything that has relation to the mod the only exception is mods that use it a a Libary
-
-
---------------------------------------------------------------
-Section 5 "AS IS" LIABILITY and "AS IS" WARRANTIES of the mod:
---------------------------------------------------------------
-THE MOD THAT IS PROVIDED COMES WITH NO WARRANTIES AND LIMITIED
-LIABILITY IT COMES 'AS-IS' MEANING THAT THE AUTHOR CAN NOT BE HELD
-LIABILITY IF ANYTHING GOES WRONG WITH SET MOD OR CODE THE AUTHOR CAN NOT BE HELD LIABLE
+THE MOD THAT IS PROVIDED COMES WITH NO WARRANTIES AND NO
+LIABILITY THE MOD COMES PACKAGED 'AS-IS' MEANING THAT THE AUTHOR CAN NOT BE HELD
+LIABILITY SO IF ANYTHING GOES WRONG WITH THE SET MOD OR CODE THE AUTHOR CAN NOT BE HELD LIABLE for
+THE DAMAGES THAT WAS CAUSED FROM THAT PARTICULAR ACTION

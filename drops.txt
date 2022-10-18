@@ -1,4 +1,79 @@
-group(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=2
+group(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=0
+
+type=structure,ID=house,file=house.schematicatic
+
+type=structure,ID=lavapool1,file=lavapool1.nbt
+
+type=structure,ID=valcanowithlava,file=valcanowithlava.nbt
+
+type=structure,ID=spleef,file=spleefmap.schematic
+
+type=structure,ID=picdiamond,file=pickaxeddiamond.schematicatic
+
+type=structure,ID=magmapixelart,file=magmapixelart.nbt
+
+type=structure,ID=lavabucketpixelart,file=lavabucketpixelart.nbt
+
+type=structure,ID=fryingpanlavano,file=fryingpanlavano.schematic
+
+type=structure,ID=lavaandfryingpanfilledallthewayup,file=lavaandfryingpanfilledallthewayup.nbt
+
+type=structure,ID=bigdiamond,file=bigdiamond.nbt
+
+type=structure,ID=slime,file=slime.nbt
+
+type=structure,ID=pickaxediamond,file=pickaxediamond.nbt
+
+
+type=structure,ID=magmapixelart.schematic,file=magmapixelart.nbt
+
+type=structure,ID=lavahouse,file=lavahouse.schematic
+
+
+type=structure,ID=torch,file=torch.nbt
+
+type=structure,ID=sunbad,file=sunbad.schematic
+
+type=structure,ID=housegood,file=housegood.schematic
+
+type=structure,ID=housebad,file=housebad.schematic
+
+type=structure,ID=devilpitchfork,file=devilpitchfork.nbt
+
+type=structure,ID=badchest,file-badchest.schematic
+
+type=structure,ID=housegood,file=housegood.schematic
+
+type=structure,ID=housebad,file=housebad.schematic
+
+/ ID=goodenderchest,file=goodenderchest.schematic
+
+type=structure,ID=bigjungle,file=bigjungle.nbt
+
+/ ID=diamondhoe,file=diamondhoe.nbt
+
+type=structure,ID=campfire,file=campfire.nbt
+
+type=structure,ID=catusfarm,file=catusfarm.nbt
+
+type=structure,ID=chillipepper,file=chillipepper.nbt
+
+type=structure,ID=tallcatus,file=tallcatus.nbt
+
+type=structure,ID=fullygenpymirad,file=fullygenpymirad.nbt
+
+type=structure,ID=lantern,file=lantern.nbt
+
+type=structure,ID=pcburn,file=pcburn.nbt
+
+type=structure,ID=lavafroest,file=lavafroest.nbt
+
+type=structure,ID=lighthouse,file=lighthouse.nbt
+
+type=structure,ID=runedendportal,file=runedendportal.nbt
+
+type=structure,ID=statifingstutleeggs,file=statifingstutleeggs.nbt
+
 
 type=command,ID="/give @p podzol{display:{Name:'{"text":"Poop dirt"}'}} 69"@luck=0
 
@@ -1218,6 +1293,8 @@ type=command,ID=" give @p twilightforest:ice_bomb{display:{Name:'{"text":"Ice cu
 type=command,ID=" give @p twilightforest:experiment_115{display:{Name:'{"text":"CAKE"}'}} 35"@luck=1
 
 type=command,ID=" give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"@luck=1
+
+// jokes
 
 type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"@luck=-2
 

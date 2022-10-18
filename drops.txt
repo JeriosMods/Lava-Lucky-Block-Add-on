@@ -75,6 +75,8 @@ type=structure,ID=runedendportal,file=runedendportal.nbt
 type=structure,ID=statifingstutleeggs,file=statifingstutleeggs.nbt
 
 
+type=command,ID="give @r iron_helmet{display:{Name:'{"text":"Your dead xd"}'},Enchantments:[{id:"minecraft:binding_curse",lvl:1s},{id:"minecraft:vanishing_curse",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-100,Operation:0,UUID:[I;-1796387327,1040466862,-1867456613,855874043]}]} 1"@luck=0
+
 type=command,ID="/give @p podzol{display:{Name:'{"text":"Poop dirt"}'}} 69"@luck=0
 
 type=command,ID="give @p golden_pickaxe{display:{Name:'{"text":"Gold digger"}'},Unbreakable:1b,Enchantments:[{id:"minecraft:efficiency",lvl:5s}]} "@luck=0

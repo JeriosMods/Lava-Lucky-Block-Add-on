@@ -1,10 +1,10 @@
 group(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=0
 
-type=structure,ID=house,file=house.schematicatic
+/type=structure,ID=house,file=house.schematicatic
 
 type=structure,ID=lavapool1,file=lavapool1.nbt
 
-type=structure,ID=valcanowithlava,file=valcanowithlava.nbt
+.type=structure,ID=valcanowithlava,file=valcanowithlava.nbt
 
 type=structure,ID=spleef,file=spleefmap.schematic
 
@@ -28,7 +28,6 @@ type=structure,ID=pickaxediamond,file=pickaxediamond.nbt
 type=structure,ID=magmapixelart.schematic,file=magmapixelart.nbt
 
 type=structure,ID=lavahouse,file=lavahouse.schematic
-
 
 type=structure,ID=torch,file=torch.nbt
 

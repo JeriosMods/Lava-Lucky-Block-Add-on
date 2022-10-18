@@ -559,12 +559,8 @@ type=item,ID=minecraft:enchanted_golden_apple,amount=5@luck=2
 /bue hoe
 type=command,ID="/give @p diamond_hoe{display:{Name:'{"text":"Blue palak hoe"}'},Enchantments:[{id:"minecraft:sharpness",lvl:23s}]} 1"@luck=2#chance=0.3
 
-
-
-
 /pink palyouk hoe
 
-type=command,ID="/give @p diamond_hoe{display:{Name:'{"text":"pink palak hoe"}',Lore:['{"text":"#girlpower"}']},CustomModelData:3432,Enchantments:[{id:"minecraft:sharpness",lvl:30s}]} 1"@luck=2
 type=command,ID="/give @p diamond_hoe{display:{Name:'{"text":"pink palak hoe"}',Lore:['{"text":"#girlpower"}']},CustomModelData:3432,Enchantments:[{id:"minecraft:sharpness",lvl:30s}]} 1"@luck=2
 
 /diamond ore

@@ -1113,6 +1113,28 @@ type=command,ID="/gamemode adventure @e"@luck=-2
 
 type=command,ID="/gamemode creative @e"@luck=2
 
+/ lucky block sword
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:40,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=1
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:30,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=1
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=1
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:10,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=2
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:90,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=1
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:100,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=1
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:50,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=2
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:60,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=1
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:70,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=0
+
+type=command,id="give @a lucky:lava_lucky_sword{Luck:80,Drops:["type=nothing@chance=10","type=effect,ID=special_fire,target=hitEntity,duration=10"]}"@luck=1
+
 group(type=slime,ID=fullygenpymirad;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)@luck=1
 
 group(type=slime,ID=cactusfarm;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)@luck=1

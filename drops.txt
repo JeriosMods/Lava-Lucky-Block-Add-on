@@ -1323,6 +1323,8 @@ type=command,ID=" give @p twilightforest:experiment_225{display:{Name:'{"text":"
 
 type=command,ID=" give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"@luck=2
 
+type=command,ID="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:zombie",IsBaby:1b,CanBreakDoors:1b,CustomName:'{"text":"imp"}',ActiveEffects:[{Id:1b,Amplifier:2b,Duration:199980,ShowParticles:1b},{Id:12b,Amplifier:1b,Duration:199980,ShowParticles:0b}]}]}"@luck=0
+
 // jokes
 
 type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}}]}"@luck=-2

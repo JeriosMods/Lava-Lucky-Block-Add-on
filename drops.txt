@@ -24,7 +24,6 @@ type=structure,ID=slime,file=slime.nbt
 
 type=structure,ID=pickaxediamond,file=pickaxediamond.nbt
 
-
 type=structure,ID=magmapixelart.schematic,file=magmapixelart.nbt
 
 type=structure,ID=lavahouse,file=lavahouse.schematic
@@ -101,26 +100,26 @@ type=command,ID="/summon sheep ~ ~ ~ {Color:6b,CustomName:'{"text":"Pink Sheep Y
 type=command,ID="/summon sheep ~ ~ ~ {Color:20b,CustomName:'{"text":"Purple Sheep YT"}'}"@luck=0
 
 / ExplodingTNT Item
-type=command,ID="/give @p tnt{display:{Name:'{"text":"ExplodingTNT"}'}} 2"@luck=0
+type=command,ID="/give @p tnt{display:{Name:'{"text":"ExplodingTNT"}'}} 2"@luck=0@chance=0.3
 
-type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:30b,CustomName:'{"text":"ExplodingTNT"}'}"@luck=-2
+type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:30b,CustomName:'{"text":"ExplodingTNT"}'}"@luck=-2@chance=0.3
 
 type=command,ID="/give @p magma 2"@luck=0
 
 / weird
 
-type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:600b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Sneezes"}'}"@luck=-2
+type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:600b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Sneezes"}'}"@luck=-2@chance=0.2
 
-type=command,ID="execute @p summon arrow ~ ~ ~ {Fire:200,player:0b,life:40,damage:29d,CustomName:'{"text":"American heat"}'}"@luck=0
+type=command,ID="execute @p summon arrow ~ ~ ~ {Fire:200,player:0b,life:40,damage:29d,CustomName:'{"text":"American heat"}'}"@luck=0@chance=0.2
 
-type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:50b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Farts"}'}"@luck=-2
+type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:50b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Farts"}'}"@luck=-2@chance=0.2
 
 type=command,ID="/summon cow ~ ~ ~ {CustomName:'{"text":"Mlike my utters"}'}"@luck=0
 
 type=command,ID="/summon chicken ~ ~ ~ {CustomName:'{"text":"KFC"}'}"@luck=0
 
 / potions
-type=command,ID="/give @p splash_potion{display:{Name:'{"text":"Heart attack potion Hearth attack on whoever you decide to splash it on"}',Lore:['{"text":"Gives the player a heart attack "}']},CustomPotionEffects:[{Id:7b,Amplifier:200b,Duration:400}]} 2"@luck=2
+type=command,ID="/give @p splash_potion{display:{Name:'{"text":"Heart attack potion Hearth attack on whoever you decide to splash it on"}',Lore:['{"text":"Gives the player a heart attack "}']},CustomPotionEffects:[{Id:7b,Amplifier:200b,Duration:400}]} 2"@luck=2@chance=0.4
 
 type=command,Id="/give @p splash_potion{display:{Name:'{"text":"Mystery Potion"}'},HideFlags:227,CustomPotionEffects:[{Id:2b,Amplifier:4b,Duration:6860},{Id:9b,Amplifier:4b,Duration:684},{Id:27b,Amplifier:2b,Duration:653},{Id:29b,Amplifier:28b,Duration:422},{Id:20b,Amplifier:3b,Duration:543},{Id:24b,Amplifier:292b,Duration:292},{Id:32b,Amplifier:454b,Duration:292}]} 2"@luck=0
 
@@ -226,6 +225,10 @@ type=command,id="/give @p lavaluckyblockutil:fire_armor_leggings"@luck=2
 type=command,id="/give @p lavaluckyblockutil:fire_armor_boots"@luck=2
 
 type=command,id="/give @p lavaluckyblockutil:fire_tnt"@luck=2
+
+type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:4b,id:"minecraft:nether_star",Count:1b},{Slot:13b,id:"minecraft:stick",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}}]} replace"@luck=0
+
+type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:0b,id:"minecraft:cake",Count:1b},{Slot:1b,id:"minecraft:cake",Count:1b},{Slot:2b,id:"minecraft:cake",Count:1b},{Slot:3b,id:"minecraft:cake",Count:1b},{Slot:4b,id:"minecraft:cake",Count:1b},{Slot:5b,id:"minecraft:cake",Count:1b},{Slot:6b,id:"minecraft:cake",Count:1b},{Slot:7b,id:"minecraft:cake",Count:1b},{Slot:8b,id:"minecraft:cake",Count:1b},{Slot:9b,id:"minecraft:cake",Count:1b},{Slot:10b,id:"minecraft:cake",Count:1b},{Slot:11b,id:"minecraft:chest",Count:1b},{Slot:12b,id:"minecraft:chest",Count:1b},{Slot:13b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:14b,id:"minecraft:cake",Count:1b},{Slot:15b,id:"minecraft:cake",Count:1b},{Slot:16b,id:"minecraft:cake",Count:1b},{Slot:17b,id:"minecraft:cake",Count:1b},{Slot:19b,id:"minecraft:cake",Count:1b},{Slot:20b,id:"minecraft:cake",Count:1b},{Slot:21b,id:"minecraft:cake",Count:1b},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}},{Slot:23b,id:"minecraft:cake",Count:1b},{Slot:24b,id:"minecraft:cake",Count:1b},{Slot:26b,id:"minecraft:cake",Count:1b}],CustomName:'{"text":"Stampylonghead\'s s Secret chest "}'} replace"@luck=0
 
 /v23 make more use of lycanitesmobs
 / cider 

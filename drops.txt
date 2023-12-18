@@ -127,14 +127,14 @@ type=command,ID="/give @p splash_potion{HideFlags:227,CustomPotionEffects:[{Id:2
 
 type=command,ID="/give @p splash_potion{display:{Name:'{"text":"Mystery Potion"}'},HideFlags:227,CustomPotionEffects:[{Id:3b,Amplifier:2b,Duration:223},{Id:5b,Amplifier:5b,Duration:8420},{Id:6b,Amplifier:2b,Duration:765},{Id:20b,Amplifier:4b,Duration:22340},{Id:23b,Amplifier:2b,Duration:543},{Id:22b,Amplifier:2b,Duration:7220},{Id:24b,Amplifier:4b,Duration:232},{Id:26b,Amplifier:2b,Duration:43},{Id:32b,Amplifier:34b,Duration:334}]} 2"@luck=0
 
-type=command,ID="/give @p splash_potion{display:{Name:'{"text":"drugs"}'},HideFlags:227,CustomPotionEffects:[{Id:2b,Amplifier:4b,Duration:20000},{Id:5b,Amplifier:5b,Duration:2600},{Id:9b,Amplifier:2b,Duration:200000},{Id:27b,Amplifier:4b,Duration:28000}]} 2"@luck=0
+type=command,ID="//give @p splash_potion{display:{Name:'{"text":"drugs"}'},HideFlags:127,CustomPotionEffects:[{Id:2b,Amplifier:4b,Duration:8000},{Id:5b,Amplifier:5b,Duration:4600},{Id:9b,Amplifier:2b,Duration:39000},{Id:27b,Amplifier:4b,Duration:28000}]} 2"@luck=0
 
 / wither spawn egg
 type=command,ID="/give @p wither_skeleton_spawn_egg{EntityTag:{id:"minecraft:wither",CustomName:"\"Wither spawn egg\"",CustomNameVisible:2}}"@luck=0
 
 / firework
 type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket}]}@luck=0
-"@luck=0
+"@luck=0@chance=0.6
 
 /diamond gear
 group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=diamond_hoe)@luck=2
@@ -160,71 +160,65 @@ type=command,ID="/give @p bone_meal{display:{Name:'{"text":"Salt"}'}} 2"@luck=0
 type=command,ID="/give @p cooked_chicken{display:{Name:'{"text":"Spicy Chicken"}'}} 2"@luck=0
 
 /lava
-group(Id=lava_bucket,amount=200)@luck=0
+group(Id=lava_bucket,amount=200)@luck=0@chance=0.2
 
 /flint and steel
 type=item,ID=minecraft:flint_and_steel@luck=0
 
 type=command,ID="/give @p pumpkin{display:{Name:'{"text":" 3.242592653589793238462643383279502884297269399375205820974944592307826406286 208998628034825342227067982248086523282306647093844609550582232725359408228482 227450284202702938522205559644622948954930382964428820975665933446228475648233 786783265272202909245648566923460348620454326648223393607260249242273724587006"}'}} 2"@luck=0
 
-type=command,ID="/give @p netherite_helmet{display:{Name:'{"text":"Soul sucker"}'},Enchantments:[{id:"minecraft:protection",lvl:20s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-200,Operation:0,UUID:[I;-2927723477,-850836768,-2882092605,520499286]}]} 2"@luck=0
+type=command,ID="/give @p netherite_helmet{display:{Name:'{"text":"Soul sucker"}'},Enchantments:[{id:"minecraft:protection",lvl:20s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-200,Operation:0,UUID:[I;-2927723477,-850836768,-2882092605,520499286]}]} 2"@luck=2@
 
-type=command,ID="/give @p paper{display:{Name:'{"text":"The guy who invented the door knocker got a no-bell prize."}'}} 2"@luck=0
+type=command,ID="/give @p paper{display:{Name:'{"text":"The guy who invented the door knob got a no-bell prize."}'}} 2"@luck=0
 /lavaluckyblockutil
 
 type=command,id="/give @p lavaluckyblockutil:lava_multi_tool"@luck=0
 
-type=command,ID="/give @p lavaluckyblockutil:haste_soul"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:haste_soul"@luck=1
 
-type=command,ID="/give @p lavaluckyblockutil:jump_soul"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:jump_soul"@luck=1
 
-type=command,ID="/give @p lavaluckyblockutil:regeneration_soul"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:regeneration_soul"@luck=1
 
-type=command,ID="/give @p lavaluckyblockutil:resistance_soul"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:resistance_soul"@luck=1
 
-type=command,ID="/give @p lavaluckyblockutil:strength_soul"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:strength_soul"@luck=1
 
-type=command,ID="/give @p lavaluckyblockutil:speed_soul"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:speed_soul"@luck=1
 
-type=command,ID="/give @p lavaluckyblockutil:lava_sword"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:lava_sword"@luck=1
 
-type=command,ID="/give @p lavaluckyblockutil:lava_pickaxe"@luck=2
+type=command,ID="/give @p lavaluckyblockutil:lava_pickaxe"@luck=1
 
-type=command,ID=" /give @p lavaluckyblockutil:lava_apple"@luck=6
+type=command,ID=" /give @p lavaluckyblockutil:lava_apple"@luck=1
 
-type=command,ID= "/give @p lavaluckyblockutil:lava_dynomite"@luck=2.9
+type=command,ID=" /give @p lavaluckyblockutil:lava_tnt"@luck=1
 
-type=command,ID=" /give @p lavaluckyblockutil:lava_tnt"@luck=2
+type=command,ID=" /give @p lavaluckyblockutil:lava_potion"@luck=1
 
-type=command,ID=" /give @p lavaluckyblockutil:lava_potion"@luck=2.5
+type=command,ID=" /give @p lavaluckyblockutil:lava_sythe"@luck=1
 
-type=command,ID=" /give @p lavaluckyblockutil:lava_sythe"@luck=2.7
+type=command,id="/give @p lavaluckyblockutil:lava_knife"@luck=1
 
-type=command,ID=" /give @p llavaluckyblockutil:lavaamo"@luck=2.9
+type=command,id="/give @p lavaluckyblockutil:flaming_hotcheetos"@luck=2@chance=0.2
 
-type=command,ID=" /give @p lavaluckyblockutil:lava_bazaka"@luck=2.9
+type=command,id="/give @p lavaluckyblockutil:spicy_diritos"@luck=2@chance=0.2
 
-type=command,id="/give @p lavaluckyblockutil:lava_knife"@luck=2
+type=command,id="/give @p lavaluckyblockutil:spicy_ramen"@luck=2@chance=0.2
 
-type=command,id="/give @p lavaluckyblockutil:flaming_hotcheetos"@luck=2
+type=command,id="/give @p lavaluckyblockutil:throwable_fire"@luck=2@chance=0.4
 
-type=command,id="/give @p lavaluckyblockutil:spicy_diritos"@luck=2
+type=command,id="/give @p lavaluckyblockutil:trinidad_morugascorpionpepper"@luck=2@chance=0.2
 
-type=command,id="/give @p lavaluckyblockutil:spicy_ramen"@luck=2
+type=command,id="/give @p lavaluckyblockutil:fire_armor_helmet"@luck=1@chance=0.4
 
-type=command,id="/give @p lavaluckyblockutil:throwable_fire"@luck=2
+type=command,id="/give @p lavaluckyblockutil:fire_armor_chestplate"@luck=1@chance=0.4
 
-type=command,id="/give @p lavaluckyblockutil:trinidad_morugascorpionpepper"@luck=5
+type=command,id="/give @p lavaluckyblockutil:fire_armor_leggings"@luck=1@chance=0.4
 
-type=command,id="/give @p lavaluckyblockutil:fire_armor_helmet"@luck=2
+type=command,id="/give @p lavaluckyblockutil:fire_armor_boots"@luck=1@chance=0.4
 
-type=command,id="/give @p lavaluckyblockutil:fire_armor_chestplate"@luck=2
-
-type=command,id="/give @p lavaluckyblockutil:fire_armor_leggings"@luck=2
-
-type=command,id="/give @p lavaluckyblockutil:fire_armor_boots"@luck=2
-
-type=command,id="/give @p lavaluckyblockutil:fire_tnt"@luck=2
+type=command,id="/give @p lavaluckyblockutil:fire_tnt"@luck=1@chance=0.4
 
 type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:4b,id:"minecraft:nether_star",Count:1b},{Slot:13b,id:"minecraft:stick",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}}]} replace"@luck=0
 
@@ -259,19 +253,19 @@ type=command,ID="/summon lycanitesmobs:afrit ~ ~ ~ {CustomName:'{"text":"Mutant 
 group(ID=tnt,amount=200)@luck=2
 
 /bob 
-group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName="$9$lBob",CustomNameVisible=true))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName="$9$lBob",CustomNameVisible=true))@luck=-1
 
 / joe
-group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.9f,0.9f,0.9f,0.9f],CustomName="$9$lJoe",CustomNameVisible=true))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.9f,0.9f,0.9f,0.9f],CustomName="$9$lJoe",CustomNameVisible=true))@luck=-1
 
 / tim
 group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.9f,0.9f,0.9f,0.9f],CustomName="$9$lTim",CustomNameVisible=true))@luck=0
 
 / ryan
-group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.9f,0.9f,0.9f,0.9f],CustomName="$9$lRyan",CustomNameVisible=true))@luck=2
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.9f,0.9f,0.9f,0.9f],CustomName="$9$lRyan",CustomNameVisible=true))@luck=-1
 
 / tom
-group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.9f,0.9f,0.9f,0.9f],CustomName="$9$lTom",CustomNameVisible=true))@luck=2
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=diamond_sword,Count=2,tag=(ench=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=2,tag=(ench=#luckyBootsEnchantments)),(id=diamond_leggings,Count=2,tag=(ench=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=2,tag=(ench=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=2,tag=(ench=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.9f,0.9f,0.9f,0.9f],CustomName="$9$lTom",CustomNameVisible=true))@luck=-1
 
 / dragon egg
 type=item,Id=minecraft:dragon_egg@luck=2
@@ -374,6 +368,9 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like potatoes)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=potato,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=baked_potato,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=poisonous_potato,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your death wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20)"]))@luck=-2
 
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$bYour wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=2,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=diamond,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=emerald,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=dye,damage=4,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
+
+
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour SEE through stuff came true! .\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=chaosawakens:crystal_shard,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:crystal_torch,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:crystal_apple,amount=25,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trough (if it is your first day playing Minecraft .\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=firt,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=wooden_hoe,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=cobblestone,amount=25,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
@@ -385,7 +382,7 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trough (if you like wasps(for some reason you physopat) .\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=chaosawakens:wasp,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:wasp,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:wasp,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
 
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish did not come trough (if you like nickleback(for some reason you physopat) .\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=iron_ingot,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=iron_ingot,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=iron_ingot,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish did come trought (if you are doing the challange games) .\";type=block,ID=diamond_block,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=sponge,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=cake,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=beacon,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=1@chance=0.3
 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trough (if you like bees(so cute) .\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=bee,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=bee,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=bee,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
 
@@ -393,21 +390,22 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eGod is good god is great!,God is good god is great!!!!!!!!!!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=lucky:lava_lucky_block,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:mobzilla_scale,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:royal_guardian_word,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=20@chance=0.2
 
 / Doom Wish
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour DOOM came true! (If you like DOOM the game)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=netherrack,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=flint_and_steel,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=lava_bucket,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour DOOM came true! (If you like DOOM, the game)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=netherrack,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=flint_and_steel,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=lava_bucket,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
 
 /bedwars wish
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like Bedwars)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=red_wool,amount=200,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=blue_wool,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=obsidian,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
 
 / Russia nuke
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Russia and Trump sent out nukes to end Humanity\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=500)"]))@luck=-2
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Russia and Trump sent out nukes to end Humanity\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=500)"]))@luck=-2@chance=0.1
 
 / arson
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like Commiting arson)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=flint_and_steel,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=lava_bucket,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=minecraft:fire,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
 
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your wish came true if you love flexing or playing the challange games!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=500)"]))@luck=-2@chance=0.1
 
 
 / your world is dead
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4God got fed up and has decided to end humanity\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=2000)"]))@luck=-2
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$e Well say goodbye to your world!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=1000)"]))@luck=-2@chance=0.1
 
 
 / hero sword

@@ -88,7 +88,7 @@ type=command,ID="/give @p dangerzone:salt 30"@luck=0
 
 type=command,ID="give @p pufferfish{display:{Name:'{"text":"Pink pufferfish"}'},CustomModelData:2} 2"@luck=0
 
-type=command,ID="/summon area_effect_cloud ~ ~20 ~ {Passengers:[{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile}]}"@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~20 ~ {Passengers:[{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile}]}"@luck=0@chance=0.3
 
 type=command,ID="/summon dangerzone:mermaid ~ ~ ~ {CustomName:'{"text":"Human Fish"}'} "@luck=0
 
@@ -108,9 +108,9 @@ type=command,ID="/give @p magma 2"@luck=0
 
 / weird
 
-type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:600b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Sneezes"}'}"@luck=-2@chance=0.2
+type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:90b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Sneezes"}'}"@luck=-2@chance=0.2
 
-type=command,ID="execute @p summon arrow ~ ~ ~ {Fire:200,player:0b,life:40,damage:29d,CustomName:'{"text":"American heat"}'}"@luck=0@chance=0.2
+type=command,ID="execute @p summon arrow ~ ~ ~ {Fire:200,player:0b,life:40,damage:29d,CustomName:'{"text":"American heat be like"}'}"@luck=0@chance=0.2
 
 type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:50b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Farts"}'}"@luck=-2@chance=0.2
 
@@ -167,7 +167,7 @@ type=item,ID=minecraft:flint_and_steel@luck=0
 
 type=command,ID="/give @p pumpkin{display:{Name:'{"text":" 3.242592653589793238462643383279502884297269399375205820974944592307826406286 208998628034825342227067982248086523282306647093844609550582232725359408228482 227450284202702938522205559644622948954930382964428820975665933446228475648233 786783265272202909245648566923460348620454326648223393607260249242273724587006"}'}} 2"@luck=0
 
-type=command,ID="/give @p netherite_helmet{display:{Name:'{"text":"Soul sucker"}'},Enchantments:[{id:"minecraft:protection",lvl:20s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-200,Operation:0,UUID:[I;-2927723477,-850836768,-2882092605,520499286]}]} 2"@luck=2
+type=command,ID="/give @p netherite_helmet{display:{Name:'{"text":"Soul sucker"}'},Enchantments:[{id:"minecraft:protection",lvl:20s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-18,Operation:0,UUID:[I;-2927723477,-850836768,-2882092605,520499286]}]} 2"@luck=2
 
 type=command,ID="/give @p paper{display:{Name:'{"text":"The guy who invented the door knob got a no-bell prize."}'}} 2"@luck=0
 /lavaluckyblockutil
@@ -354,9 +354,7 @@ type=item,ID=portal_frames,amount=20@luck=0
 type=item,ID=cake,amount=20@luck=0
 
 /p cake 20
-type=item,ID=cake,amount=20@luck=0
-
-/ type=message,ID="Hello,  hi if your are  Popoularmmos what is the challange games world seed? please type in /seed"@luck=0
+type=item,ID=cake,amount=80@luck=1
 
 
 / type=message,ID="Ok, #p Ok i am putting your brain down as a block huh that is strange it is an air block?"@luck=0
@@ -365,6 +363,7 @@ type=item,ID=cake,amount=20@luck=0
 
 / normal wishing wells
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$bYour wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=2,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=diamond,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=emerald,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=dye,damage=4,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
+
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like potatoes)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=potato,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=baked_potato,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=poisonous_potato,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your death wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20)"]))@luck=-2
 
@@ -382,7 +381,7 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trough (if you like wasps(for some reason you physopat) .\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=chaosawakens:wasp,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:wasp,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=chaosawakens:wasp,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
 
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish did come trought (if you are doing the challange games) .\";type=block,ID=diamond_block,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=sponge,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=cake,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=beacon,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=1@chance=0.3
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish did come trought (if you are doing the challange games) .\";type=block,ID=diamond_block,posY='4'bPosY+4;type=block,ID=beacon,posY='#'bPosY+2;ID=sponge,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=cake,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=beacon,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=1@chance=0.3
 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came trough (if you like bees(so cute) .\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=bee,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=bee,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=bee,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=0
 
@@ -396,7 +395,7 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like Bedwars)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=red_wool,amount=200,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=blue_wool,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=obsidian,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
 
 / Russia nuke
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Russia and Trump sent out nukes to end Humanity\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=500)"]))@luck=-2@chance=0.1
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Russia and Trump sent out nukes to end Humanity\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=50)"]))@luck=-2@chance=0.1
 
 / arson
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like Commiting arson)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=flint_and_steel,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=lava_bucket,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=minecraft:fire,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
@@ -405,7 +404,7 @@ group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you 
 
 
 / your world is dead
-group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$e Well say goodbye to your world!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=1000)"]))@luck=-2@chance=0.1
+group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$e Well say goodbye to your world!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=100)"]))@luck=-2@chance=0.1
 
 
 / hero sword
@@ -415,13 +414,13 @@ type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lHe
 type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lthe termator's axe"))@luck=2
 
 /popoularmmos beg
-type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lpopoularmmos what the challange game world seed"))@luck=2
+type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$Luckyb sword"))@luck=1
 
 /boty slapper
-type=ID=diamond_shovel,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lboty slapper"))@luck=2
+type=ID=diamond_shovel,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lboty slapper"))@luck=1
 
 /diamond hoe
-type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiamond hoe"))@luck=2
+type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiamond hoe"))@luck=0
 
 /potion
 
@@ -435,10 +434,10 @@ type=item,ID=couris_fruit,amount=24@luck=0
 type=item,ID=ender_pearls,amount=24@luck=0
 
 /skeleton apolipse
-group(type=entity,ID=skeleton,amount=250,posOffset=#circleOffset(8,20)@luck=-2
+group(type=entity,ID=skeleton,amount=50,posOffset=#circleOffset(8,20)@luck=-2
 
 /creeper
-type=entity,ID=Creeper,amount=200,posOffset=#circleOffset(8,20)@luck=-2
+type=entity,ID=Creeper,amount=30,posOffset=#circleOffset(8,20)@luck=-2
 
 /lava fill
 type=fill,ID=lava,size=(258,258,258)@luck=-2
@@ -447,7 +446,7 @@ type=fill,ID=lava,size=(258,258,258)@luck=-2
 type=sound,ID=mob.pig.say,volume=9.0@lucky=-2
 
 /wither
-type=entity,ID=Wither,amount=200@luck=-2
+type=entity,ID=Wither,amount=200@luck=-2@chance=0.4
 
 type=command,ID-"/give @p brown_dye{display:{Name:'{"text":"Poop"}'}} 2"@luck=0
 

@@ -94,6 +94,8 @@ type=command,ID="/summon dangerzone:mermaid ~ ~ ~ {CustomName:'{"text":"Human Fi
 
 /pink sheep
 type=command,ID="/summon sheep ~ ~ ~ {Color:6b,CustomName:'{"text":"Pink Sheep YT"}'}"@luck=0
+/ Everything enchantment book
+ID=enchanted_book,NBTTag=(ench=#randEnchantment),amount=#rand(39,40)@luck=2
 
 / purple sheep
 

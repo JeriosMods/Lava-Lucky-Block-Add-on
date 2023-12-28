@@ -97,7 +97,38 @@ type=command,ID="/summon dangerzone:mermaid ~ ~ ~ {CustomName:'{"text":"Human Fi
 /pink sheep
 type=command,ID="/summon sheep ~ ~ ~ {Color:6b,CustomName:'{"text":"Pink Sheep YT"}'}"@luck=0
 / Everything enchantment book
-ID=enchanted_book,NBTTag=(display=(Name="Oooooh!")   ench=#randEnchantment),amount=#rand(39,40)@luck=2
+ID=enchanted_book,NBTTag=(display=(Name="Everything books")   ench=#randEnchantment),amount=#rand(39,40)@luck=2
+
+
+type=entity,ID=villager,NBTTag=(
+    TradeTier=3,
+    Variant=9,
+    Offers=(
+        Recipes=[
+            (
+                buyA=(Name=minecraft:feather),
+                sell=(Name=minecraft:emerald_block,Count=1b,tag=(ench=#luckySwordEnchantments,display=(Name="$l$9Hero's Sword"))),
+                buyCountA=#rand(20,25),
+                maxUses=1
+            ),
+            (
+                buyA=(Name=minecraft:iron_ingot),
+                sell=(Name=minecraft:beacon,Count=1b,tag=(ench=#luckyBowEnchantments,display=(Name="$l$dull beacon"))),
+                buyCountA=#rand(20,25),
+                maxUses=1
+            ),
+            (
+                buyA=(Name=minecraft:rotten_flesh),
+                sell=(Name=minecraft:nether_star,Count=1b,tag=(ench=#luckyFishingRodEnchantments,display=(Name="$l$9Cursed star"))),
+                buyCountA=#rand(10,15),
+                maxUses=1
+            )
+        ]
+    ),
+    CustomName="$l$9 Mr.Beast ",
+    CustomNameVisible=true,
+    definitions=["+minecraft:villager_v2", "+", "+weaponsmith"]
+)@luck=1
 
 / purple sheep
 

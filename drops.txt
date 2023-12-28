@@ -105,6 +105,7 @@ type=command,ID="/summon sheep ~ ~ ~ {Color:6b,CustomName:'{"text":"Pink Sheep Y
 / Everything enchantment book
 ID=enchanted_book,NBTTag=(display=(Name="Everything books")   ench=#randEnchantment),amount=#rand(39,40)@luck=2
 
+type=block,ID=chest,tileEntity=(id=Chest,LootTable="loot_tables/chests/buriedtreasure.json")@luck=1
 
 type=entity,ID=villager,NBTTag=(
     TradeTier=3,

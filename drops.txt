@@ -90,6 +90,8 @@ type=command,ID="give @p pufferfish{display:{Name:'{"text":"Pink pufferfish"}'},
 
 type=command,ID="/summon area_effect_cloud ~ ~20 ~ {Passengers:[{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile}]}"@luck=0@chance=0.3
 
+type=entity,ID=xp_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(64,86)@luck=2
+
 type=command,ID="/summon dangerzone:mermaid ~ ~ ~ {CustomName:'{"text":"Human Fish"}'} "@luck=0
 
 /pink sheep

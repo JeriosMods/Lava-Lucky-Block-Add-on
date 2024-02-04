@@ -4,7 +4,7 @@ group(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck
 
 type=structure,ID=lavapool2,file=lavapool2.nbt@luck=-1
 
-.type=structure,ID=valcanowithlava,file=valcanowithlava.nbt@luck=-1
+type=structure,ID=valcanowithlava,file=valcanowithlava.nbt@luck=-1
 
 type=structure,ID=picdiamond,file=pickaxeddiamond.schematicatic@luck=-1
 
@@ -28,6 +28,11 @@ type=structure,ID=lavahouse,file=lavahouse.schematic@luck=1
 
 type=structure,ID=torch,file=torch.nbt@luck=0
 
+group(type=structure,ID=lavatrap,file=trainrunini4.nbt,pos=(#pPosX+18);type=message,ID="Train is approaching you!")@luck=-2
+
+group(type=structure,ID=lavatrap,file=lavatrap3.nbt;type=message,ID="Quick mine out while you still can!")@luck=-2
+
+group(type=structure,ID=lavatrap,file=tntrails4.nbt;type=message,ID="Careful! be very careful")@luck=-1
 
 type=structure,ID=housegood,file=housegood.schematic@luck=0
 
@@ -68,6 +73,183 @@ type=structure,ID=lighthouse,file=lighthouse.nbt@luck=0
 type=structure,ID=runedendportal,file=runedendportal.nbt@luck=0
 
 type=structure,ID=statifingstutleeggs,file=statifingstutleeggs.nbt@luck=-1
+
+/ normal lucky block drops from the lucky block mod
+
+group(
+    type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$eYour wish came true! (If you like 24 carrot)\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        ID=gold_ingot,amount=128,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=gold_nugget,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=enchanted_golden_apple,amount=16,posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=1
+
+group(
+    type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$eYou wish did not come through if you have diabetes\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        ID=cookies,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=sugar,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=bread ,amount=16,posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=1
+
+group(
+    ID=stone_slab,data=6,amount=#rand(4,8);
+    ID=quartz_ore,amount=#rand(16,32);
+    ID=quartz_block,amount=#rand(4,8);
+    ID=quartz_block,data=1,amount=#rand(4,8);
+    ID=quartz_block,data=2,amount=#rand(4,8);
+    ID=quartz_stairs,amount=#rand(4,8);ID=quartz,amount=#rand(24,32);
+    type=particle,ID=snowflake_particle,size=(1.5,0,1.5),particleAmount=20
+)@luck=1
+
+
+/ monster battle
+group(
+    / sword, difficulty, time, potion effects
+    ID=wooden_sword;
+    type=time,ID=18750;
+    type=effect,ID=slowness,duration=30,amplifier=4;
+    type=effect,ID=blindness,duration=30;
+    group:1:(
+        / zombies, creepers, spiders & cave spiders, silverfish & endermites, guardians
+        type=entity,ID=zombie,amount=#rand(20,50);
+        type=entity,ID=creeper,amount=#rand(10,30);
+        group(type=entity,ID=spider,amount=#rand(15,45);type=entity,ID=cave_spider,amount=#rand(5,10));
+        group(type=entity,ID=silverfish,amount=#rand(15,45);type=entity,ID=endermite,amount=#rand(5,10));
+        type=entity,ID=guardian,amount=#rand(10,30);
+        / all at once
+        group(
+            type=entity,ID=zombie,amount=#rand(20,50);
+            type=entity,ID=creeper,amount=#rand(10,30);
+            group(type=entity,ID=spider,amount=#rand(15,45);type=entity,ID=cave_spider,amount=#rand(5,10);
+            type=entity,ID=silverfish,amount=#rand(15,45);type=entity,ID=endermite,amount=#rand(5,10);
+            type=entity,ID=guardian,amount=#rand(10,30))
+        )
+    ),posOffset=#circleOffset(8,10)
+)@luck=-2
+
+
+/ falling blocks (iron, gold, diamond, emerald)
+group(
+    type=fill,ID=air,size=(1,8,1);
+    type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:iron_block,states=()));
+    type=particle,ID=basic_smoke_particle,size=(1,8,1),particleAmount=500;
+    type=sound,ID=random.fizz
+)@luck=0
+
+group(
+    type=fill,ID=air,size=(1,8,1);
+    type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:gold_block,states=()));
+    type=particle,ID=basic_flame_particle,size=(1,8,1),particleAmount=500;
+    type=sound,ID=mob.ghast.fireball
+)@luck=0
+
+group(
+    type=fill,ID=air,size=(1,8,1);
+    type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:diamond_block,states=()));
+    type=entity,ID=lightning_bolt
+)@luck=1
+
+group(
+    type=fill,ID=air,size=(1,8,1);
+    type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:emerald_block,states=()));
+    type=particle,ID=villager_happy,size=(1,8,1),particleAmount=500;
+    type=sound,ID=dig.grass
+)@luck=0
+
+group(
+    type=fill,ID=air,size=(1,8,1);
+    type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:lapis_block,states=()));
+    type=particle,ID=water_splash_particle_manual,size=(1,8,1),particleAmount=1000;
+    type=sound,ID=random.swim
+)@luck=0
+
+/ colorful pole
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(FallingBlock=(name=minecraft:red_glazed_terracotta,states=())),posY=#bPosY+5;
+        NBTTag=(FallingBlock=(name=minecraft:orange_glazed_terracotta,states=())),posY=#bPosY+10;
+        NBTTag=(FallingBlock=(name=minecraft:yellow_glazed_terracotta,states=())),posY=#bPosY+15;
+        NBTTag=(FallingBlock=(name=minecraft:lime_glazed_terracotta,states=())),posY=#bPosY+20;
+        NBTTag=(FallingBlock=(name=minecraft:light_blue_glazed_terracotta,states=())),posY=#bPosY+25;
+        NBTTag=(FallingBlock=(name=minecraft:blue_glazed_terracotta,states=())),posY=#bPosY+30;
+        NBTTag=(FallingBlock=(name=minecraft:purple_glazed_terracotta,states=())),posY=#bPosY+35;
+        NBTTag=(FallingBlock=(name=minecraft:magenta_glazed_terracotta,states=())),posY=#bPosY+40;
+        NBTTag=(FallingBlock=(name=minecraft:pink_glazed_terracotta,states=())),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=diamond_block,states=())),posY=#bPosY+50;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=2.3
+)@luck=2
+
+/ tnt pole
+group(type=fill,ID=air,size=(1,51,1);
+    type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=minecraft:redstone_block,states=())),posY=#bPosY+5;
+    group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=minecraft:tnt,states=()))
+)@luck=2
+
+/ colorful armor
+type=entity,ID=armor_stand,samples=4,seed=528,NBTTag=(
+    Mainhand=[(Name=minecraft:#randColor_candle,Count=1b)],
+    Armor=[
+        (Name=minecraft:leather_boots,Count=1b,tag=(customColor=#rand(0,16777215))),
+        (Name=minecraft:leather_leggings,Count=1b,tag=(customColor=#rand(0,16777215))),
+        (Name=minecraft:leather_chestplate,Count=1b,tag=(customColor=#rand(0,16777215))),
+        (Name=minecraft:leather_helmet,Count=1b,tag=(customColor=#rand(0,16777215)))
+    ]
+)@luck=0
+
+
+/ anvil cage
+group(
+    type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
+    type=fill,ID=air,size=(1,70,1),pos=#pPos;type=fill,ID=anvil,size=(1,2,1),pos=(#pPosX,#pPosY+70,#pPosZ)
+)@luck=-2
+
+/ lava cage
+group(
+    type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
+    type=block,ID=lava,pos=(#pPosX,#pPosY+3,#pPosZ)
+)@luck=-2
+
+/ water cage
+type=structure,ID=water_cage,pos=#pPos@luck=-2
+
+/ lava pit
+group(
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+)@luck=-2
+
+group(
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+)@luck=-2
+
+/ lucky buildings
+type=structure,ID=lucky_fort,pos=#pPos@luck=2
+type=structure,ID=lucky_temple,pos=#pPos@chance=0.4@luck=2
+
+/ bedrock problem
+type=structure,ID=bedrock_problem,rotation=#pDirect@luck=-1
+
+/ explosion
+group(type=difficulty,ID=hard;type=explosion,radius=6)@luck=-2
+
+/ choice of 2 lucky blocks
+group:1:(type=structure,ID=lucky_choice_left,rotation=#pDirect;type=structure,ID=lucky_choice_right,rotation=#pDirect)@luck=0
+
 
 
 type=command,ID="give @r iron_helmet{display:{Name:'{"text":"Your dead xd"}'},Enchantments:[{id:"minecraft:binding_curse",lvl:2s},{id:"minecraft:vanishing_curse",lvl:2s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-200,Operation:0,UUID:[I;-2796387327,2040466862,-2867456623,855874043]}]} 2"@luck=0
@@ -138,7 +320,8 @@ group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=di
 
 / MSG
 
-type=command,ID="fill ~8 ~20 ~8 ~ ~ ~ -1 replace tnt[unstable=true]"@luck=-1
+group(type=command,ID="fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt rain! Quick run away!"    )@luck=-1
+
 
 type=command,ID="item entity @p armor.head replace block.minecraft.lava"@luck=0
 
@@ -163,6 +346,23 @@ group(Id=lava_bucket,amount=200)@luck=0@chance=0.2
 
 /flint and steel
 type=item,ID=minecraft:flint_and_steel@luck=0
+
+/ Look good for the well items
+group(
+    type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$eYou wish came true(if you like hide and seek)\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        ID=diamond,amount=#rand(24,38),posY='#'bPosY+40,posOffset='3'circleOffset(23);
+        ID=emerald,amount=#rand(38,42),posY='#'bPosY+10,posOffset='9'circleOffset(18);
+        ID=gold_ingot,amount=#rand(32,52),posY='#'bPosY+10,posOffset='12'circleOffset(12)
+    )"])
+)@luck=1
+
+
+type=command,ID="/give @p dragon_head{display:{Name:'{"text":"Power of the ender dragon"}'},Enchantments:[{id:"minecraft:protection",lvl:7s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:feather_falling",lvl:10s},{id:"minecraft:blast_protection",lvl:12s},{id:"minecraft:projectile_protection",lvl:8s},{id:"minecraft:knockback",lvl:15s}],AttributeModifiers:[{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:6,Operation:0,UUID:[I;843923511,-82424146,-1230672978,-765212357]},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:30,Operation:0,UUID:[I;-2024887846,-804765150,-1468541064,-1083633823]},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:14,Operation:0,UUID:[I;-624096812,807487682,-1614614510,-1744281575]}]} 1"@luck=2@chance=0.2
 
 type=command,ID="/give @p pumpkin{display:{Name:'{"text":" 3.242592653589793238462643383279502884297269399375205820974944592307826406286 208998628034825342227067982248086523282306647093844609550582232725359408228482 227450284202702938522205559644622948954930382964428820975665933446228475648233 786783265272202909245648566923460348620454326648223393607260249242273724587006"}'}} 2"@luck=0
 
@@ -368,6 +568,7 @@ type=item,ID=cake,amount=20@luck=0
 
 / normal wishing wells
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$bYour wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=2,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=diamond,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=emerald,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=dye,damage=4,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
+
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$eYour wish came true! (If you like potatoes)\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;ID=potato,amount=228,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=baked_potato,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);ID=poisonous_potato,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2))"]))@luck=2
 group(type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";type=command,ID="/give #pName gold_nugget 2 0 {display:{Name:\"$6Coin\"}}";type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(type=message,ID=\"$4Your death wish came true!\";type=block,ID=air,posY='#'bPosY+3;type=block,ID=beacon,posY='#'bPosY+2;type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20)"]))@luck=-2
 
@@ -796,10 +997,12 @@ type=command,ID="/give @p diamond_sword{display:{Lore:['{"text":"Sword of the la
 
 
 /op lava wolf
-type=command,ID="/summon wolf ~ ~ ~ {CustomName:'{"text":"Very Lucky OP Lava wolf"}',HandItems:[{id:"minecraft:netherite_sword",Count:2b,tag:{Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:5s},{id:"minecraft:looting",lvl:5s},{id:"minecraft:sweeping",lvl:6s},{id:"minecraft:unbreaking",lvl:5s}]}},{id:"minecraft:shield",Count:2b}],ArmorItems:[{id:"minecraft:netherite_boots",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:feather_falling",lvl:6s},{id:"minecraft:thorns",lvl:6s}]}},{id:"minecraft:netherite_leggings",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}},{id:"minecraft:netherite_chestplate",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}},{id:"minecraft:netherite_helmet",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}}],Attributes:[{Name:generic.knockback_resistance,Base:2.0},{Name:generic.movement_speed,Base:9},{Name:generic.attack_damage,Base:20},{Name:generic.armor,Base:30},{Name:generic.armor_toughness,Base:20}]}"@luck=3
+type=command,ID="/summon wolf ~ ~ ~ {CustomName:'{"text":"Very Lucky OP Lava wolf. Tame it!"}',HandItems:[{id:"minecraft:netherite_sword",Count:2b,tag:{Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:5s},{id:"minecraft:looting",lvl:5s},{id:"minecraft:sweeping",lvl:6s},{id:"minecraft:unbreaking",lvl:5s}]}},{id:"minecraft:shield",Count:2b}],ArmorItems:[{id:"minecraft:netherite_boots",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:feather_falling",lvl:6s},{id:"minecraft:thorns",lvl:6s}]}},{id:"minecraft:netherite_leggings",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}},{id:"minecraft:netherite_chestplate",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}},{id:"minecraft:netherite_helmet",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}}],Attributes:[{Name:generic.knockback_resistance,Base:2.0},{Name:generic.movement_speed,Base:2},{Name:generic.attack_damage,Base:20},{Name:generic.armor,Base:30},{Name:generic.armor_toughness,Base:20}]}"@luck=3
 
 /jen dead mother
 type=command,ID="/summon giant ~ ~ ~ {CustomName:'{"text":"Jen\'s Dead rotting mother"}'}"@luck=0
+
+type=command,ID="/give @p nether_star{display:{Name:'{"text":"Double hearts"}'},AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:15,Operation:0,UUID:[I;369444052,1287668050,-1530318796,-1244640654]}]} 1"@luck=1
 
 /your computer will die
 

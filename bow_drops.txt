@@ -3,32 +3,42 @@ type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item
 
 type=entity,ID=LuckyProjectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=lava_bucket),trail=(frequency=0.5,drops=["type=particle,ID=splash"]),impact=["type=block,ID=flowing_lava"]@luck=0@chance=100
 
-type=command,ID="summon ender_pearl ~ ~ ~"@luck=0
+type=command,ID="summon ender_pearl ~ ~2 ~"@luck=-1
 
 type=particle,ID=splashpotion,potion=slowness@luck=1
 
 type=particle,ID=splashpotion,potion=instant_damage@luck=1
 
-type=command,ID="setblock ~ ~1 ~ anvil replace"@luck=0
 
-type=command,ID="summon tnt ~ ~ ~ {Fuse:2}"@luck=0
+type=entity,ID=anvil,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=1@luck=0
+
+type=entity,ID=tnt,pos=#bowPos,NBTTag=(Motion=#bowMotion,Color=-1,Fuse=13),amount=2@luck=0
+
+type=entity,ID=LuckyProjectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=tnt),drops=["type=explosion"])@luck=0
 
 type=command,ID="summon evoker_fangs ~ ~ ~"@luck=0
 
 type=command,ID="summon vex ~ ~ ~"@luck=0
 
-group(type=structure,ID=lavaandfryingpanfilledallthewayup;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)
 
 group(type=structure,ID=slime;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)
 
-group(type=structure,ID=magmapixelart;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)
+group(
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,10,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+)@luck=2
 
 type=fill,ID=air,size=(3,5,3)@luck=0
 
 type=fill,ID=lava,size=(5,5,5)@luck=1
 
-type=fill,ID=anvil,size=(5,15,5)@luck=0
+type=fill,ID=anvil,size=(2,15,2)@luck=0
 
-type=fill,ID=magma_block,size=(10,5,10)@luck=0
+type=fill,ID=magma_block,size=(10,1,10)@luck=0
 
-type=command,ID="summon llama_spit ~ ~ ~ {Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit"}]}]}]}"
+type=entity,ID=firework_rocket,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=8@luck=1
+
+type=entity,ID=fireball,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=4@luck=1
+
+type=entity,ID=llama_spit,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=18@luck=2

@@ -1,5 +1,14 @@
 >surface
 / house + lucky block
+group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)@chance=150
+
+group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-80),posX=#bPosX+1,posZ=#bPosZ-1)@chance=200
+
+group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-60),posX=#bPosX+1,posZ=#bPosZ-1)@chance=250
+
+group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-40),posX=#bPosX+1,posZ=#bPosZ-1)@chance=300
+
+group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-20),posX=#bPosX+1,posZ=#bPosZ-1)@chance=400
 
 group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=20),posX=#bPosX+1,posZ=#bPosZ-1)@chance=400
 

@@ -143,41 +143,41 @@ group(
 
 / falling blocks (iron, gold, diamond, emerald)
 group(
-    type=fill,ID=air,size=(1,8,1);
+    type=/fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:iron_block,states=()));
     type=particle,ID=basic_smoke_particle,size=(1,8,1),particleAmount=500;
     type=sound,ID=random.fizz
 )@luck=0
 
 group(
-    type=fill,ID=air,size=(1,8,1);
+    type=/fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:gold_block,states=()));
     type=particle,ID=basic_flame_particle,size=(1,8,1),particleAmount=500;
     type=sound,ID=mob.ghast.fireball
 )@luck=0
 
 group(
-    type=fill,ID=air,size=(1,8,1);
+    type=/fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:diamond_block,states=()));
     type=entity,ID=lightning_bolt
 )@luck=1
 
 group(
-    type=fill,ID=air,size=(1,8,1);
+    type=/fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:emerald_block,states=()));
     type=particle,ID=villager_happy,size=(1,8,1),particleAmount=500;
     type=sound,ID=dig.grass
 )@luck=0
 
 group(
-    type=fill,ID=air,size=(1,8,1);
+    type=/fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:lapis_block,states=()));
     type=particle,ID=water_splash_particle_manual,size=(1,8,1),particleAmount=1000;
     type=sound,ID=random.swim
 )@luck=0
 
 / colorful pole
-group(type=fill,ID=air,size=(1,51,1);
+group(type=/fill,ID=air,size=(1,51,1);
     group(
         NBTTag=(FallingBlock=(name=minecraft:red_glazed_terracotta,states=())),posY=#bPosY+5;
         NBTTag=(FallingBlock=(name=minecraft:orange_glazed_terracotta,states=())),posY=#bPosY+10;
@@ -196,7 +196,7 @@ group(type=fill,ID=air,size=(1,51,1);
 
 
 / tnt pole
-group(type=fill,ID=air,size=(1,51,1);
+group(type=/fill,ID=air,size=(1,51,1);
     type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=minecraft:redstone_block,states=())),posY=#bPosY+5;
     group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=minecraft:tnt,states=()))
 )@luck=2
@@ -216,7 +216,7 @@ type=entity,ID=armor_stand,samples=4,seed=528,NBTTag=(
 / anvil cage
 group(
     type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
-    type=fill,ID=air,size=(1,70,1),pos=#pPos;type=fill,ID=anvil,size=(1,2,1),pos=(#pPosX,#pPosY+70,#pPosZ)
+    type=/fill,ID=air,size=(1,70,1),pos=#pPos;type=/fill,ID=anvil,size=(1,2,1),pos=(#pPosX,#pPosY+70,#pPosZ)
 )@luck=-2
 
 / lava cage
@@ -230,15 +230,15 @@ type=structure,ID=water_cage,pos=#pPos@luck=-2
 
 / lava pit
 group(
-    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+    type=/fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=/fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=/fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
 )@luck=-2
 
 group(
-    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+    type=/fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=/fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=/fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
 )@luck=-2
 
 / lucky buildings
@@ -256,7 +256,7 @@ group:1:(type=structure,ID=lucky_choice_left,rotation=#pDirect;type=structure,ID
 
 / ========================= Custom Structures ================
 / Gives you 8 seconds to mine them before their wet!
-group(type=fill,ID=air,size=(1,51,1);
+group(type=/fill,ID=air,size=(1,51,1);
     group(
         NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+5;
         NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+10;
@@ -282,7 +282,7 @@ group(type=fill,ID=air,size=(1,51,1);
 / ================== MESSAGES END =====================================
 
 / ========== JOKE ITEMS =====================
-type=command,ID="give @p green_dye{display:{Name:'{"text":"Weed"}'}} 2"@luck=0
+type=command,ID="/give @p green_dye{display:{Name:'{"text":"Weed"}'}} 2"@luck=0
 
 
 / ========== JOKE ITEMS END =====================
@@ -319,7 +319,7 @@ type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiam
 
 /flash boots 22
 
-/ type=command,ID="give @p leather_boots{display:{Name:'{"text":"Flash\'s suit"}',color:26722680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:22,Operation:0,UUID:[I;-2985222852,-360692930,-2237662934,-2892404244]}]} 2"@luck=0
+/ type=command,ID="/give @p leather_boots{display:{Name:'{"text":"Flash\'s suit"}',color:26722680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:22,Operation:0,UUID:[I;-2985222852,-360692930,-2237662934,-2892404244]}]} 2"@luck=0
 
 
 
@@ -331,19 +331,19 @@ type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiam
 
 / decompiler and add new invtory pets item
 
-type=command,ID=" give @p op_scythes:rainbow_scythe 2"@luck=0
+type=command,ID=" /give @p op_scythes:rainbow_scythe 2"@luck=0
 
-type=command,ID=" give @p twilightforest:diamond_minotaur_axe 2"@luck=2
+type=command,ID=" /give @p twilightforest:diamond_minotaur_axe 2"@luck=2
 
-type=command,ID="give @p twilightforest:triple_bow 2"@luck=2
+type=command,ID="/give @p twilightforest:triple_bow 2"@luck=2
 
-type=command,ID=" give @p twilightforest:ice_bow 2"@luck=2
+type=command,ID=" /give @p twilightforest:ice_bow 2"@luck=2
 
-type=command,ID=" give @p twilightforest:ice_bomb{display:{Name:'{"text":"Ice cubes"}'}} 35"@luck=0
+type=command,ID=" /give @p twilightforest:ice_bomb{display:{Name:'{"text":"Ice cubes"}'}} 35"@luck=0
 
-type=command,ID=" give @p twilightforest:experiment_225{display:{Name:'{"text":"CAKE"}'}} 35"@luck=0
+type=command,ID=" /give @p twilightforest:experiment_225{display:{Name:'{"text":"CAKE"}'}} 35"@luck=0
 
-type=command,ID=" give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"@luck=0
+type=command,ID=" /give @p twilightforest:hydra_chop{display:{Name:'{"text":"strange lamb chops"}'}} 35"@luck=0
 
 / armor
 
@@ -406,45 +406,45 @@ group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_
 group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2
 
 
-type=command,ID="give @p inventorypets:pet_blaze 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_blaze 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_creeper 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_creeper 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_iron_golem 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_iron_golem 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_anvil 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_anvil 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_bed 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_bed 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_chest 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_chest 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_pacman 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_pacman 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_house 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_house 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_cheetah 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_cheetah 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_chest 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_chest 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_shield 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_shield 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_moon 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_moon 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_slime 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_slime 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_sun 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_sun 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_wither 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_wither 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_blackhole 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_blackhole 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_chicken 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_chicken 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_brewing_stand 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_brewing_stand 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_brewing_clould 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_brewing_clould 2"@luck=0
 
-type=command,ID="give @p inventorypets:pet_brewing_christmas 2"@luck=0
+type=command,ID="/give @p inventorypets:pet_brewing_christmas 2"@luck=0
 
 
 type=command,id="/give @p lavaluckyblockutil:lava_multi_tool"@luck=0
@@ -496,11 +496,11 @@ type=command,id="/give @p lavaluckyblockutil:fire_armor_boots"@luck=1@chance=0.4
 type=command,id="/give @p lavaluckyblockutil:fire_tnt"@luck=1@chance=0.4
 
 / OP Modded Items
-type=command,ID="give @p chaosawakens:crystal_apple 25"@luck=2
+type=command,ID="/give @p chaosawakens:crystal_apple 25"@luck=2
 
-type=command,ID="give @p chaosawakens:attitude_adjusters{display:{Name:'{"text":"It REAL hammer Time"}' 2}@luck=2
+type=command,ID="/give @p chaosawakens:attitude_adjusters{display:{Name:'{"text":"It REAL hammer Time"}' 2}@luck=2
 
-type=command,ID="give @p chaosawakens:big_hammer{display:{Name:'{"text":"It hammer Time"}'}} 2"@luck=2
+type=command,ID="/give @p chaosawakens:big_hammer{display:{Name:'{"text":"It hammer Time"}'}} 2"@luck=2
 
 type=command,ID="/give chaosawakens:ray_gun 20"@luck=2
 
@@ -544,11 +544,11 @@ type=command,ID="/summon dangerzone:redrosewarrior"@luck=0
 
 type=command,ID="/summon dangerzone:tewity"@luck=0
 
-type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball}]}"@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball}]}"@luck=0
 
 type=command,ID="/summon dangerzone:hydrolisc"@luck=0
 
-type=command,id="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly}]}"@luck=0
+type=command,id="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly}]}"@luck=0
 
 type=command,ID="/give @p dangerzone:titanium_hardened_cake{display:{Name:'{"text":"Your moms hard overcooked cake"}'}} 2"@luck=0
 
@@ -565,43 +565,43 @@ type=command,ID="/give @p chaosawakens:big_bertha_guard"@luck=2
 / END TEMP
 
 
-type=command,ID="give @p invisibilitycloak:cloak_of_invisibility 2"@luck=0
+type=command,ID="/give @p invisibilitycloak:cloak_of_invisibility 2"@luck=0
 
 /  add Twilight Forest
 
-type=command,ID="summon ~ ~2 ~ twilightforest:minoshroom"@luck=-0
+type=command,ID="/summon ~ ~2 ~ twilightforest:minoshroom"@luck=-0
 
-type=command,ID="summon ~ ~2 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}}]}"
+type=command,ID="/summon ~ ~2 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}},{id:twilightforest:fire_beetle,{CustomName:'{"text":"Lava Beetle"}'}}]}"
 
-type=command,ID="summon ~ ~2 ~ twilightforest:bighorn_sheep ~ ~ ~ {CustomName:'{"text":"butt headder"}'}"@luck=0
+type=command,ID="/summon ~ ~2 ~ twilightforest:bighorn_sheep ~ ~ ~ {CustomName:'{"text":"butt headder"}'}"@luck=0
 
-type=command,ID="summon ~ ~2 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}}]}"@luck=-2
+type=command,ID="/summon ~ ~2 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}}]}"@luck=-2
 
-type=command,ID="summon ~ ~2 ~ twilightforest:lich" @luck=-2
+type=command,ID="/summon ~ ~2 ~ twilightforest:lich" @luck=-2
 
-type=command,ID=" give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Enchanted Golden Heart Totem"}'}} 2"@luck=-2
+type=command,ID=" /give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Enchanted Golden Heart Totem"}'}} 2"@luck=-2
 
-type=command,ID=" give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Heart Totem"}'}} 2"@luck=-2
+type=command,ID=" /give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Heart Totem"}'}} 2"@luck=-2
 
-type=command,ID="give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:2} 2"@luck=-0
+type=command,ID="/give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:2} 2"@luck=-0
 
-type=command,ID="summon ~ ~2 ~ twilightforest:bunny"@luck=2
+type=command,ID="/summon ~ ~2 ~ twilightforest:bunny"@luck=2
 
-type=command,ID="give @p twilightforest:ender_bow 2"@luck=2
+type=command,ID="/give @p twilightforest:ender_bow 2"@luck=2
 
-type=command,ID="give @p twilightforest:twilight_scepter 2"@luck=2
+type=command,ID="/give @p twilightforest:twilight_scepter 2"@luck=2
 
-type=command,ID="give @p twilightforest:lifedrain_scepter 2"@luck=2
+type=command,ID="/give @p twilightforest:lifedrain_scepter 2"@luck=2
 
-type=command,ID="give @p twilightforest:seeker_bow 2"@luck=2
+type=command,ID="/give @p twilightforest:seeker_bow 2"@luck=2
 
-type=command,ID="give @p twilightforest:steeleaf 29"@luck=2
+type=command,ID="/give @p twilightforest:steeleaf 29"@luck=2
 
-type=command,ID="give @p twilightforest:skeleton_scepter 5"@luck=2
+type=command,ID="/give @p twilightforest:skeleton_scepter 5"@luck=2
 
-type=command,ID="give @p twilightforest:cooked_venison{display:{Name:'{"text":"Deer meat"}'}} 25"@luck=2
+type=command,ID="/give @p twilightforest:cooked_venison{display:{Name:'{"text":"Deer meat"}'}} 25"@luck=2
 
-type=command,ID="give @p twilightforest:charm_of_keeping_3{display:{Name:'{"text":"Invitory keeps"}'}} 2"@luck=2
+type=command,ID="/give @p twilightforest:charm_of_keeping_3{display:{Name:'{"text":"Invitory keeps"}'}} 2"@luck=2
 
 group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@luck=2
 
@@ -626,7 +626,7 @@ type=command,ID="/give @p dangerzone:poppy_sword"@luck=0
 
 / ========== CUSTOM  MODDED MOBS =====================
 
-type=command,ID="summon ~ ~2 ~ witherstormmod:wither_storm"@luck=-2@chance=0.1
+type=command,ID="/summon ~ ~2 ~ witherstormmod:wither_storm"@luck=-2@chance=0.1
 
 / cider 
 type=command,ID="/summon lycanitesmobs:cinder ~ ~ ~ {CustomName:'{"text":"Living fire"}'}"@Luck=0
@@ -655,37 +655,37 @@ type=command,ID="/summon lycanitesmobs:afrit ~ ~ ~ {CustomName:'{"text":"Mutant 
 
 type=command,ID="/summon chaosawakens:hercules_beetle"@luck=0 / Pinchy, Pinchy
 
-type=command,ID="summon ~ ~2 ~ twilightforest:minotaur"@luck=-2
+type=command,ID="/summon ~ ~2 ~ twilightforest:minotaur"@luck=-2
 
-type=command,ID="summon ~ ~2 ~ twilightforest:yeti_alpha"@luck=-2
+type=command,ID="/summon ~ ~2 ~ twilightforest:yeti_alpha"@luck=-2
 
-type=command,ID="summon ~ ~2 ~ twilightforest:hydra"@luck=-2
+type=command,ID="/summon ~ ~2 ~ twilightforest:hydra"@luck=-2
 
-type=command,ID="summon~ ~2 ~ twilightforest:yeti"@luck=-2
+type=command,ID="/summon~ ~2 ~ twilightforest:yeti"@luck=-2
 
-type=command,ID="summon~ ~2 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"@luck=-2
+type=command,ID="/summon~ ~2 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"@luck=-2
 
-type=command,ID="summon ~ ~2 ~ twilightforest:death_tome"@luck=-2
+type=command,ID="/summon ~ ~2 ~ twilightforest:death_tome"@luck=-2
 
-type=command,ID="summon twilightforest:tower_golem  ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:tower_golem  ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:troll  ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:troll  ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:goblin_knight_upper  ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:goblin_knight_upper  ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:goblin_knight_lower  ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:goblin_knight_lower  ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:skeleton_druid ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:skeleton_druid ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:slime_beetle ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:slime_beetle ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:swarm_spider ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:swarm_spider ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:wraith ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:wraith ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:ur_ghast ~ ~2 ~"@luck=-2
+type=command,ID="/summon twilightforest:ur_ghast ~ ~2 ~"@luck=-2
 
-type=command,ID="summon twilightforest:stable_ice_core ~ ~2 ~"@luck=0
+type=command,ID="/summon twilightforest:stable_ice_core ~ ~2 ~"@luck=0
 
 type=command,ID="/give @p dangerzone:apple_seed{display:{Name:'{"text":"apple jack's seed"}'}} 30"@luck=0
 
@@ -731,11 +731,11 @@ type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:
 
 type=command,ID="type=item,ID=dangerzone:technoblade_spawn_egg 200;commandSender=Technoblade,ID="TECHNOBLADE NEVER DIES"@luck=0
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Pov: Your aunt pinches your cheek}'}}]}"@luck=-2@chance=0.3
+type=command,ID="/summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Your aunty's pintches cheek}'}},{id:twilightforest:pinch_beetle,{CustomName:'{"text":"Pov: Your aunt pinches your cheek}'}}]}"@luck=-2@chance=0.3
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"@luck=-2
+type=command,ID="/summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}},{id:twilightforest:naga,{CustomName:'{"text":"Big snakes"}'}}]}"@luck=-2
 
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}},{id:twilightforest:mosquito_swarm,{CustomName:'{"text":"Texas Mosquitos"}'}}]}"@luck=0
 
 type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent},{id:dangerzone:ent}]}"@luck=-2
 
@@ -747,11 +747,11 @@ type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:dangerzone:at
 / ================ TO REWRITE END=========
 
 
-type=command,ID="give @r iron_helmet{display:{Name:'{"text":"Your dead xd"}'},Enchantments:[{id:"minecraft:binding_curse",lvl:2s},{id:"minecraft:vanishing_curse",lvl:2s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-200,Operation:0,UUID:[I;-2796387327,2040466862,-2867456623,855874043]}]} 2"@luck=0
+type=command,ID="/give @r iron_helmet{display:{Name:'{"text":"Your dead xd"}'},Enchantments:[{id:"minecraft:binding_curse",lvl:2s},{id:"minecraft:vanishing_curse",lvl:2s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-200,Operation:0,UUID:[I;-2796387327,2040466862,-2867456623,855874043]}]} 2"@luck=0
 
 type=command,ID="/give @p podzol{display:{Name:'{"text":"Poop dirt"}'}} 69"@luck=0
 
-type=command,ID="give @p golden_pickaxe{display:{Name:'{"text":"Gold digger"}'},Unbreakable:2b,Enchantments:[{id:"minecraft:efficiency",lvl:5s}]} "@luck=0
+type=command,ID="/give @p golden_pickaxe{display:{Name:'{"text":"Gold digger"}'},Unbreakable:2b,Enchantments:[{id:"minecraft:efficiency",lvl:5s}]} "@luck=0
 
 type=command,ID="/give @p stick{display:{Name:'{"text":"Spanking stick"}',Lore:['{"text":"thiccc"}']},Enchantments:[{id:"minecraft:knockback",lvl:20s}]} 2"@luck=2
 
@@ -761,7 +761,7 @@ type=command,ID="/give @p egg{display:{Name:'{"text":"Dr Keith Rowley"}'}} 2"@lu
 
 
 
-type=command,ID="give @p pufferfish{display:{Name:'{"text":"Pink pufferfish"}'},CustomModelData:2} 2"@luck=0
+type=command,ID="/give @p pufferfish{display:{Name:'{"text":"Pink pufferfish"}'},CustomModelData:2} 2"@luck=0
 
 type=command,ID="/summon area_effect_cloud ~ ~20 ~ {Passengers:[{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile},{id:chaosawakens:water_projectile}]}"@luck=0
 
@@ -783,7 +783,7 @@ type=command,ID="/give @p magma 2"@luck=0
 
 type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:600b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Sneezes"}'}"@luck=-2@chance=0.2
 
-type=command,ID="execute @p summon arrow ~ ~ ~ {Fire:200,player:0b,life:40,damage:29d,CustomName:'{"text":"American heat"}'}"@luck=0@chance=0.2
+type=command,ID="execute @p /summon arrow ~ ~ ~ {Fire:200,player:0b,life:40,damage:29d,CustomName:'{"text":"American heat"}'}"@luck=0@chance=0.2
 
 type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:50b,Fuse:2,ignited:2b,CustomName:'{"text":"Your Dads Farts"}'}"@luck=-2@chance=0.2
 
@@ -806,7 +806,7 @@ type=command,ID="/give @p splash_potion{display:{Name:'{"text":"drugs"}'},HideFl
 type=command,ID="/give @p wither_skeleton_spawn_egg{EntityTag:{id:"minecraft:wither",CustomName:"\"Wither spawn egg\"",CustomNameVisible:2}}"@luck=0
 
 / firework
-type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket}]}@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket},{id:firework_rocket}]}@luck=0
 "@luck=0@chance=0.6
 
 /diamond gear
@@ -814,7 +814,7 @@ group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=di
 
 / MSG
 
-group(type=command,ID="fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt rain! Quick run away!"    )@luck=-1
+group(type=command,ID="/fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt rain! Quick run away!"    )@luck=-1
 
 
 type=command,ID="item entity @p armor.head replace block.minecraft.lava"@luck=0
@@ -1053,12 +1053,12 @@ group(type=entity,ID=skeleton,amount=250,posOffset=#circleOffset(8,20)@luck=-2
 /creeper
 type=entity,ID=Creeper,amount=200,posOffset=#circleOffset(8,20)@luck=-2
 
-/lava fill
-type=fill,ID=lava,size=(258,258,258)@luck=-2
+/lava /fill
+type=/fill,ID=lava,size=(258,258,258)@luck=-2
 
-type=fill,ID=beacon,size=(9,9,9)@luck=-2@chance=0.2
+type=/fill,ID=beacon,size=(9,9,9)@luck=-2@chance=0.2
 
-type=fill,ID=dragon_egg,size=(9,9,9)@luck=-2
+type=/fill,ID=dragon_egg,size=(9,9,9)@luck=-2
 
 /oink
 type=sound,ID=mob.pig.say,volume=9.0@lucky=-2
@@ -1097,9 +1097,9 @@ type=item,ID=coal@luck=0
 group(type=entity,ID=chicken,amount=20,type=item,ID=diamond,amount=20)@luck=2
 
 /REWRITE INDEX
-type=command,ID="summon zombie ~ ~ ~ {Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
+type=command,ID="/summon zombie ~ ~ ~ {Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
 /REWRITE INDEX
-type=command,ID="summon skeleton ~ ~ ~ {Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
+type=command,ID="/summon skeleton ~ ~ ~ {Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
 
 /purper block
 type=item,ID=purper_block@luck=0
@@ -1339,16 +1339,16 @@ type=command,ID="/give @p splash_potion{display:{Name:'{"text":"Opness i mean Ov
 type=command,ID="/give @p skeleton_head{display:{Name:'{"text":"Jen\'s dead mother"}'}} 2"@luck=0
 
 / fire
-type=fill,ID=fire,size=(200,200,200)@luck=-2
+type=/fill,ID=fire,size=(200,200,200)@luck=-2
 
 /down
 type=command,ID="/tp 20 20 20"@luck=-2
 
 /cake
-type=fill,ID=cake,state=(bites=4),size=(3,2,3)@luck=-2
+type=/fill,ID=cake,state=(bites=4),size=(3,2,3)@luck=-2
 
 /air
-type=fill,ID=air,size=20,20,20)@luck=-0.5
+type=/fill,ID=air,size=20,20,20)@luck=-0.5
 
 /angry red cow
 type=command,ID="/summon mooshroom ~ ~ ~ {Passengers:[{id:"minecraft:vindicator"}],CustomName:'{"text":"aggressive Red mutated cow"}'}"@luck=-2
@@ -1358,10 +1358,10 @@ type=command,ID="/playsound block.anvil.hit master @p"@luck=0
 
 /3x3 gold blocks
 
-type=fill,ID=gold_blocks,size=(3,3,3)@luck=0
+type=/fill,ID=gold_blocks,size=(3,3,3)@luck=0
 
 / 3x3 diamond
- type=fill,ID=diamond_blocks,size=(3,3,3)@luck=0
+ type=/fill,ID=diamond_blocks,size=(3,3,3)@luck=0
 /more_tools:rainbow_sword@luck=0
 
 type=command,ID="/give @p more_tools:rainbow_sword 2"@luck=2@chance=0.5
@@ -1408,7 +1408,7 @@ type=entity,ID=ender_dragon,amount=25@luck=-2
 type=command,ID="/summon witch ~ ~ ~ {CustomName:'{"text":"Magic Lava Witch"}',ActiveEffects:[{Id:20b,Amplifier:2b,Duration:299980},{Id:22b,Amplifier:3b,Duration:299980}],Attributes:[{Name:generic.armor,Base:20}]}"@luck=-3
 
 /bob on drugs
-type=command,ID="summon skeleton ~ ~ ~ {CustomName:'{"text":"Bob on drugs"}',ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:2b}],ActiveEffects:[{Id:2b,Amplifier:4b,Duration:299980},{Id:20b,Amplifier:2b,Duration:9999},{Id:22b,Amplifier:4b,Duration:299980},{Id:22b,Amplifier:2b,Duration:299980}],Attributes:[{Name:generic.movement_speed,Base:20},{Name:generic.armor,Base:20}]}"@luck=-4
+type=command,ID="/summon skeleton ~ ~ ~ {CustomName:'{"text":"Bob on drugs"}',ArmorItems:[{},{},{},{id:"minecraft:iron_helmet",Count:2b}],ActiveEffects:[{Id:2b,Amplifier:4b,Duration:299980},{Id:20b,Amplifier:2b,Duration:9999},{Id:22b,Amplifier:4b,Duration:299980},{Id:22b,Amplifier:2b,Duration:299980}],Attributes:[{Name:generic.movement_speed,Base:20},{Name:generic.armor,Base:20}]}"@luck=-4
 
 
 /Super Spider
@@ -1445,21 +1445,21 @@ type=command,ID="/give @p netherite_axe{display:{Name:'{"text":"Anduril, Maul of
 type=command,ID="/give @p shield{display:{Name:'{"text":"Titanium shield "}',Lore:['{"text":"A shield that is almost impossible to break"}']},Enchantments:[{id:"minecraft:unbreaking",lvl:30s}]} 2"@luck=0
 
 /ipod
-type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"summon fireball ~ ~2 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x20 explode","color":"red","clickEvent":{"action":"run_command","value":"summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x25 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~2 ~ {ExplosionPower:25}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~2 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x200 explode","clickEvent":{"action":"run_command","value":"summon fireball ~ ~2 ~ {ExplosionPower:200}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~2 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 2"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 2"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http:/minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https:/bit.ly/3G33PfT"]}}"@luck=2@chance=0.1
+type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x20 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x25 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:25}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x200 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:200}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~2 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect /give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect /give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect /give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect /give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect /give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect /give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect /give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect /give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect /give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect /give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect /give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect /give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect /give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect /give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect /give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect /give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect /give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect /give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect /give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect /give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect /give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect /give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect /give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect /give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect /give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect /give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect /give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect /give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect /give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect /give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 2"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 2"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http:/minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https:/bit.ly/3G33PfT"]}}"@luck=2@chance=0.1
 
 /chicken renamed to Duck
 type=command,ID="/summon chicken ~ ~ ~ {CustomName:'{"text":"Duck"}'}"@luck=0
 
-mand,ID="/summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redstone_block"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:redstone_block"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:command_block"},TileEntityData:{Command:"/give @p wooden_axe{display:{Name:'{\"text\":\"Attitude Adjuster\",\"color\":\"green\",\"italic\":false}'},Custom:23} 2"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:chain_command_block"},TileEntityData:{Command:"/scoreboard objectives add hit minecraft.custom:minecraft.damage_dealt"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:chain_command_block"},TileEntityData:{Command:"/execute at @a[nbt={SelectedItem:{tag:{Custom:23}}},scores={hit=2..}] run summon @e[distance=..7] tnt ~ ~ ~ {Fuse:0}"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:chain_command_block"},TileEntityData:{Command:"/scoreboard players reset @a hit"},Time:2}]}]}]}]}]}"@luck=4
+mand,ID="/summon falling_block ~ ~ ~ {BlockState:{Name:"minecraft:redstone_block"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:redstone_block"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:command_block"},TileEntityData:{Command:"/give @p wooden_axe{display:{Name:'{\"text\":\"Attitude Adjuster\",\"color\":\"green\",\"italic\":false}'},Custom:23} 2"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:chain_command_block"},TileEntityData:{Command:"/scoreboard objectives add hit minecraft.custom:minecraft.damage_dealt"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:chain_command_block"},TileEntityData:{Command:"/execute at @a[nbt={SelectedItem:{tag:{Custom:23}}},scores={hit=2..}] run /summon @e[distance=..7] tnt ~ ~ ~ {Fuse:0}"},Time:2,Passengers:[{id:"minecraft:falling_block",BlockState:{Name:"minecraft:chain_command_block"},TileEntityData:{Command:"/scoreboard players reset @a hit"},Time:2}]}]}]}]}]}"@luck=4
 
 /lava flu
-type=command,ID="/effect give @p wither 200 255"@luck=-2
+type=command,ID="/effect /give @p wither 200 255"@luck=-2
 
 type=command,ID="/particle lava ~ ~2 ~ 0 0 0 5 200 normal"@luck=0
 
 type=message,ID="#pName, you Just goattt Coconut Mall’d"@luck=0
 
-type=message,ID="#pName, Never gonna give you up"@luck=0
+type=message,ID="#pName, Never gonna /give you up"@luck=0
 
 type=command,ID="/summon illusioner ~ ~ ~ {CustomName:'{"text":"Magician "}'}"@luck=0
 
@@ -1478,25 +1478,25 @@ group(type=item,ID=diamond;type=entity,ID=pig,NBTTag=(CustomName="Technoblade"))
 
 / lucky block sword
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:40,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:40,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:30,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:30,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:90,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:90,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:200,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:200,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:50,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:50,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:60,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:60,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:70,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=0
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:70,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=0
 
-type=command,id="give @a lucky:lava_lucky_sword{Luck:80,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
+type=command,id="/give @a lucky:lava_lucky_sword{Luck:80,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
 
 group(type=slime,ID=fullygenpymirad;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-200),posX=#bPosX+2,posZ=#bPosZ-2)@luck=2
 
@@ -1510,30 +1510,30 @@ group(type=lavapool2,ID=cactusfarm;type=block,ID=lucky:lava_lucky_block,tileEnti
 type=command,id="/summon chaosawakens:robo_warrior"@luck=-2
 
 / Brainstorm
-type=command,id="summon area_effect_cloud ~4 ~2 ~4 {Passengers:[{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}}]}"@luck=-2
+type=command,id="/summon area_effect_cloud ~4 ~2 ~4 {Passengers:[{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}}]}"@luck=-2
 
-type=command,id="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"chaosawakens:robo_pounder",CustomName:'{"text":"Extraterrestial Utility Emulator ESA478 Prototype"}',ActiveEffects:[{Id:5b,Amplifier:3b,Duration:299980,ShowParticles:0b},{Id:22b,Amplifier:4b,Duration:299980}]}]}"@luck=-2
+type=command,id="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"chaosawakens:robo_pounder",CustomName:'{"text":"Extraterrestial Utility Emulator ESA478 Prototype"}',ActiveEffects:[{Id:5b,Amplifier:3b,Duration:299980,ShowParticles:0b},{Id:22b,Amplifier:4b,Duration:299980}]}]}"@luck=-2
 
 / you have xray on
-group(type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow}]}";type=command,ID="/say Turn off your xray")@luck=2
+group(type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow}]}";type=command,ID="/say Turn off your xray")@luck=2
 
 /  queen scale armor
 group(type=item,ID=chaosawakens:queen_scale_helmet;type=item,ID=chaosawakens:queen_scale_chestplate,type=item,ID=chaosawakens:queen_scale_leggings,type=item,ID=chaosawakens:queen_scale_boots)@luck=2
 
 / REWRITE INDEX
-type=command,ID="summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp}]}"@luck=-2
+type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp}]}"@luck=-2
 
-type=command,ID="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:giant",AbsorptionAmount:400f,Health:1000f,CustomName:'{"text":"gargantuar"}',HandItems:[{id:"minecraft:iron_axe",Count:2b,tag:{display:{Name:'{"text":"gargantuar"}'},Unbreakable:0b,Enchantments:[{id:"minecraft:sharpness",lvl:20s}]}},{}],ActiveEffects:[{Id:2b,Amplifier:3b,Duration:299980},{Id:5b,Amplifier:6b,Duration:299980,ShowParticles:0b}],Attributes:[{Name:generic.knockback_resistance,Base:0.95}]}]}"@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:giant",AbsorptionAmount:400f,Health:1000f,CustomName:'{"text":"gargantuar"}',HandItems:[{id:"minecraft:iron_axe",Count:2b,tag:{display:{Name:'{"text":"gargantuar"}'},Unbreakable:0b,Enchantments:[{id:"minecraft:sharpness",lvl:20s}]}},{}],ActiveEffects:[{Id:2b,Amplifier:3b,Duration:299980},{Id:5b,Amplifier:6b,Duration:299980,ShowParticles:0b}],Attributes:[{Name:generic.knockback_resistance,Base:0.95}]}]}"@luck=0
 
-type=command,ID="give @p chaosawakens:seafood_patty 25"@luck=0
+type=command,ID="/give @p chaosawakens:seafood_patty 25"@luck=0
 
 
 / REWRITE INDEX
-type=command,ID="summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher}]}"@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher},{id:dangerzone:cave_fisher}]}"@luck=0
 
 
 
-type=command,ID="summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:zombie",IsBaby:1b,CanBreakDoors:1b,CustomName:'{"text":"imp"}',ActiveEffects:[{Id:1b,Amplifier:2b,Duration:199980,ShowParticles:1b},{Id:12b,Amplifier:1b,Duration:199980,ShowParticles:0b}]}]}"@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:zombie",IsBaby:1b,CanBreakDoors:1b,CustomName:'{"text":"imp"}',ActiveEffects:[{Id:1b,Amplifier:2b,Duration:199980,ShowParticles:1b},{Id:12b,Amplifier:1b,Duration:199980,ShowParticles:0b}]}]}"@luck=0
 
 / jokes
 type=command,ID="/summon wither_skeleton ~ ~ ~ {CustomName:'{"text":"Your Black ne- neighbor "}'}"

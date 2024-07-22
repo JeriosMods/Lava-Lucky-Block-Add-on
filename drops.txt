@@ -193,6 +193,8 @@ group(type=fill,ID=air,size=(1,51,1);
     type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=2.3
 )@luck=2
 
+
+
 / tnt pole
 group(type=fill,ID=air,size=(1,51,1);
     type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=minecraft:redstone_block,states=())),posY=#bPosY+5;
@@ -251,6 +253,26 @@ group(type=difficulty,ID=hard;type=explosion,radius=6)@luck=-2
 
 / choice of 2 lucky blocks
 group:1:(type=structure,ID=lucky_choice_left,rotation=#pDirect;type=structure,ID=lucky_choice_right,rotation=#pDirect)@luck=0
+
+/ ========================= Custom Structures ================
+/ Gives you 8 seconds to mine them before their wet!
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+5;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+10;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+15;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+20;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+25;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+30;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+35;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+40;
+        NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=water,states=(level=0))),posY=#bPosY+50,delay=8;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=1; 
+    type=message,ID="Quick, get them before their wet!"
+)@luck=2
+/ ========================= Custom Structures END ================
 
 / ===================================  END NORMAL DROPS FROM VINALLA BLOCK ==================================
 

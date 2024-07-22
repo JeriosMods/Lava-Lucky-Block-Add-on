@@ -143,41 +143,41 @@ group(
 
 / falling blocks (iron, gold, diamond, emerald)
 group(
-    type=/fill,ID=air,size=(1,8,1);
+    type=fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:iron_block,states=()));
     type=particle,ID=basic_smoke_particle,size=(1,8,1),particleAmount=500;
     type=sound,ID=random.fizz
 )@luck=0
 
 group(
-    type=/fill,ID=air,size=(1,8,1);
+    type=fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:gold_block,states=()));
     type=particle,ID=basic_flame_particle,size=(1,8,1),particleAmount=500;
     type=sound,ID=mob.ghast.fireball
 )@luck=0
 
 group(
-    type=/fill,ID=air,size=(1,8,1);
+    type=fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:diamond_block,states=()));
     type=entity,ID=lightning_bolt
 )@luck=1
 
 group(
-    type=/fill,ID=air,size=(1,8,1);
+    type=fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:emerald_block,states=()));
     type=particle,ID=villager_happy,size=(1,8,1),particleAmount=500;
     type=sound,ID=dig.grass
 )@luck=0
 
 group(
-    type=/fill,ID=air,size=(1,8,1);
+    type=fill,ID=air,size=(1,8,1);
     type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(FallingBlock=(name=minecraft:lapis_block,states=()));
     type=particle,ID=water_splash_particle_manual,size=(1,8,1),particleAmount=1000;
     type=sound,ID=random.swim
 )@luck=0
 
 / colorful pole
-group(type=/fill,ID=air,size=(1,51,1);
+group(type=fill,ID=air,size=(1,51,1);
     group(
         NBTTag=(FallingBlock=(name=minecraft:red_glazed_terracotta,states=())),posY=#bPosY+5;
         NBTTag=(FallingBlock=(name=minecraft:orange_glazed_terracotta,states=())),posY=#bPosY+10;
@@ -196,7 +196,7 @@ group(type=/fill,ID=air,size=(1,51,1);
 
 
 / tnt pole
-group(type=/fill,ID=air,size=(1,51,1);
+group(type=fill,ID=air,size=(1,51,1);
     type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=minecraft:redstone_block,states=())),posY=#bPosY+5;
     group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(FallingBlock=(name=minecraft:tnt,states=()))
 )@luck=2
@@ -216,7 +216,7 @@ type=entity,ID=armor_stand,samples=4,seed=528,NBTTag=(
 / anvil cage
 group(
     type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
-    type=/fill,ID=air,size=(1,70,1),pos=#pPos;type=/fill,ID=anvil,size=(1,2,1),pos=(#pPosX,#pPosY+70,#pPosZ)
+    type=fill,ID=air,size=(1,70,1),pos=#pPos;type=fill,ID=anvil,size=(1,2,1),pos=(#pPosX,#pPosY+70,#pPosZ)
 )@luck=-2
 
 / lava cage
@@ -230,15 +230,15 @@ type=structure,ID=water_cage,pos=#pPos@luck=-2
 
 / lava pit
 group(
-    type=/fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=/fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=/fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
 )@luck=-2
 
 group(
-    type=/fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=/fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
-    type=/fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
 )@luck=-2
 
 / lucky buildings
@@ -256,7 +256,7 @@ group:1:(type=structure,ID=lucky_choice_left,rotation=#pDirect;type=structure,ID
 
 / ========================= Custom Structures ================
 / Gives you 8 seconds to mine them before their wet!
-group(type=/fill,ID=air,size=(1,51,1);
+group(type=fill,ID=air,size=(1,51,1);
     group(
         NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+5;
         NBTTag=(FallingBlock=(name=minecraft:beacon ,states=())),posY=#bPosY+10;
@@ -814,7 +814,7 @@ group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=di
 
 / MSG
 
-group(type=command,ID="/fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt rain! Quick run away!"    )@luck=-1
+group(type=command,ID="fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt rain! Quick run away!"    )@luck=-1
 
 
 type=command,ID="item entity @p armor.head replace block.minecraft.lava"@luck=0
@@ -1053,12 +1053,12 @@ group(type=entity,ID=skeleton,amount=250,posOffset=#circleOffset(8,20)@luck=-2
 /creeper
 type=entity,ID=Creeper,amount=200,posOffset=#circleOffset(8,20)@luck=-2
 
-/lava /fill
-type=/fill,ID=lava,size=(258,258,258)@luck=-2
+/lava fill
+type=fill,ID=lava,size=(258,258,258)@luck=-2
 
-type=/fill,ID=beacon,size=(9,9,9)@luck=-2@chance=0.2
+type=fill,ID=beacon,size=(9,9,9)@luck=-2@chance=0.2
 
-type=/fill,ID=dragon_egg,size=(9,9,9)@luck=-2
+type=fill,ID=dragon_egg,size=(9,9,9)@luck=-2
 
 /oink
 type=sound,ID=mob.pig.say,volume=9.0@lucky=-2
@@ -1339,16 +1339,16 @@ type=command,ID="/give @p splash_potion{display:{Name:'{"text":"Opness i mean Ov
 type=command,ID="/give @p skeleton_head{display:{Name:'{"text":"Jen\'s dead mother"}'}} 2"@luck=0
 
 / fire
-type=/fill,ID=fire,size=(200,200,200)@luck=-2
+type=fill,ID=fire,size=(200,200,200)@luck=-2
 
 /down
 type=command,ID="/tp 20 20 20"@luck=-2
 
 /cake
-type=/fill,ID=cake,state=(bites=4),size=(3,2,3)@luck=-2
+type=fill,ID=cake,state=(bites=4),size=(3,2,3)@luck=-2
 
 /air
-type=/fill,ID=air,size=20,20,20)@luck=-0.5
+type=fill,ID=air,size=20,20,20)@luck=-0.5
 
 /angry red cow
 type=command,ID="/summon mooshroom ~ ~ ~ {Passengers:[{id:"minecraft:vindicator"}],CustomName:'{"text":"aggressive Red mutated cow"}'}"@luck=-2
@@ -1358,10 +1358,10 @@ type=command,ID="/playsound block.anvil.hit master @p"@luck=0
 
 /3x3 gold blocks
 
-type=/fill,ID=gold_blocks,size=(3,3,3)@luck=0
+type=fill,ID=gold_blocks,size=(3,3,3)@luck=0
 
 / 3x3 diamond
- type=/fill,ID=diamond_blocks,size=(3,3,3)@luck=0
+ type=fill,ID=diamond_blocks,size=(3,3,3)@luck=0
 /more_tools:rainbow_sword@luck=0
 
 type=command,ID="/give @p more_tools:rainbow_sword 2"@luck=2@chance=0.5

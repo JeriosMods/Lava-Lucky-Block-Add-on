@@ -9,3 +9,10 @@ joke fbi Flat bottom Indian [done]
 
 
 add the tribe [done]
+
+
+type=command,ID="/give chaosawakens:lighting_staff 20"@luck=0 add text saying "You are zeus!"
+
+Add All big bertha pieces
+
+Your wish came true If your a robot

@@ -1,9 +1,10 @@
 / tnt
 type=entity,ID=lucky:lucky_projectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=tnt),trail=(frequency=0.2,drops=["type=particle,ID=smoke,posY=#bExactPosY+0.4"]),impact=["group(type=difficulty,ID=hard;type=explosion,damage=4)"])@luck=0
 
-type=entity,ID=LuckyProjectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=lava_bucket),trail=(frequency=0.5,drops=["type=particle,ID=splash"]),impact=["type=block,ID=flowing_lava"]@luck=0@chance=100
+type=entity,ID=LuckyProjectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=lava_bucket),trail=(frequency=0.5,drops=["type=particle,ID=splash"]),impact=["type=block,ID=flowing_lava"]@luck=0@chance=3
 
-type=command,ID="summon ender_pearl ~ ~2 ~"@luck=-1
+
+type=entity,ID=ender_pearl,pos=#bowPos,NBTTag=(Motion=#bowMotion,Color=-1,Fuse=13),amount=2@luck=-1
 
 type=particle,ID=splashpotion,potion=slowness@luck=1
 
@@ -16,9 +17,9 @@ type=entity,ID=tnt,pos=#bowPos,NBTTag=(Motion=#bowMotion,Color=-1,Fuse=13),amoun
 
 type=entity,ID=LuckyProjectile,pos=#bowPos,NBTTag=(Motion=#bowMotion,item=(id=tnt),drops=["type=explosion"])@luck=0
 
-type=command,ID="summon evoker_fangs ~ ~ ~"@luck=0
+type=entity,ID=evoker_fangs,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=1@luck=0
 
-type=command,ID="summon vex ~ ~ ~"@luck=0
+type=entity,ID=vex,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=1@luck=0
 
 
 group(type=structure,ID=slime;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)

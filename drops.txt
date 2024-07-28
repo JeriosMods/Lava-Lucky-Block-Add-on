@@ -663,7 +663,7 @@ type=command,ID="/summon ~ ~2 ~ twilightforest:hydra"@luck=-2
 
 type=command,ID="/summon~ ~2 ~ twilightforest:yeti"@luck=-2
 
-type=command,ID="/summon~ ~2 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"@luck=-2
+type=command,ID="/summon~ ~2 ~ twilightforest:tower_ghast{CustomName:'{"text":"Bloody ghast"}'}"@luck=-2
 
 type=command,ID="/summon ~ ~2 ~ twilightforest:death_tome"@luck=-2
 

@@ -277,8 +277,6 @@ group(type=fill,ID=air,size=(1,51,1);
 / ===================================  END NORMAL DROPS FROM VINALLA BLOCK ==================================
 
 / ================== MESSAGES =====================================
-group(type=structure,ID=wishing_well;type=message,ID="Move if you're gay.";type=effect,ID=slowness,duration=80,amplifier=4)@luck=-1
-
 
 
 / ================== MESSAGES END =====================================
@@ -296,10 +294,10 @@ type=command,ID="/give @p green_dye{display:{Name:'{"text":"Weed"}'}} 2"@luck=0
 type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lHero's Sword"))@luck=2
 
 /the termator axe
-type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lThe termator's axe"))@luck=2
+type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lthe termator's axe"))@luck=2
 
 /boty slapper
-type=ID=diamond_shovel,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lbooday slapper"))@luck=2
+type=ID=diamond_shovel,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lboty slapper"))@luck=2
 
 /diamond hoe
 type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiamond hoe"))@luck=2
@@ -313,7 +311,7 @@ type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiam
 /flashes suit chestplate
 / type=command,ID="/give @p leather_chestplate{display:{Name:'{"text":"Flash\'s suit"}',color:26722680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:28,Operation:0,UUID:[I;-2985222854,-360692936,-2237662957,-2892404253]}]} 2"@luck=0
 
-/flash leggings
+/flash leggins
 / type=command,ID="/give @p leather_leggings{display:{Name:'{"text":"Flash\'s suit"}',color:26722680},AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:9,Operation:0,UUID:[I;-2985222852,-360692935,-2237662933,-2892404249]}]} 2"@luck=0
 
 /flash helmet
@@ -665,7 +663,7 @@ type=command,ID="/summon ~ ~2 ~ twilightforest:hydra"@luck=-2
 
 type=command,ID="/summon~ ~2 ~ twilightforest:yeti"@luck=-2
 
-type=command,ID="/summon~ ~2 ~ twilightforest:tower_ghast{CustomName:'{"text":"Bloody ghast"}'}"@luck=-2
+type=command,ID="/summon~ ~2 ~ twilightforest:tower_ghast{CustomName:'{"text":"Tribal ghast"}'}"@luck=-2
 
 type=command,ID="/summon ~ ~2 ~ twilightforest:death_tome"@luck=-2
 
@@ -838,7 +836,7 @@ type=command,ID="/give @p bone_meal{display:{Name:'{"text":"Salt"}'}} 2"@luck=0
 type=command,ID="/give @p cooked_chicken{display:{Name:'{"text":"Spicy Chicken"}'}} 2"@luck=0
 
 /lava
-group(ID=lava_bucket,amount=200)@luck=0@chance=0.2
+group(Id=lava_bucket,amount=200)@luck=0@chance=0.2
 
 /flint and steel
 type=item,ID=minecraft:flint_and_steel@luck=0

@@ -331,6 +331,94 @@ type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiam
 
 / decompiler and add new invtory pets item
 
+type=item,ID=inventorypets:pet_blaze,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_creeper,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_iron_golem,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_anvil,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_bed,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_chest,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_pacman,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_house,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_cheetah,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_chest,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_shield,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_moon,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_slime,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_sun,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_wither,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_blackhole,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_chicken,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_brewing_stand,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_brewing_clould,amount=2@luck=0
+
+type=item,ID=inventorypets:pet_brewing_christmas,amount=2@luck=0
+
+type=item,ID=lavaluckyblockutil:lava_multi_tool,amount=1@luck=0
+
+type=item,ID=lavaluckyblockutil:haste_soul,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:jump_soul,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:regeneration_soul,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:resistance_soul,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:strength_soul,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:speed_soul,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:lava_sword,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:lava_pickaxe,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:lava_apple,amount=1@luck=1
+type=item,ID=lavaluckyblockutil:lava_tnt,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:lava_potion,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:lava_scythe,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:lava_knife,amount=1@luck=1
+
+type=item,ID=lavaluckyblockutil:flaming_hotcheetos,amount=1@luck=2@chance=0.2
+
+type=item,ID=lavaluckyblockutil:spicy_doritos,amount=1@luck=2@chance=0.2
+
+type=item,ID=lavaluckyblockutil:spicy_ramen,amount=1@luck=2@chance=0.2
+
+type=item,ID=lavaluckyblockutil:throwable_fire,amount=1@luck=2@chance=0.4
+
+type=item,ID=lavaluckyblockutil:trinidad_morugascorpionpepper,amount=1@luck=2@chance=0.2
+
+type=item,ID=lavaluckyblockutil:fire_armor_helmet,amount=1@luck=1@chance=0.4
+
+type=item,ID=lavaluckyblockutil:fire_armor_chestplate,amount=1@luck=1@chance=0.4
+
+type=item,ID=lavaluckyblockutil:fire_armor_leggings,amount=1@luck=1@chance=0.4
+
+type=item,ID=lavaluckyblockutil:fire_armor_boots,amount=1@luck=1@chance=0.4
+
+type=item,ID=lavaluckyblockutil:fire_tnt,amount=1@luck=1@chance=0.4
+
+
 type=command,ID=" /give @p op_scythes:rainbow_scythe 2"@luck=0
 
 type=command,ID=" /give @p twilightforest:diamond_minotaur_axe 2"@luck=2
@@ -348,221 +436,75 @@ type=command,ID=" /give @p twilightforest:hydra_chop{display:{Name:'{"text":"str
 / armor
 
 
-/ ultimate armor
-group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
+/ OP Modded Items
 
+type=item,ID=chaosawakens:big_hammer,amount=2,NBTTag=(display=(Name=#jsonStr(text="It hammer Time",color=dark_red)))@luck=2
+type=item,ID=chaosawakens:crystal_apple,amount=25@luck=2
+type=item,ID=chaosawakens:attitude_adjusters,amount=2,NBTTag=(display=(Name=#jsonStr(text="It REAL hammer Time")))@luck=2
+type=item,ID=chaosawakens:ray_gun,amount=20@luck=2
+type=item,ID=chaosawakens:ray_gun,amount=2@luck=2
+type=item,ID=chaosawakens:nightmare_sword,amount=2@luck=2
+type=item,ID=chaosawakens:experience_sword,amount=2@luck=2
+type=item,ID=chaosawakens:poison_sword,amount=2@luck=2
+type=item,ID=chaosawakens:rat_sword,amount=2@luck=2
+type=item,ID=chaosawakens:fairy_sword,amount=2@luck=2
+type=item,ID=chaosawakens:royal_guardian_sword,amount=2@luck=2
+type=item,ID=chaosawakens:big_bertha,amount=2@luck=2
+type=item,ID=chaosawakens:slayer_chainsaw,amount=2@luck=2
+type=item,ID=dangerzone:salt@luck=0,amount=30
+type=item,ID=dangerzone:butter@luck=0,amount=64
+type=item,ID=dangerzone:blt@luck=0,amount=64
+type=item,ID=dangerzone:poppy_sword@luck=0
+
+
+
+
+/ ultimate armor
+group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=
 / cat eyes item
 group(type=item,ID=chaosawakens:cats_eye_sword;type=item,ID=chaosawakens:cats_eye_shovel,type=item,ID=chaosawakens:cats_eye_pickaxe,type=item,ID=chaosawakens:cats_eye_axe,type=item,ID=chaosawakens:cats_eye_hoe)@luck=2
-
 / ruby armor
 group(type=item,ID=chaosawakens:ruby_helmet;type=item,ID=chaosawakens:ruby_chestplate,type=item,ID=chaosawakens:ruby_leggings,type=item,ID=chaosawakens:ruby_boots,type=item,ID=chaosawakens:ruby_sword)@luck=2
-
 /ruby items
 group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe,type=item,ID=chaosawakens:ruby_shovel,type=item,ID=chaosawakens:pickaxe,type=item,ID=chaosawakens:ruby_hoe)@luck=2
-
 / cats eye armor
 group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings,type=item,ID=chaosawakens:cats_eye_chestplate,type=item,ID=chaosawakens:cats_eye_helmet,type=item,ID=chaosawakens:cats_eye_hoe)@luck=2
-
 / pink tormalane  items
 group(type=item,ID=chaosawakens:pink_tourmaline_sword;type=item,ID=chaosawakens:pink_tourmaline_axe,type=item,ID=chaosawakens:pink_tourmaline_shovel,type=item,ID=chaosawakens:pink_tourmaline_pickaxe,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
-
 / pink tormalane armor
 group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings,type=item,ID=chaosawakens:pink_tourmaline_chestplate,type=item,ID=chaosawakens:pink_tourmaline_helmet,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
-
 / emerald armor
 group(type=item,ID=chaosawakens:emerald_helmet;type=item,ID=chaosawakens:emerald_chestplate,type=item,ID=chaosawakens:emerald_leggings,type=item,ID=chaosawakens:emerald_boots,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
-
 / emerald tools
 group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_axe,type=item,ID=chaosawakens:emerald_shovel,type=item,ID=chaosawakens:emerald_pickaxe,type=item,ID=chaosawakens:emerald_hoe)@luck=2
-
 /ultimate items
 group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
-
 / saphire items
 group(type=item,ID=dangerzone:saphire_sword;type=item,ID=dangerzone:saphire_shovel,type=item,ID=dangerzone:saphire_pickaxe,type=item,ID=dangerzone:saphire_axe,type=item,ID=dangerzone:saphire_hoe)@luck=2
-
 group(type=item,ID=dangerzone:sapphire_boots;type=item,ID=dangerzone:saphire_leggings,type=item,ID=dangerzone:saphire_chestplate,type=item,ID=dangerzone:saphire_helmet,type=item,ID=dangerzone:saphire)@luck=2
-
-
 / lapis armor
 group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings,type=item,ID=chaosawakens:lapis_chestplate,type=item,ID=chaosawakens:lapis_helmet,type=item,ID=chaosawakens:lapis_hoe)@luck=0
-
 / mobzilla armor
 group(type=item,ID=chaosawakens:mobzilla_boots;type=item,ID=chaosawakens:mobzilla_leggings,type=item,ID=chaosawakens:mobzilla_chestplate,type=item,ID=chaosawakens:mobzilla_helmet)@luck=2
-
 group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
-
 / moth scale armor
 group(type=item,ID=chaosawakens:moth_scale_helmet;type=item,ID=chaosawakens:moth_scale_chestplate,type=item,ID=chaosawakens:moth_scale_legging,type=item,ID=chaosawakens:moth_scale_boots)
-
 group(type=item,ID=chaosawakens:ender_dragon_scale_helmet;type=item,ID=chaosawakens:ender_dragon_scale_chestplate,type=item,ID=chaosawakens:ender_dragon_scale_leggings,type=item,ID=chaosawakens:ender_dragon_scale_boots)@luck=2
-
 / lapis tools
 group(type=item,ID=chaosawakens:lapis_sword;type=item,ID=chaosawakens:lapis_sword_shovel,type=item,ID=chaosawakens:lapis_sword_pickaxe,type=item,ID=chaosawakens:lapis_sword_axe,type=item,ID=chaosawakens:lapis_sword_hoe,type=item)
-
 group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_scale_axe,type=item,ID=chaosawakens:moth_scale_pickaxe,type=item,ID=chaosawakens:moth_scale_hoe)@luck=2
-
 / royal guardian sword
 group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2
-
-
-type=command,ID="/give @p inventorypets:pet_blaze 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_creeper 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_iron_golem 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_anvil 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_bed 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_chest 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_pacman 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_house 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_cheetah 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_chest 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_shield 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_moon 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_slime 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_sun 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_wither 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_blackhole 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_chicken 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_brewing_stand 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_brewing_clould 2"@luck=0
-
-type=command,ID="/give @p inventorypets:pet_brewing_christmas 2"@luck=0
-
-
-type=command,id="/give @p lavaluckyblockutil:lava_multi_tool"@luck=0
-
-type=command,ID="/give @p lavaluckyblockutil:haste_soul"@luck=1
-
-type=command,ID="/give @p lavaluckyblockutil:jump_soul"@luck=1
-
-type=command,ID="/give @p lavaluckyblockutil:regeneration_soul"@luck=1
-
-type=command,ID="/give @p lavaluckyblockutil:resistance_soul"@luck=1
-
-type=command,ID="/give @p lavaluckyblockutil:strength_soul"@luck=1
-
-type=command,ID="/give @p lavaluckyblockutil:speed_soul"@luck=1
-
-type=command,ID="/give @p lavaluckyblockutil:lava_sword"@luck=1
-
-type=command,ID="/give @p lavaluckyblockutil:lava_pickaxe"@luck=1
-
-type=command,ID=" /give @p lavaluckyblockutil:lava_apple"@luck=1
-
-type=command,ID=" /give @p lavaluckyblockutil:lava_tnt"@luck=1
-
-type=command,ID=" /give @p lavaluckyblockutil:lava_potion"@luck=1
-
-type=command,ID=" /give @p lavaluckyblockutil:lava_sythe"@luck=1
-
-type=command,id="/give @p lavaluckyblockutil:lava_knife"@luck=1
-
-type=command,id="/give @p lavaluckyblockutil:flaming_hotcheetos"@luck=2@chance=0.2
-
-type=command,id="/give @p lavaluckyblockutil:spicy_diritos"@luck=2@chance=0.2
-
-type=command,id="/give @p lavaluckyblockutil:spicy_ramen"@luck=2@chance=0.2
-
-type=command,id="/give @p lavaluckyblockutil:throwable_fire"@luck=2@chance=0.4
-
-type=command,id="/give @p lavaluckyblockutil:trinidad_morugascorpionpepper"@luck=2@chance=0.2
-
-type=command,id="/give @p lavaluckyblockutil:fire_armor_helmet"@luck=1@chance=0.4
-
-type=command,id="/give @p lavaluckyblockutil:fire_armor_chestplate"@luck=1@chance=0.4
-
-type=command,id="/give @p lavaluckyblockutil:fire_armor_leggings"@luck=1@chance=0.4
-
-type=command,id="/give @p lavaluckyblockutil:fire_armor_boots"@luck=1@chance=0.4
-
-type=command,id="/give @p lavaluckyblockutil:fire_tnt"@luck=1@chance=0.4
-
-/ OP Modded Items
-type=command,ID="/give @p chaosawakens:crystal_apple 25"@luck=2
-
-type=command,ID="/give @p chaosawakens:attitude_adjusters{display:{Name:'{"text":"It REAL hammer Time"}' 2}@luck=2
-
-type=command,ID="/give @p chaosawakens:big_hammer{display:{Name:'{"text":"It hammer Time"}'}} 2"@luck=2
-
-type=command,ID="/give chaosawakens:ray_gun 20"@luck=2
-
-type=command,ID="/give chaosawakens:ray_gun 2"@luck=2
-
-/ robot destroyer
-
-type=command,ID="/give chaosawakens:nightmare_sword 2"@luck=2
-
-type=command,ID="/give chaosawakens:experience_sword 2"@luck=2
-
-type=command,ID="/give chaosawakens:poison_sword 2"@luck=2
-
-type=command,ID="/give chaosawakens:rat_sword 2"@luck=2
-
-type=command,ID="/give chaosawakens:fairy_sword 2"@luck=2
-
-type=command,ID="/give chaosawakens:royal_guardian_sword 2"@luck=2
-
-type=command,ID="/give chaosawakens:big_bertha 2"@luck=2
-
-type=command,ID="/give chaosawakens:slayer_chainsaw 2"@luck=2
-
-type=command,ID="/give chaosawakens:queen_scale_battle_axe 2"@luck=2
-
-type=command,ID="/give chaosawakens:lighting_staff 20"@luck=0
-
-type=command,ID="/give dangerzone:cheese"@luck=0
-
-type=command,ID="/give dangerzone:play_button_ore_block"@luck=0
-
-type=command,ID="/give dangerzone:heart_block 40"@luck=00
-
-type=command,ID="/give dangerzone:apple_block 40"@luck=0
-
-type=command,ID="/give dangerzone:candy_cane 20"@luck=0
-
-type=command,ID="/summon dangerzone:allosaurus"@luck=0
-
-type=command,ID="/summon dangerzone:redrosewarrior"@luck=0
-
-type=command,ID="/summon dangerzone:tewity"@luck=0
-
-type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball},{id:snowball}]}"@luck=0
-
-type=command,ID="/summon dangerzone:hydrolisc"@luck=0
-
-type=command,id="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly},{id:dangerzone:butterfly}]}"@luck=0
-
-type=command,ID="/give @p dangerzone:titanium_hardened_cake{display:{Name:'{"text":"Your moms hard overcooked cake"}'}} 2"@luck=0
-
-type=command,ID="/give @p dangerzone:cake_sword{display:{Name:'{"text":"Your moms hard overcooked cake"}'}} 2"@luck=0
-
-type=command,ID="/give @p dangerzone:dead_rainbow_ant{display:{Name:'{"text":"Fried ants"}'}} 2"@luck=0
-
-type=command,ID="/give @p chaosawakens:big_bertha_blade"@luck=2
-
-type=command,ID="/give @p chaosawakens:big_bertha_handle"@luck=2
-
-type=command,ID="/give @p chaosawakens:big_bertha_guard"@luck=2
-
-/ END TEMP
+group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@luck=2
+
+/ TwlightForest KingMetal
+group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)@luck=2
+/ TwlightForest Yeti set
+group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)@luck=2
+/ TwlightForest StealLeaf
+group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:steeleaf_chestplate,type=item,ID=twilightforest:steeleaf_leggings,type=item,ID=twilightforest:steeleaf_boots)@luck=2
+/ TwlightForest Ironwood
+group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)@luck=2
 
 
 type=command,ID="/give @p invisibilitycloak:cloak_of_invisibility 2"@luck=0
@@ -578,48 +520,6 @@ type=command,ID="/summon ~ ~2 ~ twilightforest:bighorn_sheep ~ ~ ~ {CustomName:'
 type=command,ID="/summon ~ ~2 ~ area_effect_cloud ~ ~-0.5 ~ {Passengers:[{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}},{id:twilightforest:king_spider,{CustomName:'{"text":"the goliath bird-eater"}'}}]}"@luck=-2
 
 type=command,ID="/summon ~ ~2 ~ twilightforest:lich" @luck=-2
-
-type=command,ID=" /give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Enchanted Golden Heart Totem"}'}} 2"@luck=-2
-
-type=command,ID=" /give @p twilightforest:charm_of_life_2{display:{Name:'{"text":"Heart Totem"}'}} 2"@luck=-2
-
-type=command,ID="/give @p cookie{display:{Name:'{"text":"Derpy Cookie"}'},CustomModelData:2} 2"@luck=-0
-
-type=command,ID="/summon ~ ~2 ~ twilightforest:bunny"@luck=2
-
-type=command,ID="/give @p twilightforest:ender_bow 2"@luck=2
-
-type=command,ID="/give @p twilightforest:twilight_scepter 2"@luck=2
-
-type=command,ID="/give @p twilightforest:lifedrain_scepter 2"@luck=2
-
-type=command,ID="/give @p twilightforest:seeker_bow 2"@luck=2
-
-type=command,ID="/give @p twilightforest:steeleaf 29"@luck=2
-
-type=command,ID="/give @p twilightforest:skeleton_scepter 5"@luck=2
-
-type=command,ID="/give @p twilightforest:cooked_venison{display:{Name:'{"text":"Deer meat"}'}} 25"@luck=2
-
-type=command,ID="/give @p twilightforest:charm_of_keeping_3{display:{Name:'{"text":"Invitory keeps"}'}} 2"@luck=2
-
-group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@luck=2
-
-group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)@luck=2
-
-group(type=item,ID=twilightforest:yeti_helmet;type=item,ID=twilightforest:yeti_chestplate,type=item,ID=twilightforest:yeti_leggings,type=item,ID=twilightforest:yeti_boots)@luck=2
-
-group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:steeleaf_chestplate,type=item,ID=twilightforest:steeleaf_leggings,type=item,ID=twilightforest:steeleaf_boots)@luck=2
-
-group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)@luck=2
-
-type=command,ID="/give @p dangerzone:salt 30"@luck=0
-
-type=command,ID="/give @p dangerzone:butter 64"@luck=0
-
-type=command,ID="/give @p dangerzone:blt 64"@luck=0
-
-type=command,ID="/give @p dangerzone:poppy_sword"@luck=0
 
 
 / ========== CUSTOM  MODDED ITEMS END =====================
@@ -696,6 +596,15 @@ type=command,ID="/summon dangerzone:mermaid ~ ~ ~ {CustomName:'{"text":"Human Fi
 
 / ============ Named VINALLA ITEMS ==========
 
+type=item,ID=podzol,NBTTag=(display=(Name=#jsonStr(text="Poop dirt")))@luck=0,amount=69
+type=item,ID=golden_pickaxe,NBTTag=(display=(Name=#jsonStr(text="Gold digger")),Unbreakable=2b,Enchantments=[{id="minecraft:efficiency",lvl=5s}])@luck=0
+type=item,ID=stick,NBTTag=(display=(Name=#jsonStr(text="Spanking stick"),Lore=[#jsonStr(text="thiccc")]),Enchantments=[{id="minecraft:knockback",lvl=20s}])@luck=2,amount=2
+type=item,ID=egg,NBTTag=(display=(Name=#jsonStr(text="Fresh Egg.")))@luck=0,amount=2
+type=item,ID=kelp,NBTTag=(display=(Name=#jsonStr(text="It's pickle rick")))@luck=0,amount=2
+type=item,ID=ender_pearl,NBTTag=(display=(Name=#jsonStr(text="Mind telekinesis  time teleportation teleportation ball ")))@luck=0,amount=9
+type=item,ID=bone_meal,NBTTag=(display=(Name=#jsonStr(text="MSG")))@luck=0,amount=2
+type=item,ID=bone_meal,NBTTag=(display=(Name=#jsonStr(text="Salt")))@luck=0,amount=2
+type=item,ID=cooked_chicken,NBTTag=(display=(Name=#jsonStr(text="Spicy Chicken")))@luck=0,amount=2
 
 / ============ Named VINALLA ITEMS END ==========
 
@@ -748,17 +657,6 @@ type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:dangerzone:at
 
 
 type=command,ID="/give @r iron_helmet{display:{Name:'{"text":"Your dead xd"}'},Enchantments:[{id:"minecraft:binding_curse",lvl:2s},{id:"minecraft:vanishing_curse",lvl:2s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-200,Operation:0,UUID:[I;-2796387327,2040466862,-2867456623,855874043]}]} 2"@luck=0
-
-type=command,ID="/give @p podzol{display:{Name:'{"text":"Poop dirt"}'}} 69"@luck=0
-
-type=command,ID="/give @p golden_pickaxe{display:{Name:'{"text":"Gold digger"}'},Unbreakable:2b,Enchantments:[{id:"minecraft:efficiency",lvl:5s}]} "@luck=0
-
-type=command,ID="/give @p stick{display:{Name:'{"text":"Spanking stick"}',Lore:['{"text":"thiccc"}']},Enchantments:[{id:"minecraft:knockback",lvl:20s}]} 2"@luck=2
-
-/ t and t
-type=command,ID="/give @p egg{display:{Name:'{"text":"Dr Keith Rowley"}'}} 2"@luck=0
-
-
 
 
 type=command,ID="/give @p pufferfish{display:{Name:'{"text":"Pink pufferfish"}'},CustomModelData:2} 2"@luck=0
@@ -816,24 +714,11 @@ group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=di
 
 group(type=command,ID="fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt rain! Quick run away!"    )@luck=-1
 
+type=command,ID="/item entity @p armor.head replace block.minecraft.lava"@luck=0
 
-type=command,ID="item entity @p armor.head replace block.minecraft.lava"@luck=0
-
-type=command,ID="item entity @p armor.head replace lava_bucket"@luck=0
+type=command,ID="/item entity @p armor.head replace lava_bucket"@luck=0
 
 type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}}]}"@luck=-2
-
-type=command,ID="/give @p kelp{display:{Name:'{"text":"It\'s pickle rick"}'}} 2"@luck=0
-
-type=command,ID="/give @p ender_pearl{display:{Name:'{"text":"Mind telekinesis  time teleportation teleportation ball "}'}} 9"@luck=0
-
-type=command,ID="/give @p bone_meal{display:{Name:'{"text":"MSG"}'}} 2"@luck=0
-
-type=command,ID="/give @p bone_meal{display:{Name:'{"text":"Salt"}'}} 2"@luck=0
-
-/ add ghost pepper and scorpion peper and clili powder hot sauce and The Sentinelese tribe
-
-type=command,ID="/give @p cooked_chicken{display:{Name:'{"text":"Spicy Chicken"}'}} 2"@luck=0
 
 /lava
 group(Id=lava_bucket,amount=200)@luck=0@chance=0.2

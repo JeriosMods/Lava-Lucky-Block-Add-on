@@ -71,14 +71,3 @@ ID=lighthouse,file=lighthouse.nbt
 ID=runedendportal,file=runedendportal.nbt
 
 ID=statifingstutleeggs,file=statifingstutleeggs.nbt
-
-type=structure,ID=statifingstutleeggs,file=statifingstutleeggs.nbt@luck=-1
-
-/ Fort
-
-ID=lava_lucky_fort_inner,file=lava_fort_inner.luckystruct,blockMode=overlay
-ID=lava_lucky_fort,file=lava_fort.nbt,overlayStruct=lava_lucky_fort_inner,centerY=1
-ID=lava_lucky_temple_inner,file=lava_temple_inner.luckystruct,blockMode=overlay
-ID=lava_lucky_temple,file=lava_temple.nbt,overlayStruct=lava_lucky_temple_inner,centerY=1
-
-

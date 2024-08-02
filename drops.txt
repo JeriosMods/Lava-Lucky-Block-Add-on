@@ -1145,39 +1145,28 @@ type=item,ID=iron_sword@luck=0
 
 /REWRITE INDEX
 /FBI
-type=command,ID="/summon skeleton ~ ~ ~ {Fire:-2s,Air:300s,OnGround:2b,Invulnerable:0b,FallDistance:0f,PortalCooldown:0,HurtTime:0s,DeathTime:0s,LeftHanded:0b,FallFlying:0b,PersistenceRequired:0b,CanPickUpLoot:2b,AbsorptionAmount:0f,Health:40f,CanBreakDoors:2b,DrownedConversionTime:-2,InWaterTime:-2,Motion:[0.0,-0.0784000025258789,0.0],Rotation:[234.80753F,0F],CustomName:'{"text":"FBI"}',HandItems:[{id:'minecraft:netherite_sword',Count:2b,tag:{Damage:0,Enchantments:[{lvl:20s,id:'minecraft:sharpness'}]}},{}],HandDropChances:[200.000F,200.000F],ArmorItems:[{id:'minecraft:netherite_boots',Count:2b,tag:{Damage:0,Enchantments:[{lvl:20,id:'protection'}]}},{},{},{}],ArmorDropChances:[200.000F,200.000F,200.000F,200.000F],Attributes:[{Name:generic.attack_damage,Base:30}]}"@luck=-2
+type=entity,ID=skeleton,NBTTag=(Fire=-2,Air=300,OnGround=2b,Invulnerable=0b,FallDistance=0f,PortalCooldown=0,HurtTime=0s,DeathTime=0s,LeftHanded=0b,FallFlying=0b,PersistenceRequired=0b,CanPickUpLoot=2b,AbsorptionAmount=0f,Health=40f,CanBreakDoors=2b,DrownedConversionTime=-2,InWaterTime=-2,Motion=[0.0,-0.0784000025258789,0.0],Rotation=[234.80753F,0F],CustomName=#jsonStr(text="FBI"),HandItems=[{ID=minecraft:netherite_sword,Count=2,tag=(Damage=0,Enchantments=[{id="minecraft:sharpness",lvl=20}])},{}],HandDropChances=[200.000F,200.000F],ArmorItems=[{ID=minecraft:netherite_boots,Count=2,tag=(Damage=0,Enchantments=[{id="protection",lvl=20}])},{}],ArmorDropChances=[200.000F,200.000F,200.000F,200.000F],Attributes=[{Name=generic.attack_damage,Base=30}]@luck=-2
 
 /cough medicine
 type=command,ID="/give @p splash_potion{display:{Name:'{"text":"cough medicine"}'},CustomPotionEffects:[{Id:5b,Amplifier:4b,Duration:300},{Id:9b,Amplifier:2b,Duration:400}],CustomPotionColor:26056320} 20"@luck=2
 
+type=item,ID=minecraft:lava_bucket,NBTTag=(display=(Name=#jsonStr(text="Lava from the sun"),Lore=#jsonArr(text="the hottest lava to exist in minecraft"))),Enchantments=[{id="minecraft:sharpness",lvl=200}]@luck=2
 
-/op lava
-type=command,ID="/give @p lava_bucket{display:{Name:'{"text":"Lava from the sun"}',Lore:['{"text":"the hottest lava to exist in minecraft"}']},Enchantments:[{id:"minecraft:sharpness",lvl:200s}]} 2"@luck=2
+type=item,ID=netherite_chestplate,NBTTag=(display=(Name=#jsonStr(text="Fireproof chestplate")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
 
-/fireproof chest
-type=command,ID="/give @p netherite_chestplate{display:{Name:'{"text":"Fireproof chestplate"}'},Enchantments:[{id:"minecraft:fire_protection",lvl:20s}]} 2"@luck=2
+type=item,ID=netherite_boots,NBTTag=(display=(Name=#jsonStr(text="Fireproof boots")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
 
-/fireproof boots
-type=command,ID="/give @p netherite_boots{display:{Name:'{"text":"Fireproof boots"}'},Enchantments:[{id:"minecraft:fire_protection",lvl:20s}]} 2"@luck=2
+type=item,ID=netherite_leggings,NBTTag=(display=(Name=#jsonStr(text="Fireproof leggings")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
 
-/fireproof leggins
-type=command,ID="/give @p netherite_leggings{display:{Name:'{"text":"Fireproof leggings"}'},Enchantments:[{id:"minecraft:fire_protection",lvl:20s}]} 2"@luck=2
+type=item,ID=netherite_helmet,NBTTag=(display=(Name=#jsonStr(text="Fireproof helmet")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
 
-/fireproof helmet
-type=command,ID="/give @p netherite_helmet{display:{Name:'{"text":"Fireproof helmet"}'},Enchantments:[{id:"minecraft:fire_protection",lvl:20s}]} 2"@luck=2
+type=item,ID=minecraft:player_head,NBTTag=(SkullOwner={Id=[I;2894797332,-2952358824,-2808979226,-2075294252],Properties={textures=[{Value="e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvZDgwYzJkZGNmZmQ2ODdjOWViMmQ2YWE4MjhlNTNmNDhhYzE2MzRlYzY5MjExOGFjZDdkOTRiMGFkMDJhOTVjOSJ9fX0="}]}},display=(Lore=["{\"text\":\"https:/namemc.com/skin/4a29575a70b02ddd\"}"]))@luck=2
 
-/ lava
-type=command,ID="/give @p minecraft:player_head{SkullOwner:{Id:[I;2894797332,-2952358824,-2808979226,-2075294252],Properties:{textures:[{Value:"e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvZDgwYzJkZGNmZmQ2ODdjOWViMmQ2YWE4MjhlNTNmNDhhYzE2MzRlYzY5MjExOGFjZDdkOTRiMGFkMDJhOTVjOSJ9fX0="}]}},display:{Lore:["{\"text\":\"https:/namemc.com/skin/4a29575a70b02ddd\"}"]}}"@luck=2
+type=item,ID=minecraft:player_head,NBTTag=(SkullOwner={Id=[I;2989256276,957634720,-2704425457,5789093],Properties={textures=[{Value="e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvMWE2YjY0OTk5NGRlYmFkMjlkNDFjYzlmYmQ4NWRkYjVlZWJlZWQxZDEzMWYyNTUxMDhkNmFmMmQ2YmNlZWM2YiJ9fX0="}]}},display=(Lore=["{\"text\":\"https:/namemc.com/skin/2382c99896bfffe9\"}"]))@luck=2
 
-/lava head 2
+type=entity,ID=magma_cube,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant Molten Lava Card"))@luck=2
 
-type=command,ID="/give @p minecraft:player_head{SkullOwner:{Id:[I;2989256276,957634720,-2704425457,5789093],Properties:{textures:[{Value:"e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvMWE2YjY0OTk5NGRlYmFkMjlkNDFjYzlmYmQ4NWRkYjVlZWJlZWQxZDEzMWYyNTUxMDhkNmFmMmQ2YmNlZWM2YiJ9fX0="}]}},display:{Lore:["{\"text\":\"https:/namemc.com/skin/2382c99896bfffe9\"}"]}}"@luck=2
-
-/magma cube
-type=command,ID="/summon magma_cube ~ ~ ~ {Size:50,CustomName:'{"text":"Mutant Molten Lava Card"}'}"@luck=2
-
-/slime
-type=command,ID="/summon slime ~ ~ ~ {Size:50,CustomName:'{"text":"Mutant slime"}'}"@luck=-0.5
+type=entity,ID=slime,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant slime"))@luck=-0.5
 
 type=entity,ID=minecraft:piglin,NBTTag=(CustomName=#jsonStr(text="mutated fire pig"),CustomNameVisible=true),amount=1@luck=0
 

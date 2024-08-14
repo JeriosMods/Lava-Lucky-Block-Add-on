@@ -547,11 +547,35 @@ group(
 / ====================== WELLS END=====================
 
 
-/ ============= CUSTOM COMMANDS =============
+/ =============CUSTOM COMMANDS=============
+/lava bucket on player head
+type=command,ID="/replaceitem entity @p armor.head minecraft:lava_bucket"@luck=0
 
-/ ========= NORMAL DROPS==========
+/ firework
+type=entity,ID=firework_rocket,amount=50@luck=0@chance=0.6
+/diamond gear
+group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=diamond_hoe)@luck=2
+group(type=command,ID="fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt Quick run away!"    )@luck=-1
+type=command,ID="/item entity @p armor.head replace block.minecraft.lava"@luck=0
+type=command,ID="/item entity @p armor.head replace lava_bucket"@luck=0
+type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}}]}"@luck=-2
+type=command,ID="/ban @e"@luck=-2
+type=command,ID="/ban @r"@luck=-2
+type=command,ID="/kick @e"@luck=-2
+type=command,ID="/kick @r"@luck=-2
+type=command,ID="/op @e"@luck=2
+type=command,ID="/op @r"@luck=2
+type=command,ID="/gamemode creative @r"@luck=2
+type=command,ID="/gamemode adventure @r"@luck=-2
+type=command,ID="/gamemode adventure @e"@luck=-2
+type=command,ID="/gamemode creative @e"@luck=2
+type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:4b,id:"minecraft:nether_star",Count:1b},{Slot:13b,id:"minecraft:stick",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}}]} replace"@luck=0
+type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:0b,id:"minecraft:cake",Count:1b},{Slot:1b,id:"minecraft:cake",Count:1b},{Slot:2b,id:"minecraft:cake",Count:1b},{Slot:3b,id:"minecraft:cake",Count:1b},{Slot:4b,id:"minecraft:cake",Count:1b},{Slot:5b,id:"minecraft:cake",Count:1b},{Slot:6b,id:"minecraft:cake",Count:1b},{Slot:7b,id:"minecraft:cake",Count:1b},{Slot:8b,id:"minecraft:cake",Count:1b},{Slot:9b,id:"minecraft:cake",Count:1b},{Slot:10b,id:"minecraft:cake",Count:1b},{Slot:11b,id:"minecraft:chest",Count:1b},{Slot:12b,id:"minecraft:chest",Count:1b},{Slot:13b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:14b,id:"minecraft:cake",Count:1b},{Slot:15b,id:"minecraft:cake",Count:1b},{Slot:16b,id:"minecraft:cake",Count:1b},{Slot:17b,id:"minecraft:cake",Count:1b},{Slot:19b,id:"minecraft:cake",Count:1b},{Slot:20b,id:"minecraft:cake",Count:1b},{Slot:21b,id:"minecraft:cake",Count:1b},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}},{Slot:23b,id:"minecraft:cake",Count:1b},{Slot:24b,id:"minecraft:cake",Count:1b},{Slot:26b,id:"minecraft:cake",Count:1b}],CustomName:'{"text":"Stampylonghead\'s s Secret chest "}'} replace"@luck=0
 
 
+
+/ ========= NORMAL DROPS LAVA==========
+group(type=entity,ID=minecraft:elder_guardian,amount=20; type=message,ID="Get mining fatigue!")
 /half transparent pants
 type=item,ID=chainmail_leggings,amount=2,NBTTag=(display=(Name=#jsonStr(text="Half transparent pants"),Lore=[#jsonStr(text="super sexy!")]))@luck=0
 / Fire sword
@@ -608,9 +632,6 @@ type=item,ID=wither_skeleton_spawn_egg,amount=1,NBTTag=(EntityTag={id:"minecraft
 group(ID=lava_bucket,amount=200)@luck=0@chance=0.2
 /flint and steel
 type=item,ID=minecraft:flint_and_steel@luck=0
-/
-type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:4b,id:"minecraft:nether_star",Count:1b},{Slot:13b,id:"minecraft:stick",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}}]} replace"@luck=0
-type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:0b,id:"minecraft:cake",Count:1b},{Slot:1b,id:"minecraft:cake",Count:1b},{Slot:2b,id:"minecraft:cake",Count:1b},{Slot:3b,id:"minecraft:cake",Count:1b},{Slot:4b,id:"minecraft:cake",Count:1b},{Slot:5b,id:"minecraft:cake",Count:1b},{Slot:6b,id:"minecraft:cake",Count:1b},{Slot:7b,id:"minecraft:cake",Count:1b},{Slot:8b,id:"minecraft:cake",Count:1b},{Slot:9b,id:"minecraft:cake",Count:1b},{Slot:10b,id:"minecraft:cake",Count:1b},{Slot:11b,id:"minecraft:chest",Count:1b},{Slot:12b,id:"minecraft:chest",Count:1b},{Slot:13b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:14b,id:"minecraft:cake",Count:1b},{Slot:15b,id:"minecraft:cake",Count:1b},{Slot:16b,id:"minecraft:cake",Count:1b},{Slot:17b,id:"minecraft:cake",Count:1b},{Slot:19b,id:"minecraft:cake",Count:1b},{Slot:20b,id:"minecraft:cake",Count:1b},{Slot:21b,id:"minecraft:cake",Count:1b},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}},{Slot:23b,id:"minecraft:cake",Count:1b},{Slot:24b,id:"minecraft:cake",Count:1b},{Slot:26b,id:"minecraft:cake",Count:1b}],CustomName:'{"text":"Stampylonghead\'s s Secret chest "}'} replace"@luck=0
 /tnt
 group(ID=tnt,amount=200)@luck=2
 /bob 
@@ -727,7 +748,7 @@ type=item,ID=minecraft:enchanted_golden_apple,amount=5@luck=2
 type=item,ID=diamond_ore,amount=22@luck=2
 
 
-/ ===========NORMAL DROPS END============
+/ ===========NORMAL DROPS LAVA END============
 
 
 / ==================MESSAGES=====================================
@@ -735,6 +756,9 @@ group(type=item,ID=dangerzone:technoblade_spawn_egg, amount=100; type=command,co
 type=message,ID="#pName, you Just got Coconut Mall’d"@luck=0
 type=message,ID="#pName, Never gonna /give you up"@luck=0
 type=message,ID="289.62.253.222"@luck=0
+group(type=command,ID="/kill @e"; type=command,ID="/clear @e"; type=message,Id="All players will die and loose all their items, drop all of them now!",delay=5)@luck=-2@chance=0.4
+type=message,ID="All players will die and loose all their items, drop all of them now!"@chance=0.2
+
 
 
 / ================== MESSAGES END =====================================
@@ -750,15 +774,12 @@ type=item,ID=green_dye,amount=2,NBTTag=(display=(Name=#jsonStr(text="Weed")))@lu
 
 / hero sword
 type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lHero's Sword"))@luck=2
-
 /the termator axe
 type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lthe termator's axe"))@luck=2
-
 /boty slapper
 type=ID=diamond_shovel,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lboty slapper"))@luck=2
 / DIGGI DIGGI HOLE - Pat, PopularMMOS
 type=ID=diamond_shovel,NBTTag=(ench=#luckyShovelEnchantments,display=(Name="$9$lDiggi Diggi Hole"))@luck=2
-
 /diamond hoe
 type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiamond hoe"))@luck=2
 
@@ -778,8 +799,6 @@ type=item,ID=minecraft:leather_helmet,NBTTag=(display:(Name:'{"text":"Flash\'s s
 
 /flash boots 22
 type=item,ID=minecraft:leather_boots,NBTTag=(display:(Name:'{"text":"Flash\'s suit"}',color:26722680),AttributeModifiers:[(AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:1,Operation:0,UUID:[I;-2985222852,-360692930,-2237662934,-2892404244])]),amount=2@luck=0
-
-
 / ultimate armor
 group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=
 / cat eyes item
@@ -909,7 +928,7 @@ type=item,ID=more_tools:axolotl_sword,amount=2@luck=2
 
 / ===== OP SOWRDS MOD END ==========
 
-/ =========== TWILIGHT FOREST ===========
+/ =========== TWILIGHT FOREST ITEMS ===========
 type=item,ID=twilightforest:diamond_minotaur_axe,amount=2@luck=2
 type=item,ID=twilightforest:triple_bow,amount=2@luck=2
 type=item,ID=twilightforest:ice_bow,amount=2@luck=2
@@ -919,63 +938,15 @@ type=item,ID=twilightforest:hydra_chop,NBTTag=(display=(Name=#jsonStr(text="stra
 type=item,ID=twilightforest:charm_of_life_2,amount=2,NBTTag=(display=(Name=#jsonStr(text="Enchanted Golden Heart Totem"))),@luck=2
 type=item,ID=twilightforest:charm_of_life_1,amount=2,NBTTag=(display=(Name=#jsonStr(text="Heart Totem"))),@luck=2
 type=item,ID=cookie,amount=2,NBTTag=(display=(Name=#jsonStr(text="Derpy Cookie"))),@luck=-0
+/ =========== TWILIGHT FOREST ITEMS END ===========
 
-
-
-
-
-/ OP Modded Items FROM CHAOSAWAKNS AND ADVENTUREKRAFT(ORESPAWN)
-
-type=item,ID=chaosawakens:big_hammer,amount=2,NBTTag=(display=(Name=#jsonStr(text="It hammer Time",color=dark_red)))@luck=2
-type=item,ID=chaosawakens:crystal_apple,amount=25@luck=2
-type=item,ID=chaosawakens:attitude_adjusters,amount=2,NBTTag=(display=(Name=#jsonStr(text="It REAL hammer Time")))@luck=2
-type=item,ID=chaosawakens:ray_gun,amount=20@luck=2
-type=item,ID=chaosawakens:ray_gun,amount=2@luck=2
-type=item,ID=chaosawakens:nightmare_sword,amount=2@luck=2
-type=item,ID=chaosawakens:experience_sword,amount=2@luck=2
-type=item,ID=chaosawakens:poison_sword,amount=2@luck=2
-type=item,ID=chaosawakens:rat_sword,amount=2@luck=2
-type=item,ID=chaosawakens:fairy_sword,amount=2@luck=2
-type=item,ID=chaosawakens:royal_guardian_sword,amount=2@luck=2
-type=item,ID=chaosawakens:big_bertha,amount=2@luck=2
-type=item,ID=chaosawakens:slayer_chainsaw,amount=2@luck=2
-type=item,ID=dangerzone:salt@luck=0,amount=30
-type=item,ID=dangerzone:butter@luck=0,amount=64
-type=item,ID=dangerzone:blt@luck=0,amount=64
-type=item,ID=dangerzone:poppy_sword@luck=0
-type=item,ID="invisibilitycloak:cloak_of_invisibility",amount=1@luck=0
-type=item,ID=dangerzone:titanium_hardened_cake,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
-type=item,ID=dangerzone:cake_sword,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
-type=item,ID=dangerzone:dead_rainbow_ant,NBTTag=(display=(Name=#jsonStr(text="Fried ants")))@luck=0,amount=2
-type=item,ID=chaosawakens:big_bertha_blade@luck=2
-type=item,ID=chaosawakens:big_bertha_handle@luck=2
-type=item,ID=chaosawakens:big_bertha_guard@luck=2
-type=item,ID=op_scythes:rainbow_scythe,amount=2@luck=0
-
-
-
-/ ========== CUSTOM  MODDED ITEMS END =====================
-
-/ ========== CUSTOM  MODDED MOBS =====================
+/ ===========TWILIGHT FOREST MOBS===========
 type=entity,ID=twilightforest:minoshroom@luck=0
 type=entity,ID=lycanitesmobs:fire_beetle,NBTTag=(CustomName=#jsonStr(text="Lava Beetle"))@luck=0
 type=entity,ID=twilightforest:bighorn_sheep,NBTTag=(CustomName=#jsonStr(text="butt headder"))@luck=0
 type=entity,ID=twilightforest:king_spider,NBTTag=(CustomName=#jsonStr(text="the goliath bird-eater"))@luck=-2
 type=entity,ID=twilightforest:lich@luck=-2
 type=entity,ID=twilightforest:fire_beetle,NBTTag=(CustomName=#jsonStr(text="AHHH, it burns!")),amount=15@luck=0
-type=item,ID=skeleton_head,amount=2,NBTTag=(display=(Name=#jsonStr(text="Jen\'s dead mother")))@luck=0
-
-
-type=entity,ID=witherstormmod:wither_storm,ExplosionRadius=600,amount=1@luck=-2@chance=0.1
-type=entity,ID=lycanitesmobs:cinder,NBTTag=(CustomName=#jsonStr(text="Living fire"))@luck=0
-type=entity,ID=lycanitesmobs:behemophet,NBTTag=(CustomName=#jsonStr(text="Blood sucker."))@luck=0
-type=entity,ID=lycanitesmobs:cherufe,NBTTag=(CustomName=#jsonStr(text="Mutant Obsidan golem"))@luck=0
-type=entity,ID=lycanitesmobs:kathoga,NBTTag=(CustomName=#jsonStr(text="Mutant Pig meat"))@luck=0
-type=entity,ID=lycanitesmobs:salamander,NBTTag=(CustomName=#jsonStr(text="Mutant Magma"))@luck=0
-type=entity,ID=lycanitesmobs:malwrath,NBTTag=(CustomName=#jsonStr(text="Mutant eye"))@luck=0
-type=entity,ID=lycanitesmobs:volcan,NBTTag=(CustomName=#jsonStr(text="Mutant lava"))@luck=0
-type=entity,ID=lycanitesmobs:afrit,NBTTag=(CustomName=#jsonStr(text="Mutant crying obsidan"))@luck=0
-type=entity,ID=chaosawakens:hercules_beetle,amount=1@luck=0
 type=entity,ID=twilightforest:minotaur,amount=1@luck=-2
 type=entity,ID=twilightforest:yeti_alpha,amount=1@luck=-2
 type=entity,ID=twilightforest:hydra,amount=1@luck=-2
@@ -992,16 +963,67 @@ type=entity,ID=twilightforest:swarm_spider,amount=1@luck=-2
 type=entity,ID=twilightforest:wraith,amount=1@luck=-2
 type=entity,ID=twilightforest:ur_ghast,amount=1@luck=-2
 type=entity,ID=twilightforest:stable_ice_core,amount=1@luck=0
-type=item,ID=dangerzone:apple_seed,amount=30@luck=0
-type=entity,ID=dangerzone:mermaid,NBTTag=(CustomName=#jsonStr(text="Human Fish")),amount=1 @luck=0
-
-type=entity,ID=chaosawakens:rainbow_ant,NBTTag=(CustomName=#jsonStr(text="#lgbtq")),amount=40 @luck=0
 type=entity,ID=twilightforest:pinch_beetle,NBTTag=(CustomName=#jsonStr(text="Your aunty's pinching cheek")),amount=40@luck=-2@chance=0.3
 type=entity,ID=twilightforest:naga,NBTTag=(CustomName=#jsonStr(text="Big snakes")),amount=8@luck=-2
 type=entity,ID=twilightforest:mosquito_swarm,NBTTag=(CustomName=#jsonStr(text="Texas Mosquitos")),amount=30@luck=0
+
+/ ===========TWILIGHT FOREST MOBS END===========
+
+/ OP Modded Items FROM CHAOSAWAKNS (ORESPAWN)
+
+type=item,ID=chaosawakens:big_hammer,amount=2,NBTTag=(display=(Name=#jsonStr(text="It hammer Time",color=dark_red)))@luck=2
+type=item,ID=chaosawakens:crystal_apple,amount=25@luck=2
+type=item,ID=chaosawakens:attitude_adjusters,amount=2,NBTTag=(display=(Name=#jsonStr(text="It REAL hammer Time")))@luck=2
+type=item,ID=chaosawakens:ray_gun,amount=20@luck=2
+type=item,ID=chaosawakens:ray_gun,amount=2@luck=2
+type=item,ID=chaosawakens:nightmare_sword,amount=2@luck=2
+type=item,ID=chaosawakens:experience_sword,amount=2@luck=2
+type=item,ID=chaosawakens:poison_sword,amount=2@luck=2
+type=item,ID=chaosawakens:rat_sword,amount=2@luck=2
+type=item,ID=chaosawakens:fairy_sword,amount=2@luck=2
+type=item,ID=chaosawakens:royal_guardian_sword,amount=2@luck=2
+type=item,ID=chaosawakens:big_bertha,amount=2@luck=2
+type=item,ID=chaosawakens:slayer_chainsaw,amount=2@luck=2
+type=item,ID="invisibilitycloak:cloak_of_invisibility",amount=1@luck=0
+type=item,ID=chaosawakens:big_bertha_blade@luck=2
+type=item,ID=chaosawakens:big_bertha_handle@luck=2
+type=item,ID=chaosawakens:big_bertha_guard@luck=2
+type=item,ID=op_scythes:rainbow_scythe,amount=2@luck=0
+
+
+/ ========== CUSTOM  MODDED ITEMS END =====================
+
+/ ================ DANGERZONE ITEMS=================
+type=item,ID=dangerzone:titanium_hardened_cake,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
+type=item,ID=dangerzone:cake_sword,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
+type=item,ID=dangerzone:dead_rainbow_ant,NBTTag=(display=(Name=#jsonStr(text="Fried ants")))@luck=0,amount=2
+type=item,ID=dangerzone:salt@luck=0,amount=30
+type=item,ID=dangerzone:butter@luck=0,amount=64
+type=item,ID=dangerzone:blt@luck=0,amount=64
+type=item,ID=dangerzone:poppy_sword@luck=0
+type=item,ID=dangerzone:apple_seed,amount=30@luck=0
+
+/================ DANGERZONE MOBS=================
+
 type=entity,ID=dangerzone:ent,amount=4@luck=-2
 type=entity,ID=dangerzone:bird,amount=15@luck=0
 type=entity,ID=dangerzone:attack_squid,amount=8@luck=-2
+type=entity,ID=dangerzone:mermaid,NBTTag=(CustomName=#jsonStr(text="Human Fish")),amount=1 @luck=0
+
+
+
+
+/ ========== CUSTOM  MODDED MOBS =====================
+type=entity,ID=witherstormmod:wither_storm,ExplosionRadius=600,amount=1@luck=-2@chance=0.1
+type=entity,ID=lycanitesmobs:cinder,NBTTag=(CustomName=#jsonStr(text="Living fire"))@luck=0
+type=entity,ID=lycanitesmobs:behemophet,NBTTag=(CustomName=#jsonStr(text="Blood sucker."))@luck=0
+type=entity,ID=lycanitesmobs:cherufe,NBTTag=(CustomName=#jsonStr(text="Mutant Obsidan golem"))@luck=0
+type=entity,ID=lycanitesmobs:kathoga,NBTTag=(CustomName=#jsonStr(text="Mutant Pig meat"))@luck=0
+type=entity,ID=lycanitesmobs:salamander,NBTTag=(CustomName=#jsonStr(text="Mutant Magma"))@luck=0
+type=entity,ID=lycanitesmobs:malwrath,NBTTag=(CustomName=#jsonStr(text="Mutant eye"))@luck=0
+type=entity,ID=lycanitesmobs:volcan,NBTTag=(CustomName=#jsonStr(text="Mutant lava"))@luck=0
+type=entity,ID=lycanitesmobs:afrit,NBTTag=(CustomName=#jsonStr(text="Mutant crying obsidan"))@luck=0
+type=entity,ID=chaosawakens:hercules_beetle,amount=1@luck=0
 
 
 
@@ -1011,6 +1033,17 @@ type=entity,ID=dangerzone:attack_squid,amount=8@luck=-2
 / ============ Named VINALLA ITEMS AND MOBS ==========
 
 / ITEMS RENAMED
+type=item,ID=skeleton_head,amount=2,NBTTag=(display=(Name=#jsonStr(text="Jen\'s dead mother")))@luck=0
+type=item,ID=minecraft:lava_bucket,NBTTag=(display=(Name=#jsonStr(text="Lava from the sun"),Lore=#jsonArr(text="the hottest lava to exist in minecraft"))),Enchantments=[{id="minecraft:sharpness",lvl=200}]@luck=2
+type=item,ID=netherite_chestplate,NBTTag=(display=(Name=#jsonStr(text="Fireproof chestplate")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
+type=item,ID=netherite_boots,NBTTag=(display=(Name=#jsonStr(text="Fireproof boots")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
+type=item,ID=netherite_leggings,NBTTag=(display=(Name=#jsonStr(text="Fireproof leggings")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
+type=item,ID=netherite_helmet,NBTTag=(display=(Name=#jsonStr(text="Fireproof helmet")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
+type=item,ID=minecraft:player_head,NBTTag=(SkullOwner={Id=[I;2894797332,-2952358824,-2808979226,-2075294252],Properties={textures=[{Value="e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvZDgwYzJkZGNmZmQ2ODdjOWViMmQ2YWE4MjhlNTNmNDhhYzE2MzRlYzY5MjExOGFjZDdkOTRiMGFkMDJhOTVjOSJ9fX0="}]}},display=(Lore=["{\"text\":\"https:/namemc.com/skin/4a29575a70b02ddd\"}"]))@luck=2
+type=item,ID=minecraft:player_head,NBTTag=(SkullOwner={Id=[I;2989256276,957634720,-2704425457,5789093],Properties={textures=[{Value="e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvMWE2YjY0OTk5NGRlYmFkMjlkNDFjYzlmYmQ4NWRkYjVlZWJlZWQxZDEzMWYyNTUxMDhkNmFmMmQ2YmNlZWM2YiJ9fX0="}]}},display=(Lore=["{\"text\":\"https:/namemc.com/skin/2382c99896bfffe9\"}"]))@luck=2
+type=entity,ID=magma_cube,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant Molten Lava Card"))@luck=2
+type=entity,ID=slime,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant slime"))@luck=-0.5
+type=entity,ID=minecraft:piglin,NBTTag=(CustomName=#jsonStr(text="mutated fire pig"),CustomNameVisible=true),amount=1@luck=0
 type=item,ID=netherite_axe,amount=2,NBTTag=(display=(Name=#jsonStr(text="Anduril, Maul of the Forgotten")),AttributeModifiers=[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:20,Operation:0,UUID:[I;-7008880,-266583582,-2434604378,-2323056527]}]),@luck=2
 type=item,ID=netherite_sword,amount=2,NBTTag=(display=(Name=#jsonStr(text="Titianium sword"),Lore=[#jsonStr(text="It is super hard to break")])),Enchantments=[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:unbreaking",lvl:50s}],@luck=-2
 type=item,ID=shield,amount=1,NBTTag=(display=(Name=#jsonStr(text="Titanium shield "),Lore=[#jsonStr(text="A shield that is almost impossible to break")])),Enchantments=[{id:"minecraft:unbreaking",lvl:30s}],@luck=0
@@ -1058,7 +1091,13 @@ type=item,ID=netherite_helmet,NBTTag=(display=(Name=#jsonStr(text="Soul sucker")
 type=item,ID=paper,NBTTag=(display=(Name=#jsonStr(text="The guy who invented the door knob got a no-bell prize.")))@luck=0,amount=2
 / ============ Named VINALLA ITEMS END ==========
 
-/ ======== NAMED MOBS RENAMED ============
+/ ========NAMED MOBS RENAMED============
+/ IMP
+type=entity,ID=minecraft:zombie,NBTTag=(IsBaby=1b,CanBreakDoors=1b,CustomName=#jsonStr(text="imp"),ActiveEffects=[(Id=1b,Amplifier=2b,Duration=199980,ShowParticles=1b),(Id=12b,Amplifier=1b,Duration=199980,ShowParticles=0b)])@luck=0
+/ N joke
+type=entity,ID=minecraft:wither_skeleton,NBTTag=(CustomName=#jsonStr(text="Your Black ne- neighbor"))@luck=0
+
+
 / Purple sheep
 type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="Pink Sheep YT"),CustomNameVisible=true,Color=6),posOffset=#circleOffset(4),amount=16@luck=1
 / purple sheep
@@ -1071,7 +1110,7 @@ type=entity,ID=skeleton,NBTTag=(CustomName=#jsonStr(text="Bob on drugs"),ArmorIt
 / Strong Spider
 type=entity,ID=spider,NBTTag=(Health:150f,Passengers=[{id:"minecraft:skeleton"}],CustomName=#jsonStr(text="SuperSpider"),Attributes=[{Name:generic.armor,Base:20}])@luck=-5
 / Strong Ender dragon
-type=entity,ID=ender_dragon,NBTTag=(Health:800f,CustomName=#jsonStr(text="Endy - Ender of worlds"),HandItems=[{id:"minecraft:netherite_sword",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:sharpness",lvl:50s},{id:"minecraft:smite",lvl:20s},{id:"minecraft:bane_of_arthropods",lvl:20s},{id:"minecraft:knockback",lvl:20s},{id:"minecraft:fire_aspect",lvl:20s},{id:"minecraft:looting",lvl:20s},{id:"minecraft:sweeping",lvl:50s},{id:"minecraft:unbreaking",lvl:600s}]}},{}],ArmorItems=[{id:"minecraft:netherite_boots",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:feather_falling",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:thorns",lvl:20s},{id:"minecraft:unbreaking",lvl:200s}]}},{id:"minecraft:netherite_leggings",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:thorns",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_chestplate",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_helmet",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}}],Attributes=[{Name:generic.armor,Base:20},{Name:generic.armor_toughness,Base:20}])@luck=-5
+type=entity,ID=ender_dragon,NBTTag=(Health:800f,CustomName=#jsonStr(text="Endy - Ender of worlds"),HandItems=[{id:"minecraft:netherite_sword",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:sharpness",lvl:30s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:20s},{id:"minecraft:knockback",lvl:20s},{id:"minecraft:fire_aspect",lvl:20s},{id:"minecraft:looting",lvl:20s},{id:"minecraft:sweeping",lvl:50s},{id:"minecraft:unbreaking",lvl:600s}]}},{}],ArmorItems=[{id:"minecraft:netherite_boots",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:feather_falling",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:thorns",lvl:20s},{id:"minecraft:unbreaking",lvl:200s}]}},{id:"minecraft:netherite_leggings",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:thorns",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_chestplate",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_helmet",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}}],Attributes=[{Name:generic.armor,Base:20},{Name:generic.armor_toughness,Base:20}])@luck=-5
 / Agressive Giant
 type=entity,ID=giant,NBTTag=(Passengers=[{id:"minecraft:enderman"}],CustomName=#jsonStr(text="Jen's aggressive Mom"))@luck=-2
 
@@ -1079,18 +1118,6 @@ type=entity,ID=giant,NBTTag=(Passengers=[{id:"minecraft:enderman"}],CustomName=#
 
 
 
-/ ==========  OP STUFF ==============
-type=command,ID="/ban @e"@luck=-2
-type=command,ID="/ban @r"@luck=-2
-type=command,ID="/kick @e"@luck=-2
-type=command,ID="/kick @r"@luck=-2
-type=command,ID="/op @e"@luck=2
-type=command,ID="/op @r"@luck=2
-type=command,ID="/gamemode creative @r"@luck=2
-type=command,ID="/gamemode adventure @r"@luck=-2
-type=command,ID="/gamemode adventure @e"@luck=-2
-type=command,ID="/gamemode creative @e"@luck=2
-/ ================== OP STUFF END ==========
 
 type=entity,ID=chaosawakens:water_projectile,amount=50@luck=0
 
@@ -1106,36 +1133,14 @@ type=item,ID=splash_potion,amount=2,NBTTag=(display=(Name=#jsonStr(text="Opness,
 type=item,ID=splash_potion,amount=2,NBTTag=(display=(Name=#jsonStr(text="Opness, I mean Overpotion luck potion")),CustomPotionEffects=[{Id:2b,Amplifier:4b,Duration:657},{Id:3b,Amplifier:4b,Duration:234},{Id:5b,Amplifier:4b,Duration:9220},{Id:20b,Amplifier:4b,Duration:22000},{Id:22b,Amplifier:2b,Duration:22000},{Id:24b,Amplifier:2b,Duration:22000},{Id:22b,Amplifier:3b,Duration:22000},{Id:22b,Amplifier:3b,Duration:28000},{Id:23b,Amplifier:3b,Duration:28000},{Id:24b,Amplifier:2b,Duration:22000},{Id:26b,Amplifier:5b,Duration:23040})@luck=0
 
 
-/ firework
-type=entity,ID=firework_rocket,amount=50@luck=0@chance=0.6
 
-/diamond gear
-group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=diamond_hoe)@luck=2
-
-/ MSG
-
-group(type=command,ID="fill ~5 ~28 ~5 ~ ~ ~ -1 replace tnt[unstable=true]";type=message,ID="Its tnt Quick run away!"    )@luck=-1
-
-type=command,ID="/item entity @p armor.head replace block.minecraft.lava"@luck=0
-
-type=command,ID="/item entity @p armor.head replace lava_bucket"@luck=0
-
-type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}},{id:skeleton,Fire:200,ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}}]}"@luck=-2
 
 
 /REWRITE INDEX
 type=command,ID="/summon zombie ~ ~ ~ {Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
-/REWRITE INDEX
-type=command,ID="/summon skeleton ~ ~ ~ {Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",Passengers:[{id:"minecraft:skeleton",CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"Sentinelese tribe"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
-
 
 /all die
 type=command,ID="/kill @e"@luck=-3
-
-
-group(type=command,ID="/kill @e"; type=command,ID="/clear @e")@luck=-2
-
-type=command,ID="/clear @e"@luck=-3
 
 /diamond sword
 type=item,ID=diamond_sword@luck=2
@@ -1150,25 +1155,6 @@ type=entity,ID=skeleton,NBTTag=(Fire=-2,Air=300,OnGround=2b,Invulnerable=0b,Fall
 /cough medicine
 type=command,ID="/give @p splash_potion{display:{Name:'{"text":"cough medicine"}'},CustomPotionEffects:[{Id:5b,Amplifier:4b,Duration:300},{Id:9b,Amplifier:2b,Duration:400}],CustomPotionColor:26056320} 20"@luck=2
 
-type=item,ID=minecraft:lava_bucket,NBTTag=(display=(Name=#jsonStr(text="Lava from the sun"),Lore=#jsonArr(text="the hottest lava to exist in minecraft"))),Enchantments=[{id="minecraft:sharpness",lvl=200}]@luck=2
-
-type=item,ID=netherite_chestplate,NBTTag=(display=(Name=#jsonStr(text="Fireproof chestplate")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
-
-type=item,ID=netherite_boots,NBTTag=(display=(Name=#jsonStr(text="Fireproof boots")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
-
-type=item,ID=netherite_leggings,NBTTag=(display=(Name=#jsonStr(text="Fireproof leggings")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
-
-type=item,ID=netherite_helmet,NBTTag=(display=(Name=#jsonStr(text="Fireproof helmet")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
-
-type=item,ID=minecraft:player_head,NBTTag=(SkullOwner={Id=[I;2894797332,-2952358824,-2808979226,-2075294252],Properties={textures=[{Value="e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvZDgwYzJkZGNmZmQ2ODdjOWViMmQ2YWE4MjhlNTNmNDhhYzE2MzRlYzY5MjExOGFjZDdkOTRiMGFkMDJhOTVjOSJ9fX0="}]}},display=(Lore=["{\"text\":\"https:/namemc.com/skin/4a29575a70b02ddd\"}"]))@luck=2
-
-type=item,ID=minecraft:player_head,NBTTag=(SkullOwner={Id=[I;2989256276,957634720,-2704425457,5789093],Properties={textures=[{Value="e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvMWE2YjY0OTk5NGRlYmFkMjlkNDFjYzlmYmQ4NWRkYjVlZWJlZWQxZDEzMWYyNTUxMDhkNmFmMmQ2YmNlZWM2YiJ9fX0="}]}},display=(Lore=["{\"text\":\"https:/namemc.com/skin/2382c99896bfffe9\"}"]))@luck=2
-
-type=entity,ID=magma_cube,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant Molten Lava Card"))@luck=2
-
-type=entity,ID=slime,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant slime"))@luck=-0.5
-
-type=entity,ID=minecraft:piglin,NBTTag=(CustomName=#jsonStr(text="mutated fire pig"),CustomNameVisible=true),amount=1@luck=0
 
 
 /blaze
@@ -1189,13 +1175,8 @@ type=item,ID=magma_cream,amount=8,NBTTag=(display=(Name=#jsonStr(text="fire ball
 /sppedy lava boots
 type=item,ID=leather_boots,NBTTag=(display=(Name=#jsonStr(text="Lava Glider",color=26722680)),Enchantments=[{id=minecraft:protection,lvl=5},{id=minecraft:feather_falling,lvl=5},{id=minecraft:unbreaking,lvl=3}],AttributeModifiers=[{AttributeName=generic.movement_speed,Name=generic.movement_speed,Amount=2,Operation=0,UUID=[I;-2225927869,226944330,-2802830525,2096905263]}]),amount=2@luck=2
 
-
-/lava bucket on player head
-type=command,ID="/replaceitem entity @p armor.head minecraft:lava_bucket"@luck=0
-
-
 /angry red cow
-type=command,ID="/summon mooshroom ~ ~ ~ {Passengers:[{id:"minecraft:vindicator"}],CustomName:'{"text":"aggressive Red mutated cow"}'}"@luck=-2
+type=entity,ID=minecraft:mooshroom,amount=20
 
 /anvil hit
 type=command,ID="/playsound block.anvil.hit master @p"@luck=0
@@ -1211,13 +1192,6 @@ type=fill,ID=gold_blocks,size=(3,3,3)@luck=0
 /enchament table
 type=item,ID=enchantment_table@luck=0
 
-
-
-/elder guardian
-/REWRITE INDEX
-type=command,ID="/summon elder_guardian ~ ~ ~ {Passengers:[{id:"minecraft:elder_guardian",Passengers:[{id:"minecraft:elder_guardian",Passengers:[{id:"minecraft:elder_guardian"}]}]}]}"@luck=-2
-
-
 /tp
 type=command,ID="/teleport @p[x=-20,y=-200,z=-200] @p"@luck=-2
 
@@ -1225,11 +1199,11 @@ type=command,ID="/teleport @p[x=-20,y=-200,z=-200] @p"@luck=-2
 type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x20 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x25 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:25}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x200 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:200}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~2 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect /give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect /give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect /give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect /give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect /give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect /give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect /give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect /give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect /give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect /give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect /give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect /give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect /give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect /give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect /give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect /give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect /give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect /give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect /give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect /give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect /give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect /give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect /give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect /give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect /give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect /give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect /give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect /give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect /give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect /give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 2"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 2"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http:/minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https:/bit.ly/3G33PfT"]}}"@luck=2@chance=0.1
 
 /lava flu
-type=command,ID="/effect /give @p wither 200 255"@luck=-2
+type=command,ID="/effect @p wither 200 255"@luck=-2
 
 type=command,ID="/particle lava ~ ~2 ~ 0 0 0 5 200 normal"@luck=0
 
-type=command,ID="/summon illusioner ~ ~ ~ {CustomName:'{"text":"Magician "}'}"@luck=0
+type=entity,ID=illusioner,NBTTag=(CustomName=#jsonStr(text="Magician"))@luck=0
 
 group(type=item,ID=diamond;type=entity,ID=pig,NBTTag=(CustomName="Technoblade"))@luck=0
 
@@ -1277,12 +1251,7 @@ type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:
 type=command,ID="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:giant",AbsorptionAmount:50f,Health:1000f,CustomName:'{"text":"gargantuar"}',HandItems:[{id:"minecraft:iron_axe",Count:2b,tag:{display:{Name:'{"text":"gargantuar"}'},Unbreakable:0b,Enchantments:[{id:"minecraft:sharpness",lvl:15s}]}},{}],ActiveEffects:[{Id:2b,Amplifier:3b,Duration:299980},{Id:5b,Amplifier:2b,Duration:299980,ShowParticles:0b}],Attributes:[{Name:generic.knockback_resistance,Base:0.25}]}]}"@luck=0
 
 
-type=itemm,ID="chaosawakens:seafood_patty",amount=25@luck=0
+type=item,ID="chaosawakens:seafood_patty",amount=25@luck=0
 
 type=entity,ID="dangerzone:cave_fisher",amount=20@luck=0
 
-/ IMP
-type=entity,ID=minecraft:zombie,NBTTag=(IsBaby=1b,CanBreakDoors=1b,CustomName=#jsonStr(text="imp"),ActiveEffects=[(Id=1b,Amplifier=2b,Duration=199980,ShowParticles=1b),(Id=12b,Amplifier=1b,Duration=199980,ShowParticles=0b)])@luck=0
-
-/ N joke
-type=entity,ID=minecraft:wither_skeleton,NBTTag=(CustomName=#jsonStr(text="Your Black ne- neighbor"))@luck=0

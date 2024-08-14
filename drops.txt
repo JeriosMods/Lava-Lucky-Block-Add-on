@@ -1248,3 +1248,4 @@ type=item,ID="chaosawakens:seafood_patty",amount=25@luck=0
 
 type=entity,ID="dangerzone:cave_fisher",amount=20@luck=0
 
+

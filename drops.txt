@@ -1148,6 +1148,9 @@ type=item,ID=green_dye,amount=2,NBTTag=(display=(Name=#jsonStr(text="Weed")))@lu
 / ==========JOKE ITEMS END=====================
 
 / ========MINECRAFT NAMED MOBS RENAMED============
+ype=entity,ID=illusioner,NBTTag=(CustomName=#jsonStr(text="Magician"))@luck=0
+group(type=item,ID=diamond;type=entity,ID=pig,NBTTag=(CustomName="Technoblade"))@luck=0
+
 / IMP
 type=entity,ID=minecraft:zombie,NBTTag=(IsBaby=1b,CanBreakDoors=1b,CustomName=#jsonStr(text="imp"),ActiveEffects=[(Id=1b,Amplifier=2b,Duration=199980,ShowParticles=1b),(Id=12b,Amplifier=1b,Duration=199980,ShowParticles=0b)])@luck=0
 / N joke
@@ -1196,32 +1199,24 @@ type=item,ID=splash_potion,NBTTag=(display=(Name=#jsonStr(text="drugs")),HideFla
 type=item,ID=splash_potion,amount=2,NBTTag=(display=(Name=#jsonStr(text="Opness, I mean Overpotion luck potion")),CustomPotionEffects=[{Id:2b,Amplifier:4b,Duration:657},{Id:3b,Amplifier:4b,Duration:234},{Id:5b,Amplifier:4b,Duration:9220},{Id:20b,Amplifier:4b,Duration:22000},{Id:22b,Amplifier:2b,Duration:22000},{Id:24b,Amplifier:2b,Duration:22000},{Id:22b,Amplifier:3b,Duration:22000},{Id:22b,Amplifier:3b,Duration:28000},{Id:23b,Amplifier:3b,Duration:28000},{Id:24b,Amplifier:2b,Duration:22000},{Id:26b,Amplifier:5b,Duration:23040})@luck=0
 / OVERPENIS potion
 type=item,ID=splash_potion,amount=2,NBTTag=(display=(Name=#jsonStr(text="Opness, I mean overpenis lucky potion")),CustomPotionEffects=[{Id:2b,Amplifier:4b,Duration:657},{Id:3b,Amplifier:4b,Duration:234},{Id:5b,Amplifier:4b,Duration:9220},{Id:20b,Amplifier:4b,Duration:22000},{Id:22b,Amplifier:2b,Duration:22000},{Id:24b,Amplifier:2b,Duration:22000},{Id:22b,Amplifier:3b,Duration:22000},{Id:22b,Amplifier:3b,Duration:28000},{Id:23b,Amplifier:3b,Duration:28000},{Id:24b,Amplifier:2b,Duration:22000},{Id:26b,Amplifier:5b,Duration:23040})@luck=0
+type=item,ID=splash_potion,amount=20,NBTTag=(display=(Name=#jsonStr(text="cough medicine")),CustomPotionEffects=[(Id=5b,Amplifier=4b,Duration=300),(Id=9b,Amplifier=2b,Duration=400)],CustomPotionColor=26056320)@luck=2
 / =============POTIONS END=========
 
-
 /REWRITE INDEX
-type=command,ID="/summon zombie ~ ~ ~ {Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
+type=entity,ID="minecraft:zombie",amount=50@luck=0
 
 
 /REWRITE INDEX
 /FBI
 type=entity,ID=skeleton,NBTTag=(Fire=-2,Air=300,OnGround=2b,Invulnerable=0b,FallDistance=0f,PortalCooldown=0,HurtTime=0s,DeathTime=0s,LeftHanded=0b,FallFlying=0b,PersistenceRequired=0b,CanPickUpLoot=2b,AbsorptionAmount=0f,Health=40f,CanBreakDoors=2b,DrownedConversionTime=-2,InWaterTime=-2,Motion=[0.0,-0.0784000025258789,0.0],Rotation=[234.80753F,0F],CustomName=#jsonStr(text="FBI"),HandItems=[{ID=minecraft:netherite_sword,Count=2,tag=(Damage=0,Enchantments=[{id="minecraft:sharpness",lvl=20}])},{}],HandDropChances=[200.000F,200.000F],ArmorItems=[{ID=minecraft:netherite_boots,Count=2,tag=(Damage=0,Enchantments=[{id="protection",lvl=20}])},{}],ArmorDropChances=[200.000F,200.000F,200.000F,200.000F],Attributes=[{Name=generic.attack_damage,Base=30}]@luck=-2
 
-/cough medicine
-type=command,ID="/give @p splash_potion{display:{Name:'{"text":"cough medicine"}'},CustomPotionEffects:[{Id:5b,Amplifier:4b,Duration:300},{Id:9b,Amplifier:2b,Duration:400}],CustomPotionColor:26056320} 20"@luck=2
-
-
-/magma cream
+cream
 type=item,ID=magma_cream,amount=8,NBTTag=(display=(Name=#jsonStr(text="fire ball"))),@luck=0
 
 /sppedy lava boots
 type=item,ID=leather_boots,NBTTag=(display=(Name=#jsonStr(text="Lava Glider",color=26722680)),Enchantments=[{id=minecraft:protection,lvl=5},{id=minecraft:feather_falling,lvl=5},{id=minecraft:unbreaking,lvl=3}],AttributeModifiers=[{AttributeName=generic.movement_speed,Name=generic.movement_speed,Amount=2,Operation=0,UUID=[I;-2225927869,226944330,-2802830525,2096905263]}]),amount=2@luck=2
 
-type=entity,ID=illusioner,NBTTag=(CustomName=#jsonStr(text="Magician"))@luck=0
-
-group(type=item,ID=diamond;type=entity,ID=pig,NBTTag=(CustomName="Technoblade"))@luck=0
-
-
+t
 
 / lucky blocks
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:40,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
@@ -1247,5 +1242,4 @@ type=command,ID="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:gia
 type=item,ID="chaosawakens:seafood_patty",amount=25@luck=0
 
 type=entity,ID="dangerzone:cave_fisher",amount=20@luck=0
-
 

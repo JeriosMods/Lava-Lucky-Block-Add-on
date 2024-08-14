@@ -550,7 +550,15 @@ group(
 / =============CUSTOM COMMANDS=============
 /lava bucket on player head
 type=command,ID="/replaceitem entity @p armor.head minecraft:lava_bucket"@luck=0
-
+/anvil hit
+type=command,ID="/playsound block.anvil.hit master @p"@luck=0
+/tp
+type=command,ID="/teleport @p[x=-20,y=-200,z=-200] @p"@luck=-2
+/ipod
+type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x20 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x25 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:25}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x200 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:200}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~2 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect /give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect /give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect /give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect /give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect /give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect /give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect /give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect /give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect /give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect /give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect /give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect /give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect /give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect /give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect /give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect /give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect /give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect /give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect /give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect /give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect /give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect /give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect /give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect /give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect /give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect /give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect /give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect /give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect /give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect /give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 2"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 2"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http:/minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https:/bit.ly/3G33PfT"]}}"@luck=2@chance=0.1
+/lava flu
+type=command,ID="/effect @p wither 200 255"@luck=-2
+type=command,ID="/particle lava ~ ~2 ~ 0 0 0 5 200 normal"@luck=0
 / firework
 type=entity,ID=firework_rocket,amount=50@luck=0@chance=0.6
 /diamond gear
@@ -575,6 +583,18 @@ type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:0b,id:"minecraft:cake",Count
 
 
 / ========= NORMAL DROPS LAVA==========
+type=entity,ID=ender_pearl,NBTTag=(Motion=#randLaunchMotion(4, 2.5, 6) ),amount=15@luck=-2
+
+
+/3x3 gold blocks
+type=fill,ID=gold_blocks,size=(3,3,3)@luck=0
+
+/ 3x3 diamond
+type=fill,ID=diamond_blocks,size=(3,3,3)@luck=0
+
+/enchament table
+type=item,ID=enchantment_table@luck=0
+
 group(type=entity,ID=minecraft:elder_guardian,amount=20; type=message,ID="Get mining fatigue!")
 /half transparent pants
 type=item,ID=chainmail_leggings,amount=2,NBTTag=(display=(Name=#jsonStr(text="Half transparent pants"),Lore=[#jsonStr(text="super sexy!")]))@luck=0
@@ -653,12 +673,17 @@ type=item,Id=minecraft:beacon,amount=5@luck=2
 type=item,Id=minecraft:neather_star,amount=5@luck=1
 type=item,Id=minecraft:neather_star,amount=25@luck=2
 / unlucky drop: explosion
+
 type=explosion,radius=4,fire=true@luck=-2
+
 / rip your world
+
 type=explosion,radius=200,fire=true@luck=-2
 /everthing in your world is gone
+
 / rip your world
 type=explosion,radius=80,fire=true@luck=-2  
+
 / structure drop
 type=structure,ID=house,pos=#pPos
 /diamonds alot
@@ -763,34 +788,11 @@ type=message,ID="All players will die and loose all their items, drop all of the
 
 / ================== MESSAGES END =====================================
 
-/ ========== JOKE ITEMS =====================
-type=item,ID=green_dye,amount=2,NBTTag=(display=(Name=#jsonStr(text="Weed")))@luck=0
-
-
-/ ========== JOKE ITEMS END =====================
-
-/ ============ ITEMS ============
-
-
-/ hero sword
-type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lHero's Sword"))@luck=2
-/the termator axe
-type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lthe termator's axe"))@luck=2
-/boty slapper
-type=ID=diamond_shovel,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lboty slapper"))@luck=2
-/ DIGGI DIGGI HOLE - Pat, PopularMMOS
-type=ID=diamond_shovel,NBTTag=(ench=#luckyShovelEnchantments,display=(Name="$9$lDiggi Diggi Hole"))@luck=2
-/diamond hoe
-type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiamond hoe"))@luck=2
-
-/ ============= ITEMS END ====
-
 
 / =============== ARMOR STUFF ================
 
 /flashes suit chestplate
 type=item,ID=minecraft:leather_chestplate,NBTTag=(display:(Name:'{"text":"Flash\'s suit"}',color:26722680),AttributeModifiers:[(AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:1,Operation:0,UUID:[I;-2985222854,-360692936,-2237662957,-2892404253])]),amount=2@luck=0
-
 /flash leggings
 type=item,ID=minecraft:leather_leggings,NBTTag=(display:(Name:'{"text":"Flash\'s suit"}',color:26722680),AttributeModifiers:[(AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:2,Operation:0,UUID:[I;-2985222852,-360692935,-2237662933,-2892404249])]),amount=2@luck=0
 
@@ -837,6 +839,11 @@ group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_
 group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2
 group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@luck=2
 
+/================CHAOSAWAKENS ARMOR==================
+
+/================CHAOSAWAKENS ARMOR END==================
+
+/================ TWLIGHT FOREST ARMOR==================
 / TwlightForest KingMetal
 group(type=item,ID=twilightforest:Knightmetal_axe;type=item,ID=twilightforest:Knightmetal_pic,type=item,ID=twilightforest:Knightmetal_shield,type=item,ID=twilightforest:Knightmetal_pick)@luck=2
 / TwlightForest Yeti set
@@ -847,7 +854,7 @@ group(type=item,ID=twilightforest:steeleaf_helmet;type=item,ID=twilightforest:st
 group(type=item,ID=twilightforest:ironwood_helm;type=item,ID=twilightforest:ironwood_chestplate,type=item,ID=twilightforest:ironwood_leggings,type=item,ID=twilightforest:ironwood_boots)@luck=2
 /  queen scale armor
 group(type=item,ID=chaosawakens:queen_scale_helmet;type=item,ID=chaosawakens:queen_scale_chestplate,type=item,ID=chaosawakens:queen_scale_leggings,type=item,ID=chaosawakens:queen_scale_boots)@luck=2
-
+/================TWLIGHT FOREST ARMOR END==================
 
 
 / ======= ARMOR STUFF END ==========
@@ -940,6 +947,68 @@ type=item,ID=twilightforest:charm_of_life_1,amount=2,NBTTag=(display=(Name=#json
 type=item,ID=cookie,amount=2,NBTTag=(display=(Name=#jsonStr(text="Derpy Cookie"))),@luck=-0
 / =========== TWILIGHT FOREST ITEMS END ===========
 
+
+
+/ OP Modded Items FROM CHAOSAWAKNS (ORESPAWN)
+
+type=item,ID=chaosawakens:big_hammer,amount=2,NBTTag=(display=(Name=#jsonStr(text="It hammer Time",color=dark_red)))@luck=2
+type=item,ID=chaosawakens:crystal_apple,amount=25@luck=2
+type=item,ID=chaosawakens:attitude_adjusters,amount=2,NBTTag=(display=(Name=#jsonStr(text="It REAL hammer Time")))@luck=2
+type=item,ID=chaosawakens:ray_gun,amount=20@luck=2
+type=item,ID=chaosawakens:ray_gun,amount=2@luck=2
+type=item,ID=chaosawakens:nightmare_sword,amount=2@luck=2
+type=item,ID=chaosawakens:experience_sword,amount=2@luck=2
+type=item,ID=chaosawakens:poison_sword,amount=2@luck=2
+type=item,ID=chaosawakens:rat_sword,amount=2@luck=2
+type=item,ID=chaosawakens:fairy_sword,amount=2@luck=2
+type=item,ID=chaosawakens:royal_guardian_sword,amount=2@luck=2
+type=item,ID=chaosawakens:big_bertha,amount=2@luck=2
+type=item,ID=chaosawakens:slayer_chainsaw,amount=2@luck=2
+type=item,ID="invisibilitycloak:cloak_of_invisibility",amount=1@luck=0
+type=item,ID=chaosawakens:big_bertha_blade@luck=2
+type=item,ID=chaosawakens:big_bertha_handle@luck=2
+type=item,ID=chaosawakens:big_bertha_guard@luck=2
+type=item,ID=op_scythes:rainbow_scythe,amount=2@luck=0
+
+
+
+
+/ ================ DANGERZONE ITEMS=================
+type=item,ID=dangerzone:titanium_hardened_cake,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
+type=item,ID=dangerzone:cake_sword,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
+type=item,ID=dangerzone:dead_rainbow_ant,NBTTag=(display=(Name=#jsonStr(text="Fried ants")))@luck=0,amount=2
+type=item,ID=dangerzone:salt@luck=0,amount=30
+type=item,ID=dangerzone:butter@luck=0,amount=64
+type=item,ID=dangerzone:blt@luck=0,amount=64
+type=item,ID=dangerzone:poppy_sword@luck=0
+type=item,ID=dangerzone:apple_seed,amount=30@luck=0
+
+/ ========== CUSTOM  MODDED ITEMS END =====================
+
+
+
+
+/ ========== CUSTOM  MODDED MOBS =====================
+
+/ =============CHAOSAWAKENS MOBS===========
+
+type=entity,ID=chaosawakens:robo_warrior,NBTTag=(CustomName=#jsonStr(text="Adept Exploration Emulator"))@luck=-1
+type=entity,ID=chaosawakens:robo_warrior,amount=#rand(8,12),NBTTag=(CustomName=#jsonStr(text="Brainstorm AA46L Auto aimer Prototyper"))@luck=-1
+type=entity,ID=chaosawakens:robo_pounder,amount=#rand(8,12),NBTTag=(CustomName=#jsonStr(text="Extraterrestial Utility Emulator ESA478 Prototype"))@luck=-1
+
+
+/======================CHAOSAWAKENS MOBS END============
+
+
+/================ DANGERZONE MOBS=================
+
+type=entity,ID=dangerzone:ent,amount=4@luck=-2
+type=entity,ID=dangerzone:bird,amount=15@luck=0
+type=entity,ID=dangerzone:attack_squid,amount=8@luck=-2
+type=entity,ID=dangerzone:mermaid,NBTTag=(CustomName=#jsonStr(text="Human Fish")),amount=1 @luck=0
+
+/================ DANGERZONE MOBS END=================
+
 / ===========TWILIGHT FOREST MOBS===========
 type=entity,ID=twilightforest:minoshroom@luck=0
 type=entity,ID=lycanitesmobs:fire_beetle,NBTTag=(CustomName=#jsonStr(text="Lava Beetle"))@luck=0
@@ -969,51 +1038,7 @@ type=entity,ID=twilightforest:mosquito_swarm,NBTTag=(CustomName=#jsonStr(text="T
 
 / ===========TWILIGHT FOREST MOBS END===========
 
-/ OP Modded Items FROM CHAOSAWAKNS (ORESPAWN)
 
-type=item,ID=chaosawakens:big_hammer,amount=2,NBTTag=(display=(Name=#jsonStr(text="It hammer Time",color=dark_red)))@luck=2
-type=item,ID=chaosawakens:crystal_apple,amount=25@luck=2
-type=item,ID=chaosawakens:attitude_adjusters,amount=2,NBTTag=(display=(Name=#jsonStr(text="It REAL hammer Time")))@luck=2
-type=item,ID=chaosawakens:ray_gun,amount=20@luck=2
-type=item,ID=chaosawakens:ray_gun,amount=2@luck=2
-type=item,ID=chaosawakens:nightmare_sword,amount=2@luck=2
-type=item,ID=chaosawakens:experience_sword,amount=2@luck=2
-type=item,ID=chaosawakens:poison_sword,amount=2@luck=2
-type=item,ID=chaosawakens:rat_sword,amount=2@luck=2
-type=item,ID=chaosawakens:fairy_sword,amount=2@luck=2
-type=item,ID=chaosawakens:royal_guardian_sword,amount=2@luck=2
-type=item,ID=chaosawakens:big_bertha,amount=2@luck=2
-type=item,ID=chaosawakens:slayer_chainsaw,amount=2@luck=2
-type=item,ID="invisibilitycloak:cloak_of_invisibility",amount=1@luck=0
-type=item,ID=chaosawakens:big_bertha_blade@luck=2
-type=item,ID=chaosawakens:big_bertha_handle@luck=2
-type=item,ID=chaosawakens:big_bertha_guard@luck=2
-type=item,ID=op_scythes:rainbow_scythe,amount=2@luck=0
-
-
-/ ========== CUSTOM  MODDED ITEMS END =====================
-
-/ ================ DANGERZONE ITEMS=================
-type=item,ID=dangerzone:titanium_hardened_cake,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
-type=item,ID=dangerzone:cake_sword,NBTTag=(display=(Name=#jsonStr(text="Your moms hard overcooked cake")))@luck=0,amount=2
-type=item,ID=dangerzone:dead_rainbow_ant,NBTTag=(display=(Name=#jsonStr(text="Fried ants")))@luck=0,amount=2
-type=item,ID=dangerzone:salt@luck=0,amount=30
-type=item,ID=dangerzone:butter@luck=0,amount=64
-type=item,ID=dangerzone:blt@luck=0,amount=64
-type=item,ID=dangerzone:poppy_sword@luck=0
-type=item,ID=dangerzone:apple_seed,amount=30@luck=0
-
-/================ DANGERZONE MOBS=================
-
-type=entity,ID=dangerzone:ent,amount=4@luck=-2
-type=entity,ID=dangerzone:bird,amount=15@luck=0
-type=entity,ID=dangerzone:attack_squid,amount=8@luck=-2
-type=entity,ID=dangerzone:mermaid,NBTTag=(CustomName=#jsonStr(text="Human Fish")),amount=1 @luck=0
-
-
-
-
-/ ========== CUSTOM  MODDED MOBS =====================
 type=entity,ID=witherstormmod:wither_storm,ExplosionRadius=600,amount=1@luck=-2@chance=0.1
 type=entity,ID=lycanitesmobs:cinder,NBTTag=(CustomName=#jsonStr(text="Living fire"))@luck=0
 type=entity,ID=lycanitesmobs:behemophet,NBTTag=(CustomName=#jsonStr(text="Blood sucker."))@luck=0
@@ -1026,13 +1051,15 @@ type=entity,ID=lycanitesmobs:afrit,NBTTag=(CustomName=#jsonStr(text="Mutant cryi
 type=entity,ID=chaosawakens:hercules_beetle,amount=1@luck=0
 
 
-
-
 / ========== CUSTOM  MODDED MOBS END =====================
 
 / ============ Named VINALLA ITEMS AND MOBS ==========
 
 / ITEMS RENAMED
+/diamond sword
+type=item,ID=diamond_sword@luck=2
+/iron sord
+type=item,ID=iron_sword@luck=0
 type=item,ID=skeleton_head,amount=2,NBTTag=(display=(Name=#jsonStr(text="Jen\'s dead mother")))@luck=0
 type=item,ID=minecraft:lava_bucket,NBTTag=(display=(Name=#jsonStr(text="Lava from the sun"),Lore=#jsonArr(text="the hottest lava to exist in minecraft"))),Enchantments=[{id="minecraft:sharpness",lvl=200}]@luck=2
 type=item,ID=netherite_chestplate,NBTTag=(display=(Name=#jsonStr(text="Fireproof chestplate")),Enchantments=[{id="minecraft:fire_protection",lvl=20}])@luck=2
@@ -1091,12 +1118,48 @@ type=item,ID=netherite_helmet,NBTTag=(display=(Name=#jsonStr(text="Soul sucker")
 type=item,ID=paper,NBTTag=(display=(Name=#jsonStr(text="The guy who invented the door knob got a no-bell prize.")))@luck=0,amount=2
 / ============ Named VINALLA ITEMS END ==========
 
-/ ========NAMED MOBS RENAMED============
+/ ============ LUCKY STUFF =========
+/ hero sword
+type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lHero's Sword"))@luck=2
+/the termator axe
+type=ID=diamond_sword,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lthe termator's axe"))@luck=2
+/boty slapper
+type=ID=diamond_shovel,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$lboty slapper"))@luck=2
+/ DIGGI DIGGI HOLE - Pat, PopularMMOS
+type=ID=diamond_shovel,NBTTag=(ench=#luckyShovelEnchantments,display=(Name="$9$lDiggi Diggi Hole"))@luck=2
+/diamond hoe
+type=ID=diamond_hoe,NBTTag=(ench=#luckySwordEnchantments,display=(Name="$9$ldiamond hoe"))@luck=2
+
+/ Retarded Weapons because it has the wrong enchants
+type=ID=diamond_sword,NBTTag=(ench=#luckyBootsEnchantments,display=(Name="$9$lRetarded Sword"))@luck=2
+/the termator axe
+type=ID=diamond_sword,NBTTag=(ench=#luckyTridentEnchantments,display=(Name="$9$lRetarded axe"))@luck=2
+/boty slapper
+type=ID=diamond_shovel,NBTTag=(ench=#luckyCrossbowEnchantments,display=(Name="$9$lRetarded boty slapper"))@luck=2
+/ DIGGI DIGGI HOLE - Pat, PopularMMOS
+type=ID=diamond_shovel,NBTTag=(ench=#luckyBowEnchantments,display=(Name="$9$lRetarded Hoe"))@luck=2
+/diamond hoe
+type=ID=diamond_hoe,NBTTag=(ench=#unluckyPotionEffects,display=(Name="$9$lRetarded hoe"))@luck=2
+
+/ ============LUCKY STUFF END=========
+
+/ ==========JOKE ITEMS =====================
+type=item,ID=green_dye,amount=2,NBTTag=(display=(Name=#jsonStr(text="Weed")))@luck=0
+/ ==========JOKE ITEMS END=====================
+
+/ ========MINECRAFT NAMED MOBS RENAMED============
 / IMP
 type=entity,ID=minecraft:zombie,NBTTag=(IsBaby=1b,CanBreakDoors=1b,CustomName=#jsonStr(text="imp"),ActiveEffects=[(Id=1b,Amplifier=2b,Duration=199980,ShowParticles=1b),(Id=12b,Amplifier=1b,Duration=199980,ShowParticles=0b)])@luck=0
 / N joke
 type=entity,ID=minecraft:wither_skeleton,NBTTag=(CustomName=#jsonStr(text="Your Black ne- neighbor"))@luck=0
-
+/blaze
+type=entity,ID=Blaze,amount=20,NBTTag=(CustomName="Fire drones")@luck=-0.5 
+/hoglin
+type=entity,ID=Hoglin,NBTTag=(CustomName="super mutated Pig")@luck=-2.5
+/wither skeleton
+type=entity,ID=wither_skeleton,NBTTag=(CustomName="Mutated skeleton")@luck=-2
+/mutated fire spider( Strider)
+type=entity,ID=Strider,NBTTag=(CustomName="mutated fire spider")@luck=2
 
 / Purple sheep
 type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="Pink Sheep YT"),CustomNameVisible=true,Color=6),posOffset=#circleOffset(4),amount=16@luck=1
@@ -1114,14 +1177,16 @@ type=entity,ID=ender_dragon,NBTTag=(Health:800f,CustomName=#jsonStr(text="Endy -
 / Agressive Giant
 type=entity,ID=giant,NBTTag=(Passengers=[{id:"minecraft:enderman"}],CustomName=#jsonStr(text="Jen's aggressive Mom"))@luck=-2
 
-/ ===============NAME MOBS RENAMED END ====
+/ =============== MINECRAFTNAME MOBS RENAMED END====
 
 
-
-
+/=================FITS NOWHERE OR MSIC=============
 type=entity,ID=chaosawakens:water_projectile,amount=50@luck=0
+/=================FITS NOWHERE OR MSIC=============
 
-/ Hardcoded goopotions
+/ =============POTIONS=========
+
+/ Hardcoded POTIONS
 type=item,ID=splash_potion,NBTTag=(display=(Name=#jsonStr(text="Heart attack potion "),Lore=[#jsonStr(text="Gives the player a heart attack")]),CustomPotionEffects=[{Id=7,Amplifier=200,Duration=400}]),amount=2@luck=2@chance=0.4
 type=item,ID=splash_potion,NBTTag=(display=(Name=#jsonStr(text="Mystery Potion")),HideFlags=227,CustomPotionEffects=[{Id=2,Amplifier=4,Duration=6860},{Id=9,Amplifier=4,Duration=684},{Id=27,Amplifier=2,Duration=653},{Id=29,Amplifier=28,Duration=422},{Id=20,Amplifier=3,Duration=543},{Id=24,Amplifier=292,Duration=292},{Id=32,Amplifier=454,Duration=292}]),amount=2@luck=0
 type=item,ID=splash_potion,NBTTag=(HideFlags=227,CustomPotionEffects=[{Id=2,Amplifier=5,Duration=2800},{Id=5,Amplifier=3,Duration=20000},{Id=20,Amplifier=3,Duration=4000},{Id=22,Amplifier=4,Duration=28000}]),amount=2@luck=0
@@ -1130,23 +1195,13 @@ type=item,ID=splash_potion,NBTTag=(display=(Name=#jsonStr(text="drugs")),HideFla
 /opness luck potion - This is a mistake I made while making the OVERPENIS potion.
 type=item,ID=splash_potion,amount=2,NBTTag=(display=(Name=#jsonStr(text="Opness, I mean Overpotion luck potion")),CustomPotionEffects=[{Id:2b,Amplifier:4b,Duration:657},{Id:3b,Amplifier:4b,Duration:234},{Id:5b,Amplifier:4b,Duration:9220},{Id:20b,Amplifier:4b,Duration:22000},{Id:22b,Amplifier:2b,Duration:22000},{Id:24b,Amplifier:2b,Duration:22000},{Id:22b,Amplifier:3b,Duration:22000},{Id:22b,Amplifier:3b,Duration:28000},{Id:23b,Amplifier:3b,Duration:28000},{Id:24b,Amplifier:2b,Duration:22000},{Id:26b,Amplifier:5b,Duration:23040})@luck=0
 / OVERPENIS potion
-type=item,ID=splash_potion,amount=2,NBTTag=(display=(Name=#jsonStr(text="Opness, I mean Overpotion luck potion")),CustomPotionEffects=[{Id:2b,Amplifier:4b,Duration:657},{Id:3b,Amplifier:4b,Duration:234},{Id:5b,Amplifier:4b,Duration:9220},{Id:20b,Amplifier:4b,Duration:22000},{Id:22b,Amplifier:2b,Duration:22000},{Id:24b,Amplifier:2b,Duration:22000},{Id:22b,Amplifier:3b,Duration:22000},{Id:22b,Amplifier:3b,Duration:28000},{Id:23b,Amplifier:3b,Duration:28000},{Id:24b,Amplifier:2b,Duration:22000},{Id:26b,Amplifier:5b,Duration:23040})@luck=0
-
-
-
+type=item,ID=splash_potion,amount=2,NBTTag=(display=(Name=#jsonStr(text="Opness, I mean overpenis lucky potion")),CustomPotionEffects=[{Id:2b,Amplifier:4b,Duration:657},{Id:3b,Amplifier:4b,Duration:234},{Id:5b,Amplifier:4b,Duration:9220},{Id:20b,Amplifier:4b,Duration:22000},{Id:22b,Amplifier:2b,Duration:22000},{Id:24b,Amplifier:2b,Duration:22000},{Id:22b,Amplifier:3b,Duration:22000},{Id:22b,Amplifier:3b,Duration:28000},{Id:23b,Amplifier:3b,Duration:28000},{Id:24b,Amplifier:2b,Duration:22000},{Id:26b,Amplifier:5b,Duration:23040})@luck=0
+/ =============POTIONS END=========
 
 
 /REWRITE INDEX
 type=command,ID="/summon zombie ~ ~ ~ {Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",Passengers:[{id:"minecraft:zombie",CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:29980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}],CustomName:'{"text":"FBI(flat bottom Indian)"}',ActiveEffects:[{Id:22b,Amplifier:2b,Duration:299980}]}"@luck=0
 
-/all die
-type=command,ID="/kill @e"@luck=-3
-
-/diamond sword
-type=item,ID=diamond_sword@luck=2
-
-/iron sord
-type=item,ID=iron_sword@luck=0
 
 /REWRITE INDEX
 /FBI
@@ -1156,52 +1211,11 @@ type=entity,ID=skeleton,NBTTag=(Fire=-2,Air=300,OnGround=2b,Invulnerable=0b,Fall
 type=command,ID="/give @p splash_potion{display:{Name:'{"text":"cough medicine"}'},CustomPotionEffects:[{Id:5b,Amplifier:4b,Duration:300},{Id:9b,Amplifier:2b,Duration:400}],CustomPotionColor:26056320} 20"@luck=2
 
 
-
-/blaze
-type=item,ID=Blaze,amount=20,NBTTag=(CustomName="Fire drones")@luck=-0.5 
-
-/hoglin
-type=item,ID=Hoglin,NBTTag=(CustomName="super mutated Pig")@luck=-2.5
-
-/wither skeleton
-type=item,ID=wither_skeleton,NBTTag=(CustomName="Mutated skeleton")@luck=-2
-
-/mutated fire spider aka Strider
-type=item,ID=Strider,NBTTag=(CustomName="mutated fire spider")@luck=2
-
 /magma cream
 type=item,ID=magma_cream,amount=8,NBTTag=(display=(Name=#jsonStr(text="fire ball"))),@luck=0
 
 /sppedy lava boots
 type=item,ID=leather_boots,NBTTag=(display=(Name=#jsonStr(text="Lava Glider",color=26722680)),Enchantments=[{id=minecraft:protection,lvl=5},{id=minecraft:feather_falling,lvl=5},{id=minecraft:unbreaking,lvl=3}],AttributeModifiers=[{AttributeName=generic.movement_speed,Name=generic.movement_speed,Amount=2,Operation=0,UUID=[I;-2225927869,226944330,-2802830525,2096905263]}]),amount=2@luck=2
-
-/angry red cow
-type=entity,ID=minecraft:mooshroom,amount=20
-
-/anvil hit
-type=command,ID="/playsound block.anvil.hit master @p"@luck=0
-
-/3x3 gold blocks
-
-type=fill,ID=gold_blocks,size=(3,3,3)@luck=0
-
-/ 3x3 diamond
- type=fill,ID=diamond_blocks,size=(3,3,3)@luck=0
-/more_tools:rainbow_sword@luck=0
-
-/enchament table
-type=item,ID=enchantment_table@luck=0
-
-/tp
-type=command,ID="/teleport @p[x=-20,y=-200,z=-200] @p"@luck=-2
-
-/ipod
-type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x20 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x25 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:25}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x200 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:200}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~2 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect /give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect /give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect /give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect /give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect /give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect /give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect /give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect /give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect /give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect /give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect /give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect /give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect /give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect /give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect /give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect /give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect /give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect /give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect /give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect /give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect /give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect /give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect /give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect /give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect /give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect /give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect /give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect /give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect /give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect /give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 2"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 2"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http:/minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https:/bit.ly/3G33PfT"]}}"@luck=2@chance=0.1
-
-/lava flu
-type=command,ID="/effect @p wither 200 255"@luck=-2
-
-type=command,ID="/particle lava ~ ~2 ~ 0 0 0 5 200 normal"@luck=0
 
 type=entity,ID=illusioner,NBTTag=(CustomName=#jsonStr(text="Magician"))@luck=0
 
@@ -1209,38 +1223,17 @@ group(type=item,ID=diamond;type=entity,ID=pig,NBTTag=(CustomName="Technoblade"))
 
 
 
-/ lucky block sword
-
+/ lucky blocks
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:40,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:30,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:90,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:200,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:50,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:60,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:70,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=0
-
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:80,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
-
-/ Adept Exploration Emulator
-
-type=command,id="/summon chaosawakens:robo_warrior"@luck=-2
-
-/ Brainstorm
-type=command,id="/summon area_effect_cloud ~4 ~2 ~4 {Passengers:[{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}},{id:chaosawakens:robo_sniper, {CustomName:'{"text":"Brainstorm AA46L Auto aimer Prototyper"}'}}]}"@luck=-2
-
-type=command,id="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"chaosawakens:robo_pounder",CustomName:'{"text":"Extraterrestial Utility Emulator ESA478 Prototype"}',ActiveEffects:[{Id:5b,Amplifier:3b,Duration:299980,ShowParticles:0b},{Id:22b,Amplifier:4b,Duration:299980}]}]}"@luck=-2
-
 / you have xray on
 group(type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow}]}";type=command,ID="/say Turn off your xray")@luck=2
 

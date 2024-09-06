@@ -1,31 +1,5 @@
 group(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=0
 
-/type=structure,ID=house,file=house.schematicatic@luck=0
-
-type=structure,ID=lavapool2,file=lavapool2.nbt@luck=-1
-
-type=structure,ID=valcanowithlava,file=valcanowithlava.nbt@luck=-1
-
-/type=structure,ID=picdiamond,file=pickaxeddiamond.schematicatic@luck=-1
-
-type=structure,ID=magmapixelart,file=magmapixelart.nbt@luck=-1
-
-type=structure,ID=lavabucketpixelart,file=lavabucketpixelart.nbt@luck=-1
-
-type=structure,ID=fryingpanlavano,file=fryingpanlavano.schematic@luck=-1
-
-type=structure,ID=lavaandfryingpanfilledallthewayup,file=lavaandfryingpanfilledallthewayup.nbt@luck=-1
-
-type=structure,ID=bigdiamond,file=bigdiamond.nbt@luck=1
-
-type=structure,ID=slime,file=slime.nbt@luck=0
-
-type=structure,ID=pickaxediamond,file=pickaxediamond.nbt@luck=1
-
-type=structure,ID=magmapixelart.schematic,file=magmapixelart.nbt
-
-type=structure,ID=lavahouse,file=lavahouse.schematic@luck=1
-
 type=structure,ID=torch,file=torch.nbt@luck=0
 
 group(type=structure,ID=lavatrap,file=trainrunini4.nbt,pos=(#pPosX+18);type=message,ID="Train is approaching you!")@luck=-2
@@ -42,42 +16,6 @@ group(type=slime,ID=cactusfarm;type=block,ID=lucky:lava_lucky_block,tileEntity=(
 
 group(type=lavapool2,ID=cactusfarm;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-200),posX=#bPosX+2,posZ=#bPosZ-2)@luck=2
 
-
-type=structure,ID=housebad,file=housebad.schematic@luck=0
-
-type=structure,ID=devilpitchfork,file=devilpitchfork.nbt@luck=0
-
-type=structure,ID=badchest,file-badchest.schematic@luck=-1
-
-type=structure,ID=housegood,file=housegood.schematic@luck=0
-
-type=structure,ID=housebad,file=housebad.schematic@luck=-1
-
-/ ID=goodenderchest,file=goodenderchest.schematic
-
-type=structure,ID=bigjungle,file=bigjungle.nbt@luck=0
-
-/ ID=diamondhoe,file=diamondhoe.nbt
-
-type=structure,ID=campfire,file=campfire.nbt@luck=0
-
-type=structure,ID=catusfarm,file=catusfarm.nbt
-
-type=structure,ID=chillipepper,file=chillipepper.nbt@luck=0
-
-type=structure,ID=tallcatus,file=tallcatus.nbt
-
-type=structure,ID=fullygenpymirad,file=fullygenpymirad.nbt@luck=0
-
-type=structure,ID=lantern,file=lantern.nbt@luck=0
-
-type=structure,ID=pcburn,file=pcburn.nbt@luck=0
-
-type=structure,ID=lavafroest,file=lavafroest.nbt@luck=-1
-
-type=structure,ID=lighthouse,file=lighthouse.nbt@luck=0
-
-type=structure,ID=runedendportal,file=runedendportal.nbt@luck=0
 
 type=structure,ID=lava_lucky_fort,pos=#pPos@luck=2
 type=structure,ID=lava_lucky_temple,pos=#pPos@chance=0.4@luck=2
@@ -825,7 +763,21 @@ type=item,ID=minecraft:enchanted_golden_apple,amount=2@luck=2
 type=item,ID=minecraft:enchanted_golden_apple,amount=5@luck=2
 /diamond ore
 type=item,ID=diamond_ore,amount=22@luck=2
+/========================= Lucky Villagers ================
 
+group(
+    type=entity,ID=villager,NBTTag=(
+        VillagerData=(level=3,profession=toolsmith,type=jungle),
+        Offers=(Recipes=[
+            (buy=(id=),sell=(id=diamond_shovel,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero\'s Shovel",color=blue,bold=true)))),maxUses=1),
+            (buy=(id=),sell=(id=enchanted_golden_apple,Count=20),maxUses=99),
+            (buy=(id=),sell=(id=potion,NBTTag=(Potion="fire_resistance",custom_potion_effects=#unluckyPotionEffects,display=(Name=#jsonStr(text="Unlucky Hero\'s Potion",color=blue,bold=true)))),maxUses=12),
+            (buy=(id=),sell=(id=potion,NBTTag=(Potion="fire_resistance",custom_potion_effects=#luckyPotionEffects,display=(Name=#jsonStr(text="Lucky Hero\'s Potion",color=blue,bold=true)))),maxUses=12)
+        ]),
+        CustomName=#jsonStr(text="Hero Villager",color=red,bold=true),
+        CustomNameVisible=true,
+        {active_effects:[{id:"minecraft:wither",amplifier:4,duration:800,show_particles:1b,show_icon:1b,ambient:0b}]}
+    )@luck=1
 
 / ===========NORMAL DROPS LAVA END============
 
@@ -959,52 +911,9 @@ type=item,ID=inventorypets:pet_brewing_christmas,amount=2@luck=0
 
 / ========== LAVALUCKYUTIL ITEMS =====================
 
-type=item,ID=lavaluckyblockutil:lava_multi_tool,amount=1@luck=0
-type=item,ID=lavaluckyblockutil:haste_soul,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:jump_soul,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:regeneration_soul,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:resistance_soul,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:strength_soul,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:speed_soul,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:lava_sword,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:lava_pickaxe,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:lava_apple,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:lava_tnt,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:lava_potion,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:lava_scythe,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:lava_knife,amount=1@luck=1
-type=item,ID=lavaluckyblockutil:flaming_hotcheetos,amount=1@luck=2@chance=0.2
-type=item,ID=lavaluckyblockutil:spicy_doritos,amount=1@luck=2@chance=0.2
-type=item,ID=lavaluckyblockutil:spicy_ramen,amount=1@luck=2@chance=0.2
-type=item,ID=lavaluckyblockutil:throwable_fire,amount=1@luck=2@chance=0.4
-type=item,ID=lavaluckyblockutil:trinidad_morugascorpionpepper,amount=1@luck=2@chance=0.2
-type=item,ID=lavaluckyblockutil:fire_armor_helmet,amount=1@luck=1@chance=0.4
-type=item,ID=lavaluckyblockutil:fire_armor_chestplate,amount=1@luck=1@chance=0.4
-type=item,ID=lavaluckyblockutil:fire_armor_leggings,amount=1@luck=1@chance=0.4
-type=item,ID=lavaluckyblockutil:fire_armor_boots,amount=1@luck=1@chance=0.4
-type=item,ID=lavaluckyblockutil:fire_tnt,amount=1@luck=1@chance=0.4
-
 / ========== LAVALUCKYUTIL ITEMS END =====================
 / armor
 
-/ ============== OP SWORDS MOD =========
-type=item,ID=more_tools:rainbow_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:nuclear_sythe,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:infinite_powers,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:herobrine_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:hacker_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:galaxy_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:fire_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:epic_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:diamond_matter_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:death_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:crystal_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:cloud_sword,amount=2@luck=2@chance=0.5
-type=item,ID=more_tools:axolotl_sword,amount=2@luck=2
-
-
-
-/ ===== OP SOWRDS MOD END ==========
 
 / =========== TWILIGHT FOREST ITEMS ===========
 type=item,ID=twilightforest:diamond_minotaur_axe,amount=2@luck=2
@@ -1035,7 +944,7 @@ type=item,ID=chaosawakens:fairy_sword,amount=2@luck=2
 type=item,ID=chaosawakens:royal_guardian_sword,amount=2@luck=2
 type=item,ID=chaosawakens:big_bertha,amount=2@luck=2
 type=item,ID=chaosawakens:slayer_chainsaw,amount=2@luck=2
-type=item,ID="invisibilitycloak:cloak_of_invisibility",amount=1@luck=0
+type=item,ID=invisibilitycloak:cloak_of_invisibility,amount=1@luck=0
 type=item,ID=chaosawakens:big_bertha_blade@luck=2
 type=item,ID=chaosawakens:big_bertha_handle@luck=2
 type=item,ID=chaosawakens:big_bertha_guard@luck=2
@@ -1084,14 +993,14 @@ type=entity,ID=dangerzone:mermaid,NBTTag=(CustomName=#jsonStr(text="Human Fish")
 type=entity,ID=twilightforest:minoshroom@luck=0
 type=entity,ID=lycanitesmobs:fire_beetle,NBTTag=(CustomName=#jsonStr(text="Lava Beetle"))@luck=0
 type=entity,ID=twilightforest:bighorn_sheep,NBTTag=(CustomName=#jsonStr(text="butt headder"))@luck=0
-type=entity,ID=twilightforest:king_spider,NBTTag=(CustomName=#jsonStr(text="the goliath bird-eater"))@luck=-2
+type=entity,ID=twilightforest:king_spider,NBTTag=(CustomName=#jsonStr(text="the goliath bird-eater"), CustomNameVisible=true)@luck=-2
 type=entity,ID=twilightforest:lich@luck=-2
-type=entity,ID=twilightforest:fire_beetle,NBTTag=(CustomName=#jsonStr(text="AHHH, it burns!")),amount=15@luck=0
+type=entity,ID=twilightforest:fire_beetle,NBTTag=(CustomName=#jsonStr(text="AHHH, it burns!"), CustomNameVisible=true),amount=15@luck=0
 type=entity,ID=twilightforest:minotaur,amount=1@luck=-2
 type=entity,ID=twilightforest:yeti_alpha,amount=1@luck=-2
 type=entity,ID=twilightforest:hydra,amount=1@luck=-2
 type=entity,ID=twilightforest:yeti,amount=1@luck=-2
-type=entity,ID=twilightforest:tower_ghast,NBTTag=(CustomName=#jsonStr(text="Tribal ghast")),amount=1@luck=-2
+type=entity,ID=twilightforest:tower_ghast,NBTTag=(CustomName=#jsonStr(text="Tribal ghast"), CustomNameVisible=true),amount=1@luck=-2
 type=entity,ID=twilightforest:death_tome,amount=1@luck=-2
 type=entity,ID=twilightforest:tower_golem,amount=1@luck=-2
 type=entity,ID=twilightforest:troll,amount=1@luck=-2
@@ -1103,9 +1012,9 @@ type=entity,ID=twilightforest:swarm_spider,amount=1@luck=-2
 type=entity,ID=twilightforest:wraith,amount=1@luck=-2
 type=entity,ID=twilightforest:ur_ghast,amount=1@luck=-2
 type=entity,ID=twilightforest:stable_ice_core,amount=1@luck=0
-type=entity,ID=twilightforest:pinch_beetle,NBTTag=(CustomName=#jsonStr(text="Your aunty's pinching cheek")),amount=40@luck=-2@chance=0.3
-type=entity,ID=twilightforest:naga,NBTTag=(CustomName=#jsonStr(text="Big snakes")),amount=8@luck=-2
-type=entity,ID=twilightforest:mosquito_swarm,NBTTag=(CustomName=#jsonStr(text="Texas Mosquitos")),amount=30@luck=0
+type=entity,ID=twilightforest:pinch_beetle,NBTTag=(CustomName=#jsonStr(text="pich dat ass"), CustomNameVisible=true),amount=40@luck=-2@chance=0.3
+type=entity,ID=twilightforest:naga,NBTTag=(CustomName=#jsonStr(text="Big snakes"), CustomNameVisible=true),amount=8@luck=-2
+type=entity,ID=twilightforest:mosquito_swarm,NBTTag=(CustomName=#jsonStr(text="Texas Mosquitos"), CustomNameVisible=true),amount=30@luck=0
 
 / ===========TWILIGHT FOREST MOBS END===========
 
@@ -1310,10 +1219,10 @@ type=entity,ID="minecraft:zombie",amount=50@luck=0
 type=entity,ID=skeleton,NBTTag=(Fire=-2,Air=300,OnGround=2b,Invulnerable=0b,FallDistance=0f,PortalCooldown=0,HurtTime=0s,DeathTime=0s,LeftHanded=0b,FallFlying=0b,PersistenceRequired=0b,CanPickUpLoot=2b,AbsorptionAmount=0f,Health=40f,CanBreakDoors=2b,DrownedConversionTime=-2,InWaterTime=-2,Motion=[0.0,-0.0784000025258789,0.0],Rotation=[234.80753F,0F],CustomName=#jsonStr(text="FBI"),HandItems=[{ID=minecraft:netherite_sword,Count=2,tag=(Damage=0,Enchantments=[{id="minecraft:sharpness",lvl=20}])},{}],HandDropChances=[200.000F,200.000F],ArmorItems=[{ID=minecraft:netherite_boots,Count=2,tag=(Damage=0,Enchantments=[{id="protection",lvl=20}])},{}],ArmorDropChances=[200.000F,200.000F,200.000F,200.000F],Attributes=[{Name=generic.attack_damage,Base=30}]@luck=-2
 
 cream
-type=item,ID=magma_cream,amount=8,NBTTag=(display=(Name=#jsonStr(text="fire ball"))),@luck=0
+group(type=item,ID=magma_cream,amount=8,NBTTag=(display=(Name=#jsonStr(text="fire ball"))))@luck=0
 
 /sppedy lava boots
-type=item,ID=leather_boots,NBTTag=(display=(Name=#jsonStr(text="Lava Glider",color=26722680)),Enchantments=[{id=minecraft:protection,lvl=5},{id=minecraft:feather_falling,lvl=5},{id=minecraft:unbreaking,lvl=3}],AttributeModifiers=[{AttributeName=generic.movement_speed,Name=generic.movement_speed,Amount=1.5,Operation=0,UUID=[I;-2225927869,226944330,-2802830525,2096905263]}]),amount=2@luck=2
+group(type=item,ID=leather_boots,NBTTag=(display=(Name=#jsonStr(text="Lava Glider",color=26722680)),Enchantments=[{id=minecraft:protection,lvl=5},{id=minecraft:feather_falling,lvl=5},{id=minecraft:unbreaking,lvl=3}],AttributeModifiers=[{AttributeName=generic.movement_speed,Name=generic.movement_speed,Amount=1.5,Operation=0,UUID=[I;-2225927869,226944330,-2802830525,2096905263]}]),amount=2)@luck=2
 
 / lucky blocks
 type=command,id="/give @a lucky:lava_lucky_sword{Luck:40,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
@@ -1337,11 +1246,11 @@ type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:
 type=command,ID="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:giant",AbsorptionAmount:50f,Health:1000f,CustomName:'{"text":"gargantuar"}',HandItems:[{id:"minecraft:iron_axe",Count:2b,tag:{display:{Name:'{"text":"gargantuar"}'},Unbreakable:0b,Enchantments:[{id:"minecraft:sharpness",lvl:15s}]}},{}],ActiveEffects:[{Id:2b,Amplifier:3b,Duration:299980},{Id:5b,Amplifier:2b,Duration:299980,ShowParticles:0b}],Attributes:[{Name:generic.knockback_resistance,Base:0.25}]}]}"@luck=0
 
 
-type=item,ID="chaosawakens:seafood_patty",amount=25@luck=0
+group(type=item,ID=chaosawakens:seafood_patty,amount=25)@luck=0
 
-type=entity,ID="dangerzone:cave_fisher",amount=20@luck=0
+group(type=entity,ID=dangerzone:cave_fisher,amount=20)@luck=0
 
-type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(CustomName=#jsonStr(text="Bed Destroyer"),CustomNameVisible=true),Drops=["group(
+group(type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(CustomName=#jsonStr(text="Bed Destroyer"),CustomNameVisible=true),Drops=["group(
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 red_bed destroy";
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 blue_bed destroy";
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 cyan_bed destroy";
@@ -1357,4 +1266,4 @@ type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(CustomName=#jsonStr(text="
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 magenta_bed destroy";
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 light_blue_bed destroy";
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 light_gray_bed destroy";
-)"],)
+)"]))@luck=1

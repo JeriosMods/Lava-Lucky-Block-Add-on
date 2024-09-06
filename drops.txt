@@ -1357,4 +1357,4 @@ type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(CustomName=#jsonStr(text="
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 magenta_bed destroy";
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 light_blue_bed destroy";
     type=command,ID="fill ~3 ~3 ~3 ~3 ~3 ~3 light_gray_bed destroy";
-)"])
+)"],)

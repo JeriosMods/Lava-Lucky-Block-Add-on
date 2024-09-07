@@ -42,4 +42,4 @@ type=entity,ID=firework_rocket,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=8@l
 
 type=entity,ID=fireball,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=4@luck=1
 
-type=entity,ID=llama_spit,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=18@luck=2
+type=entity,ID=llama_spit,pos=#bowPos,NBTTag=(Motion=#bowMotion),amount=18@luck=-2

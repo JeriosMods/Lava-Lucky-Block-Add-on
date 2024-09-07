@@ -748,9 +748,9 @@ type=command,ID="/give @e diamond{display:{Name:'{"text":"22"}'}} 2"@luck=0
 / pumpink
 type=block,ID=pumpkin@luck=0
 /kelp
-type=command,ID="/give @p kelp 2"@luck=-2
+type=item,ID=kelp@luck=-2
 /kelp 40
-type=command,Id="/give @p kelp 40"@luck=-2
+type=item,ID=kelp,amount=40@luck=-2
 /blue bed
 type=command,ID="/give @p blue_bed 2"@luck=0
 / charged creeper 
@@ -759,9 +759,9 @@ type=command,ID="/summon creeper {powered:2}"@luck=-2
 type=item,ID=minecraft:exp_bootle,amount=200@luck=0
 /regular golden apples 5
 type=item,ID=minecraft:golden_apple,amount=5@luck=2
-/ECNHANT apple 2
+/enchanted apple 2
 type=item,ID=minecraft:enchanted_golden_apple,amount=2@luck=2
-/ENCHANT apple 5
+/enchanted apple 5
 type=item,ID=minecraft:enchanted_golden_apple,amount=5@luck=2
 /diamond ore
 type=item,ID=diamond_ore,amount=22@luck=2
@@ -990,14 +990,14 @@ type=entity,ID=chaosawakens:robo_pounder,amount=#rand(8,12),NBTTag=(CustomName=#
 type=entity,ID=dangerzone:ent,amount=4@luck=-2
 type=entity,ID=dangerzone:bird,amount=15@luck=0
 type=entity,ID=dangerzone:attack_squid,amount=8@luck=-2
-type=entity,ID=dangerzone:mermaid,NBTTag=(CustomName=#jsonStr(text="Human Fish")),amount=1 @luck=0
+type=entity,ID=dangerzone:mermaid,NBTTag=(CustomName=#jsonStr(text="Human Fish"),CustomNameVisible=true),amount=1 @luck=0
 
 /================ DANGERZONE MOBS END=================
 
 / ===========TWILIGHT FOREST MOBS===========
 type=entity,ID=twilightforest:minoshroom@luck=0
-type=entity,ID=lycanitesmobs:fire_beetle,NBTTag=(CustomName=#jsonStr(text="Lava Beetle"))@luck=0
-type=entity,ID=twilightforest:bighorn_sheep,NBTTag=(CustomName=#jsonStr(text="butt headder"))@luck=0
+type=entity,ID=lycanitesmobs:fire_beetle,NBTTag=(CustomName=#jsonStr(text="Lava Beetle"),CustomNameVisible=true)@luck=0
+type=entity,ID=twilightforest:bighorn_sheep,NBTTag=(CustomName=#jsonStr(text="butt headder"),CustomNameVisible=true)@luck=0
 type=entity,ID=twilightforest:king_spider,NBTTag=(CustomName=#jsonStr(text="the goliath bird-eater"), CustomNameVisible=true)@luck=-2
 type=entity,ID=twilightforest:lich@luck=-2
 type=entity,ID=twilightforest:fire_beetle,NBTTag=(CustomName=#jsonStr(text="AHHH, it burns!"), CustomNameVisible=true),amount=15@luck=0
@@ -1025,14 +1025,14 @@ type=entity,ID=twilightforest:mosquito_swarm,NBTTag=(CustomName=#jsonStr(text="T
 
 
 type=entity,ID=witherstormmod:wither_storm,ExplosionRadius=600,amount=1@luck=-2@chance=0.1
-type=entity,ID=lycanitesmobs:cinder,NBTTag=(CustomName=#jsonStr(text="Living fire"))@luck=0
-type=entity,ID=lycanitesmobs:behemophet,NBTTag=(CustomName=#jsonStr(text="Blood sucker."))@luck=0
-type=entity,ID=lycanitesmobs:cherufe,NBTTag=(CustomName=#jsonStr(text="Mutant Obsidan golem"))@luck=0
-type=entity,ID=lycanitesmobs:kathoga,NBTTag=(CustomName=#jsonStr(text="Mutant Pig meat"))@luck=0
-type=entity,ID=lycanitesmobs:salamander,NBTTag=(CustomName=#jsonStr(text="Mutant Magma"))@luck=0
-type=entity,ID=lycanitesmobs:malwrath,NBTTag=(CustomName=#jsonStr(text="Mutant eye"))@luck=0
-type=entity,ID=lycanitesmobs:volcan,NBTTag=(CustomName=#jsonStr(text="Mutant lava"))@luck=0
-type=entity,ID=lycanitesmobs:afrit,NBTTag=(CustomName=#jsonStr(text="Mutant crying obsidan"))@luck=0
+type=entity,ID=lycanitesmobs:cinder,NBTTag=(CustomName=#jsonStr(text="Living fire") ,CustomNameVisible=true)@luck=0
+type=entity,ID=lycanitesmobs:behemophet,NBTTag=(CustomName=#jsonStr(text="Blood sucker.") ,CustomNameVisible=true)@luck=0
+type=entity,ID=lycanitesmobs:cherufe,NBTTag=(CustomName=#jsonStr(text="Mutant Obsidan golem") ,CustomNameVisible=true)@luck=0
+type=entity,ID=lycanitesmobs:kathoga,NBTTag=(CustomName=#jsonStr(text="Mutant Pig meat" ,CustomNameVisible=true))@luck=0
+type=entity,ID=lycanitesmobs:salamander,NBTTag=(CustomName=#jsonStr(text="Mutant Magma") ,CustomNameVisible=true)@luck=0
+type=entity,ID=lycanitesmobs:malwrath,NBTTag=(CustomName=#jsonStr(text="Mutant eye") ,CustomNameVisible=true)@luck=0
+type=entity,ID=lycanitesmobs:volcan,NBTTag=(CustomName=#jsonStr(text="Mutant lava" ) ,CustomNameVisible=true)@luck=0
+type=entity,ID=lycanitesmobs:afrit,NBTTag=(CustomName=#jsonStr(text="Mutant crying obsidan") ,CustomNameVisible=true)@luck=0
 type=entity,ID=chaosawakens:hercules_beetle,amount=1@luck=0
 
 

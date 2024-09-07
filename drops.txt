@@ -846,24 +846,28 @@ group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_
 group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel;type=item,ID=chaosawakens:ultimate_pickaxe;type=item,ID=chaosawakens:ultimate_axe;type=item,ID=chaosawakens:ultimate_hoe;type=item,ID=chaosawakens:ultimate_bow)@luck=2
 / saphire items
 
-group(type=item,ID=dangerzone:saphire_sword;type=item,ID=dangerzone:saphire_shovel,type=item,ID=dangerzone:saphire_pickaxe,type=item,ID=dangerzone:saphire_axe,type=item,ID=dangerzone:saphire_hoe)@luck=2
+group(type=item,ID=dangerzone:saphire_sword;type=item,ID=dangerzone:saphire_shovel;type=item,ID=dangerzone:saphire_pickaxe;type=item,ID=dangerzone:saphire_axe;type=item,ID=dangerzone:saphire_hoe)@luck=2
 
-group(type=item,ID=dangerzone:sapphire_boots;type=item,ID=dangerzone:saphire_leggings,type=item,ID=dangerzone:saphire_chestplate,type=item,ID=dangerzone:saphire_helmet,type=item,ID=dangerzone:saphire)@luck=2
+group(type=item,ID=dangerzone:sapphire_boots;type=item,ID=dangerzone:saphire_leggings;type=item,ID=dangerzone:saphire_chestplate;type=item,ID=dangerzone:saphire_helmet;type=item,ID=dangerzone:saphire)@luck=2
 
 / lapis armor
-group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings,type=item,ID=chaosawakens:lapis_chestplate,type=item,ID=chaosawakens:lapis_helmet,type=item,ID=chaosawakens:lapis_hoe)@luck=0
+group(type=item,ID=chaosawakens:lapis_boots;type=item,ID=chaosawakens:lapis_leggings;type=item,ID=chaosawakens:lapis_chestplate;type=item,ID=chaosawakens:lapis_helmet;type=item,ID=chaosawakens:lapis_hoe)@luck=0
+
 / mobzilla armor
-group(type=item,ID=chaosawakens:mobzilla_boots;type=item,ID=chaosawakens:mobzilla_leggings,type=item,ID=chaosawakens:mobzilla_chestplate,type=item,ID=chaosawakens:mobzilla_helmet)@luck=2
-group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
+group(type=item,ID=chaosawakens:mobzilla_boots;type=item,ID=chaosawakens:mobzilla_leggings;type=item,ID=chaosawakens:mobzilla_chestplate;type=item,ID=chaosawakens:mobzilla_helmet)@luck=2
+group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel;type=item,ID=chaosawakens:ultimate_pickaxe;type=item,ID=chaosawakens:ultimate_axe;type=item,ID=chaosawakens:ultimate_hoe;type=item,ID=chaosawakens:ultimate_bow)@luck=2
 / moth scale armor
-group(type=item,ID=chaosawakens:moth_scale_helmet;type=item,ID=chaosawakens:moth_scale_chestplate,type=item,ID=chaosawakens:moth_scale_legging,type=item,ID=chaosawakens:moth_scale_boots)
-group(type=item,ID=chaosawakens:ender_dragon_scale_helmet;type=item,ID=chaosawakens:ender_dragon_scale_chestplate,type=item,ID=chaosawakens:ender_dragon_scale_leggings,type=item,ID=chaosawakens:ender_dragon_scale_boots)@luck=2
+group(type=item,ID=chaosawakens:moth_scale_helmet;type=item,ID=chaosawakens:moth_scale_chestplate;type=item,ID=chaosawakens:moth_scale_legging;type=item,ID=chaosawakens:moth_scale_boots)
+
+group(type=item,ID=chaosawakens:ender_dragon_scale_helmet;type=item,ID=chaosawakens:ender_dragon_scale_chestplate;type=item,ID=chaosawakens:ender_dragon_scale_leggings;type=item,ID=chaosawakens:ender_dragon_scale_boots)@luck=2
 / lapis tools
 group(type=item,ID=chaosawakens:lapis_sword;type=item,ID=chaosawakens:lapis_sword_shovel,type=item,ID=chaosawakens:lapis_sword_pickaxe,type=item,ID=chaosawakens:lapis_sword_axe,type=item,ID=chaosawakens:lapis_sword_hoe,type=item)
-group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_scale_axe,type=item,ID=chaosawakens:moth_scale_pickaxe,type=item,ID=chaosawakens:moth_scale_hoe)@luck=2
+
+group(type=item,ID=chaosawakens:moth_scale_sword;type=item,ID=chaosawakens:moth_scale_axe;type=item,ID=chaosawakens:moth_scale_pickaxe;type=item,ID=chaosawakens:moth_scale_hoe)@luck=2
 / royal guardian sword
-group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate,type=item,ID=chaosawakens:royal_guardian_leggings,type=item,ID=chaosawakens:royal_guardian_boots)@luck=2
-group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate,type=item,ID=twilightforest:Knightmetal_leggings,type=item,ID=twilightforest:Knightmetal_boots)@luck=2
+group(type=item,ID=chaosawakens:royal_guardian_helmet;type=item,ID=chaosawakens:royal_guardian_chestplate;type=item,ID=chaosawakens:royal_guardian_leggings;type=item,ID=chaosawakens:royal_guardian_boots)@luck=2
+
+group(type=item,ID=twilightforest:Knightmetal_helm;type=item,ID=twilightforest:Knightmetal_chestplate;type=item,ID=twilightforest:knightmetal_leggings;type=item,ID=twilightforest:knightmetal_boots)@luck=2
 
 /================CHAOSAWAKENS ARMOR==================
 
@@ -922,11 +926,10 @@ type=item,ID=twilightforest:diamond_minotaur_axe,amount=2@luck=2
 type=item,ID=twilightforest:triple_bow,amount=2@luck=2
 type=item,ID=twilightforest:ice_bow,amount=2@luck=2
 type=item,ID=twilightforest:ice_bomb,NBTTag=(display=(Name=#jsonStr(text="Ice cubes",color=white)))@luck=0
-type=item,ID=twilightforest:experiment_225,NBTTag=(display=(Name=#jsonStr(text="Totally CAKE",color=white)))@luck=0
+type=item,ID=twilightforest:experiment_225,NBTTag=(display=(Name=#jsonStr(text="?TOTALLY! CAKE",color=white)))@luck=0
 type=item,ID=twilightforest:hydra_chop,NBTTag=(display=(Name=#jsonStr(text="strange lamb chops",color=white)))@luck=0
-type=item,ID=twilightforest:charm_of_life_2,amount=2,NBTTag=(display=(Name=#jsonStr(text="Enchanted Golden Heart Totem"))),@luck=2
-type=item,ID=twilightforest:charm_of_life_1,amount=2,NBTTag=(display=(Name=#jsonStr(text="Heart Totem"))),@luck=2
-type=item,ID=cookie,amount=2,NBTTag=(display=(Name=#jsonStr(text="Derpy Cookie"))),@luck=-0
+type=item,ID=twilightforest:charm_of_life_2,amount=2,NBTTag=(display=(Name=#jsonStr(text="Enchanted Golden Heart Totem")))@luck=2
+type=item,ID=twilightforest:charm_of_life_1,amount=2,NBTTag=(display=(Name=#jsonStr(text="Heart Totem")))@luck=2
 / =========== TWILIGHT FOREST ITEMS END ===========
 
 
@@ -1053,9 +1056,9 @@ type=item,ID=minecraft:player_head,NBTTag=(SkullOwner={Id=[I;2989256276,95763472
 type=entity,ID=magma_cube,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant Molten Lava Card"))@luck=2
 type=entity,ID=slime,Size=50,NBTTag=(CustomName=#jsonStr(text="Mutant slime"))@luck=-0.5
 type=entity,ID=minecraft:piglin,NBTTag=(CustomName=#jsonStr(text="mutated fire pig"),CustomNameVisible=true),amount=1@luck=0
-type=item,ID=netherite_axe,amount=2,NBTTag=(display=(Name=#jsonStr(text="Anduril, Maul of the Forgotten")),AttributeModifiers=[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:20,Operation:0,UUID:[I;-7008880,-266583582,-2434604378,-2323056527]}]),@luck=2
-type=item,ID=netherite_sword,amount=2,NBTTag=(display=(Name=#jsonStr(text="Titianium sword"),Lore=[#jsonStr(text="It is super hard to break")])),Enchantments=[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:unbreaking",lvl:50s}],@luck=-2
-type=item,ID=shield,amount=1,NBTTag=(display=(Name=#jsonStr(text="Titanium shield "),Lore=[#jsonStr(text="A shield that is almost impossible to break")])),Enchantments=[{id:"minecraft:unbreaking",lvl:30s}],@luck=0
+type=item,ID=netherite_axe,amount=2,NBTTag=(display=(Name=#jsonStr(text="Anduril, Maul of the Forgotten")),AttributeModifiers=[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:20,Operation:0,UUID:[I;-7008880,-266583582,-2434604378,-2323056527]}])@luck=2
+type=item,ID=netherite_sword,amount=2,NBTTag=(display=(Name=#jsonStr(text="Titianium sword"),Lore=[#jsonStr(text="It is super hard to break")])),Enchantments=[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:unbreaking",lvl:50s}]@luck=-2
+type=item,ID=shield,amount=1,NBTTag=(display=(Name=#jsonStr(text="Titanium shield "),Lore=[#jsonStr(text="A shield that is almost impossible to break")])),Enchantments=[{id:"minecraft:unbreaking",lvl:30s}]@luck=0
 type=entity,ID=chicken,NBTTag=(CustomName=#jsonStr(text="Duck"),CustomNameVisible=true),amount=1@luck=0
 type=item,ID=milk_bucket,NBTTag=(display=(Name=#jsonStr(text="Something your dad does not have")))
 type=item,ID=milk_bucket,NBTTag=(display=(Name=#jsonStr(text="Cuphead"))),amount=2@luck=0
@@ -1212,9 +1215,6 @@ ID=potion,NBTTag=(
 
 type=item,ID=splash_potion,amount=20,NBTTag=(display=(Name=#jsonStr(text="cough medicine")),CustomPotionEffects=[(Id=5b,Amplifier=4b,Duration=300),(Id=9b,Amplifier=2b,Duration=400)],CustomPotionColor=26056320)@luck=2
 / =============POTIONS END=========
-
-/REWRITE INDEX
-type=entity,ID="minecraft:zombie",amount=50@luck=0
 
 
 /REWRITE INDEX

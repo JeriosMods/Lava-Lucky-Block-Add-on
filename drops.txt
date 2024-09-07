@@ -533,9 +533,11 @@ type=fill,ID=diamond_blocks,size=(3,3,3)@luck=0
 /enchament table
 type=item,ID=enchantment_table@luck=0
 
-group(type=entity,ID=minecraft:elder_guardian,amount=20; type=message,ID="Get mining fatigue!")
+group(type=entity,ID=minecraft:elder_guardian,amount=20; type=message,ID="Get mining fatigue!"
+)
 /half transparent pants
-type=item,ID=chainmail_leggings,amount=2,NBTTag=(display=(Name=#jsonStr(text="Half transparent pants"),Lore=[#jsonStr(text="super sexy!")]))@luck=0
+type=item,ID=chainmail_leggings,amount=2,NBTTag=(display=(Name=#jsonStr(text="Half transparent pants")),Lore=[#jsonStr(text="super sexy!")]))@luck=0
+
 / Fire sword
 type=item,ID=diamond_sword,amount=2,NBTTag=(display=(Name=#jsonStr(text="Fire sword")),Enchantments=[(id="minecraft:fire_aspect",lvl=30s)])@luck=2
 type=item,ID=porkchop,amount=22,NBTTag=(display=(Name=#jsonStr(text="Raw Bacon"))))@luck=-2
@@ -576,18 +578,22 @@ type=fill,ID=air,(size=20,20,20)@luck=-0.5
 
 /banners
 type=item,ID=minecraft:black_banner,NBTTag=(BlockEntityTag=(Patterns=[{Color:2,Pattern="flo"},{Color:2,Pattern="hhb"},{Color:25,Pattern="mc"},{Color:2,Pattern="hhb"}]))@luck=0
+
 type=item,ID=minecraft:shield,NBTTag=(BlockEntityTag=(Base=25,Patterns=[{Color:2,Pattern="flo"},{Color:2,Pattern="hhb"},{Color:25,Pattern="mc"},{Color:2,Pattern="hhb"}]))@luck=0
+
 type=item,ID=minecraft:red_banner,NBTTag=(BlockEntityTag=(Patterns=[{Color:0,Pattern="ss"},{Color:22,Pattern="tl"}]))@luck=0
+
 type=item,ID=minecraft:shield,NBTTag=(BlockEntityTag=(Base=24,Patterns=[{Color:0,Pattern="ss"},{Color:22,Pattern="tl"}]))@luck=0
+
 type=item,ID=minecraft:red_banner,NBTTag=(BlockEntityTag=(Patterns=[{Pattern="drs",Color=0},{Pattern="drs",Color=25}]))@luck=0,amount=2
+
 type=item,ID=minecraft:shield,NBTTag=(BlockEntityTag=(Patterns=[{Pattern="drs",Color=0},{Pattern="drs",Color=25}],Base=24))@luck=0,amount=2
+
 type=item,ID=minecraft:player_head,NBTTag=(SkullOwner=(Id=[I;285549492,307779540,-2224658363,682662222],Properties=(textures=[{Value="e3RleHR2cmVzOntTS0lOOnt2cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR2cmUvZGEyNzAyZGRjYzI2MDkyYTk2Njg2MWIyMWU4MTMyZjc3MWQ5NDU2OTI4NTI5NDIxZDQxMmZkM2IwODljOWU2MCJ9fX0="}])),display=(Lore=["{\"text\":\"https:/namemc.com/skin/9a8ac480b2efe3f2\"}"]))@luck=0
+
 /coal
 type=item,ID=coal@luck=0
 
-type=item,ID=wither_skeleton_spawn_egg,amount=1,NBTTag=(
-EntityTag={id:"minecraft:wither",CustomName=#jsonStr(text="Wither spawn egg"),
-CustomNameVisible=true})@luck=0
 /lava
 group(ID=lava_bucket,amount=200)@luck=0@chance=0.2
 /flint and steel
@@ -719,8 +725,6 @@ type=item,ID=portal_frames,amount=20@luck=0
 type=item,ID=cake,amount=20@luck=0
 /p cake 20
 type=item,ID=cake,amount=20@luck=0
-/potion
-/group(type=effect,ID=373,target=hitEntity,amplifier=5,duration=200;type=particle,ID=splashpotion,potion="Danger")@luck=2
 / couris fruit
 type=item,ID=couris_fruit,amount=24@luck=0
 / couris fruit
@@ -753,8 +757,6 @@ type=command,ID="/give @p blue_bed 2"@luck=0
 type=command,ID="/summon creeper {powered:2}"@luck=-2
 /xp bottles
 type=item,ID=minecraft:exp_bootle,amount=200@luck=0
-/ all player get 50 exp
-type=command,ID="/experience set @e 50 levels"@luck=2
 /regular golden apples 5
 type=item,ID=minecraft:golden_apple,amount=5@luck=2
 /ECNHANT apple 2
@@ -763,21 +765,22 @@ type=item,ID=minecraft:enchanted_golden_apple,amount=2@luck=2
 type=item,ID=minecraft:enchanted_golden_apple,amount=5@luck=2
 /diamond ore
 type=item,ID=diamond_ore,amount=22@luck=2
-/========================= Lucky Villagers ================
 
+/========================= Lucky Villagers ================
 group(
     type=entity,ID=villager,NBTTag=(
         VillagerData=(level=3,profession=toolsmith,type=jungle),
         Offers=(Recipes=[
-            (buy=(id=),sell=(id=diamond_shovel,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero\'s Shovel",color=blue,bold=true)))),maxUses=1),
-            (buy=(id=),sell=(id=enchanted_golden_apple,Count=20),maxUses=99),
-            (buy=(id=),sell=(id=potion,NBTTag=(Potion="fire_resistance",custom_potion_effects=#unluckyPotionEffects,display=(Name=#jsonStr(text="Unlucky Hero\'s Potion",color=blue,bold=true)))),maxUses=12),
-            (buy=(id=),sell=(id=potion,NBTTag=(Potion="fire_resistance",custom_potion_effects=#luckyPotionEffects,display=(Name=#jsonStr(text="Lucky Hero\'s Potion",color=blue,bold=true)))),maxUses=12)
+            (buy=(id=,Count=1),sell=(id=diamond_shovel,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero\'s Shovel",color=blue,bold=true)))),maxUses=1),
+            (buy=(id=,Count=1),sell=(id=enchanted_golden_apple,Count=20),maxUses=99),
+            (buy=(id=,Count=1),sell=(id=potion,NBTTag=(Potion="fire_resistance",custom_potion_effects=#unluckyPotionEffects,display=(Name=#jsonStr(text="Unlucky Hero\'s Potion",color=blue,bold=true)))),maxUses=12),
+            (buy=(id=,Count=1),sell=(id=potion,NBTTag=(Potion="fire_resistance",custom_potion_effects=#luckyPotionEffects,display=(Name=#jsonStr(text="Lucky Hero\'s Potion",color=blue,bold=true)))),maxUses=12)
         ]),
         CustomName=#jsonStr(text="Hero Villager",color=red,bold=true),
         CustomNameVisible=true,
         {active_effects:[{id:"minecraft:wither",amplifier:4,duration:800,show_particles:1b,show_icon:1b,ambient:0b}]}
     )@luck=1
+
 
 / ===========NORMAL DROPS LAVA END============
 
@@ -812,35 +815,35 @@ type=item,ID=minecraft:leather_boots,NBTTag=(display:(Name:'{"text":"Flash\'s su
 
 / ultimate armor
 
-group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings,type=item,ID=chaosawakens:ultimate_chestplate,type=item,ID=chaosawakens:untimate_helmet,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
+group(type=item,ID=chaosawakens:ultimate_boots;type=item,ID=chaosawakens:ultimate_leggings; type=item,ID=chaosawakens:ultimate_chestplate; type=item,ID=chaosawakens:untimate_helmet;type=item,ID=chaosawakens:ultimate_hoe; type=item,ID=chaosawakens:ultimate_bow)@luck=2
 / cat eyes item
 
-group(type=item,ID=chaosawakens:cats_eye_sword;type=item,ID=chaosawakens:cats_eye_shovel,type=item,ID=chaosawakens:cats_eye_pickaxe,type=item,ID=chaosawakens:cats_eye_axe,type=item,ID=chaosawakens:cats_eye_hoe)@luck=2
+group(type=item,ID=chaosawakens:cats_eye_sword; type=item,ID=chaosawakens:cats_eye_shovel; type=item,ID=chaosawakens:cats_eye_pickaxe; type=item,ID=chaosawakens:cats_eye_axe; type=item,ID=chaosawakens:cats_eye_hoe)@luck=2
 / ruby armor
 
-group(type=item,ID=chaosawakens:ruby_helmet;type=item,ID=chaosawakens:ruby_chestplate,type=item,ID=chaosawakens:ruby_leggings,type=item,ID=chaosawakens:ruby_boots,type=item,ID=chaosawakens:ruby_sword)@luck=2
+group(type=item,ID=chaosawakens:ruby_helmet; type=item,ID=chaosawakens:ruby_chestplate; type=item,ID=chaosawakens:ruby_leggings; type=item,ID=chaosawakens:ruby_boots; type=item,ID=chaosawakens:ruby_sword)@luck=2
 /ruby items
 
-group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe,type=item,ID=chaosawakens:ruby_shovel,type=item,ID=chaosawakens:pickaxe,type=item,ID=chaosawakens:ruby_hoe)@luck=2
+group(type=item,ID=chaosawakens:ruby_sword;type=item,ID=chaosawakens:ruby_axe; type=item,ID=chaosawakens:ruby_shovel; type=item,ID=chaosawakens:pickaxe; type=item,ID=chaosawakens:ruby_hoe)@luck=2
 / cats eye armor
 
-group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings,type=item,ID=chaosawakens:cats_eye_chestplate,type=item,ID=chaosawakens:cats_eye_helmet,type=item,ID=chaosawakens:cats_eye_hoe)@luck=2
+group(type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_leggings; type=item,ID=chaosawakens:cats_eye_chestplate;type=item,ID=chaosawakens:cats_eye_helmet;type=item,ID=chaosawakens:cats_eye_hoe)@luck=2
 / pink tormalane  items
 
-group(type=item,ID=chaosawakens:pink_tourmaline_sword;type=item,ID=chaosawakens:pink_tourmaline_axe,type=item,ID=chaosawakens:pink_tourmaline_shovel,type=item,ID=chaosawakens:pink_tourmaline_pickaxe,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
+group(type=item,ID=chaosawakens:pink_tourmaline_sword; type=item,ID=chaosawakens:pink_tourmaline_axe; type=item,ID=chaosawakens:pink_tourmaline_shovel; type=item,ID=chaosawakens:pink_tourmaline_pickaxe;type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
 
 / pink tormalane armor
-group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings,type=item,ID=chaosawakens:pink_tourmaline_chestplate,type=item,ID=chaosawakens:pink_tourmaline_helmet,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
+group(type=item,ID=chaosawakens:pink_tourmaline_boots;type=item,ID=chaosawakens:pink_tourmaline_leggings;type=item,ID=chaosawakens:pink_tourmaline_chestplate;type=item,ID=chaosawakens:pink_tourmaline_helmet;type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
 / emerald armor
 
-group(type=item,ID=chaosawakens:emerald_helmet;type=item,ID=chaosawakens:emerald_chestplate,type=item,ID=chaosawakens:emerald_leggings,type=item,ID=chaosawakens:emerald_boots,type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
+group(type=item,ID=chaosawakens:emerald_helmet;type=item,ID=chaosawakens:emerald_chestplate;type=item,ID=chaosawakens:emerald_leggings;type=item,ID=chaosawakens:emerald_boots;type=item,ID=chaosawakens:pink_tourmaline_hoe)@luck=2
 
 
 / emerald tools
-group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_axe,type=item,ID=chaosawakens:emerald_shovel,type=item,ID=chaosawakens:emerald_pickaxe,type=item,ID=chaosawakens:emerald_hoe)@luck=2
+group(type=item,ID=chaosawakens:emerald_sword;type=item,ID=chaosawakens:emerald_axe;type=item,ID=chaosawakens:emerald_shovel;type=item,ID=chaosawakens:emerald_pickaxe;type=item,ID=chaosawakens:emerald_hoe)@luck=2
 
 /ultimate items
-group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel,type=item,ID=chaosawakens:ultimate_pickaxe,type=item,ID=chaosawakens:ultimate_axe,type=item,ID=chaosawakens:ultimate_hoe,type=item,ID=chaosawakens:ultimate_bow)@luck=2
+group(type=item,ID=chaosawakens:ultimate_sword;type=item,ID=chaosawakens:ultimate_shovel;type=item,ID=chaosawakens:ultimate_pickaxe;type=item,ID=chaosawakens:ultimate_axe;type=item,ID=chaosawakens:ultimate_hoe;type=item,ID=chaosawakens:ultimate_bow)@luck=2
 / saphire items
 
 group(type=item,ID=dangerzone:saphire_sword;type=item,ID=dangerzone:saphire_shovel,type=item,ID=dangerzone:saphire_pickaxe,type=item,ID=dangerzone:saphire_axe,type=item,ID=dangerzone:saphire_hoe)@luck=2
@@ -912,7 +915,6 @@ type=item,ID=inventorypets:pet_brewing_christmas,amount=2@luck=0
 / ========== LAVALUCKYUTIL ITEMS =====================
 
 / ========== LAVALUCKYUTIL ITEMS END =====================
-/ armor
 
 
 / =========== TWILIGHT FOREST ITEMS ===========
@@ -1154,15 +1156,16 @@ type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="Purple Sheep YT"),CustomN
 type=entity,ID=chicken,NBTTag=(CustomName=#jsonStr(text="Duck"),CustomNameVisible=true),amount=1@luck=0
 / Strong Witch
 type=entity,ID=witch,NBTTag=(CustomName=#jsonStr(text="Magic Lava Witch"),ActiveEffects=[{Id:3b,Amplifier:2b,Duration:299980},{Id:3b,Amplifier:3b,Duration:299980}],Attributes=[{Name:generic.armor,Base:20}])@luck=-2
+
 /  BOB with super speed
-type=entity,ID=skeleton,NBTTag=(CustomName=#jsonStr(text="Bob on drugs"),ArmorItems=[{},{},{},{id:"minecraft:iron_helmet",Count:1b}],ActiveEffects=[{Id:2b,Amplifier:4b,Duration:299980},{Id:20b,Amplifier:2b,Duration:9999},{Id:22b,Amplifier:4b,Duration:299980},{Id:22b,Amplifier:2b,Duration:299980}],Attributes=[{Name:generic.movement_speed,Base:4},{Name:generic.armor,Base:20}])@luck=-2
-/ Strong Spider
-type=entity,ID=spider,NBTTag=(Health:150f,Passengers=[{id:"minecraft:skeleton"}],CustomName=#jsonStr(text="SuperSpider"),Attributes=[{Name:generic.armor,Base:20}])@luck=-5
-/ Strong Ender dragon
-type=entity,ID=ender_dragon,NBTTag=(Health:800f,CustomName=#jsonStr(text="Endy - Ender of worlds"),HandItems=[{id:"minecraft:netherite_sword",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:sharpness",lvl:30s},{id:"minecraft:smite",lvl:8s},{id:"minecraft:bane_of_arthropods",lvl:20s},{id:"minecraft:knockback",lvl:20s},{id:"minecraft:fire_aspect",lvl:20s},{id:"minecraft:looting",lvl:20s},{id:"minecraft:sweeping",lvl:50s},{id:"minecraft:unbreaking",lvl:600s}]}},{}],ArmorItems=[{id:"minecraft:netherite_boots",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:feather_falling",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:thorns",lvl:20s},{id:"minecraft:unbreaking",lvl:200s}]}},{id:"minecraft:netherite_leggings",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:thorns",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_chestplate",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}},{id:"minecraft:netherite_helmet",Count:2b,tag={Unbreakable:2b,Enchantments=[{id:"minecraft:protection",lvl:20s},{id:"minecraft:fire_protection",lvl:20s},{id:"minecraft:blast_protection",lvl:20s},{id:"minecraft:projectile_protection",lvl:20s},{id:"minecraft:unbreaking",lvl:20s}]}}],Attributes=[{Name:generic.armor,Base:20},{Name:generic.armor_toughness,Base:20}])@luck=-3
+type=entity,ID=skeleton,NBTTag=(CustomName=#jsonStr(text="Bob on drugs"),ArmorItems=[{},{},{},{id:"minecraft:iron_helmet",Count:1b}],ActiveEffects=[{Id:2b,Amplifier:4b,Duration:299980},{Id:20b,Amplifier:2b,Duration:9999},{Id:22b,Amplifier:4b,Duration:299980},{Id:22b,Amplifier:2b,Duration:299980}],Attributes=[{Name:generic.movement_speed,Base:1},{Name:generic.armor,Base:20}])@luck=-2
+
 
 / Agressive Giant
-type=entity,ID=giant,NBTTag=(Passengers=[{id:"minecraft:enderman"}],CustomName=#jsonStr(text="Jen's aggressive Mom"))@luck=-2
+
+type=entity,ID=giant,NBTTag=(
+Passengers=[{id:"minecraft:enderman"}]
+,CustomName=#jsonStr(text="Jen's aggressive Mom"))@luck=-2
 
 / =============== MINECRAFTNAME MOBS RENAMED END====
 
@@ -1216,35 +1219,23 @@ type=entity,ID="minecraft:zombie",amount=50@luck=0
 
 /REWRITE INDEX
 /FBI
-type=entity,ID=skeleton,NBTTag=(Fire=-2,Air=300,OnGround=2b,Invulnerable=0b,FallDistance=0f,PortalCooldown=0,HurtTime=0s,DeathTime=0s,LeftHanded=0b,FallFlying=0b,PersistenceRequired=0b,CanPickUpLoot=2b,AbsorptionAmount=0f,Health=40f,CanBreakDoors=2b,DrownedConversionTime=-2,InWaterTime=-2,Motion=[0.0,-0.0784000025258789,0.0],Rotation=[234.80753F,0F],CustomName=#jsonStr(text="FBI"),HandItems=[{ID=minecraft:netherite_sword,Count=2,tag=(Damage=0,Enchantments=[{id="minecraft:sharpness",lvl=20}])},{}],HandDropChances=[200.000F,200.000F],ArmorItems=[{ID=minecraft:netherite_boots,Count=2,tag=(Damage=0,Enchantments=[{id="protection",lvl=20}])},{}],ArmorDropChances=[200.000F,200.000F,200.000F,200.000F],Attributes=[{Name=generic.attack_damage,Base=30}]@luck=-2
+type=entity,ID=skeleton,NBTTag=(
+Fire=-2,Air=300,OnGround=2b,Invulnerable=0b,FallDistance=0f,PortalCooldown=0,
+HurtTime=0s,DeathTime=0s,LeftHanded=0b,FallFlying=0b,PersistenceRequired=0b,
+CanPickUpLoot=2b,AbsorptionAmount=0f,Health=40f,CanBreakDoors=2b,DrownedConversionTime=-2,
+InWaterTime=-2,Motion=[0.0,-0.0784000025258789,0.0],Rotation=[234.80753F,0F],
+CustomName=#jsonStr(text="FBI"),HandItems=[{ID=minecraft:netherite_sword,count=2,
+tag=(Damage=0,Enchantments=[{id="minecraft:sharpness",lvl=20}])},{}],HandDropChances=[200.000F,200.000F],
+ArmorItems=[{ID=minecraft:netherite_boots,Count=2,tag=(Damage=0,Enchantments=[{id="protection",lvl=20}])},{}],
+ArmorDropChances=[200.000F,200.000F,200.000F,200.000F],Attributes=[{Name=generic.attack_damage,Base=30}]@luck=-2
 
 cream
-group(type=item,ID=magma_cream,amount=8,NBTTag=(display=(Name=#jsonStr(text="fire ball"))))@luck=0
+group(
+type=item,ID=magma_cream,amount=8,NBTTag=(
+display=(Name=#jsonStr(text="fire ball"))))@luck=0
 
 /sppedy lava boots
 group(type=item,ID=leather_boots,NBTTag=(display=(Name=#jsonStr(text="Lava Glider",color=26722680)),Enchantments=[{id=minecraft:protection,lvl=5},{id=minecraft:feather_falling,lvl=5},{id=minecraft:unbreaking,lvl=3}],AttributeModifiers=[{AttributeName=generic.movement_speed,Name=generic.movement_speed,Amount=1.5,Operation=0,UUID=[I;-2225927869,226944330,-2802830525,2096905263]}]),amount=2)@luck=2
-
-/ lucky blocks
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:40,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:30,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:20,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:90,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:200,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:50,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:60,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:70,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=0
-type=command,id="/give @a lucky:lava_lucky_sword{Luck:80,Drops:["type=nothing@chance=20","type=effect,ID=special_fire,target=hitEntity,duration=20"]}"@luck=2
-
-/ you have xray on
-group(type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow},{id:chaosawakens:crystal_apple_cow}]}";type=command,ID="/say Turn off your xray off")@luck=2
-
-
-/ REWRITE INDEX
-type=command,ID="/summon area_effect_cloud ~ ~2 ~ {Passengers:[{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp},{id:chaosawakens:wasp}]}"@luck=-2
-
-type=command,ID="/summon area_effect_cloud ~ ~ ~ {Passengers:[{id:"minecraft:giant",AbsorptionAmount:50f,Health:1000f,CustomName:'{"text":"gargantuar"}',HandItems:[{id:"minecraft:iron_axe",Count:2b,tag:{display:{Name:'{"text":"gargantuar"}'},Unbreakable:0b,Enchantments:[{id:"minecraft:sharpness",lvl:15s}]}},{}],ActiveEffects:[{Id:2b,Amplifier:3b,Duration:299980},{Id:5b,Amplifier:2b,Duration:299980,ShowParticles:0b}],Attributes:[{Name:generic.knockback_resistance,Base:0.25}]}]}"@luck=0
-
 
 group(type=item,ID=chaosawakens:seafood_patty,amount=25)@luck=0
 

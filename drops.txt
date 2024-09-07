@@ -566,7 +566,7 @@ type=item,ID=Bee,NBTTag=(CustomName="drippy")@luck=0
 / Rock the dwayne johnson iron golem
 type=item,ID=iron_golem,NBTTag=(CustomName="Rock the dwayne johnson")@luck=2
 /ear destroyer
-type=item,ID=Pig,amount=200,NBTTag=(CustomName="ear destroyer")@luck=-2
+type=entity,ID=pig,amount=200,NBTTag=(CustomName="ear destroyer")@luck=-2
 / fire
 type=fill,ID=fire,size=(10,10,10)@luck=-2
 /down

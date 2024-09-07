@@ -1,29 +1,29 @@
-type=command,ID="setblock ~ ~2 ~ anvil replace"@luck=0
-
-type=command,ID="summon tnt ~ ~ ~ {Fuse:30}"@luck=0
-
-type=command,ID="summon dragon_fireball ~ ~ ~"@luck=0
+type=block,ID=anvil@luck=0
 
 group(type=effect,ID=poison,range=4,duration=30;type=particle,ID=splashpotion,potion=poison;type=difficulty,ID=hard;type=entity,ID=cave_spider;type=item,ID=#randList(rotten_flesh,spider_eye,fermented_spider_eye),posOffset=#circleOffset(0.0,2.0),amount=30)@luck=-2
 
 type=command,ID="effect give @s speed 10 2"@luck=-2
 
-type=entity,ID="minecraft:flowing_lava"@luck=0
+type=entity,ID=tnt,NBTTag=(Fuse:10)@luck=0
 
-type=command,ID="summon iron_golem ~ ~ ~"@luck=0
+type=entity,ID=flowing_lava@luck=2
 
-type=command,ID="summon wolf ~ ~ ~"@luck=1
+type=entity,ID=iron_golem@luck=2
 
-type=command,ID="summon lightning_bolt ~ ~ ~"@luck=2
+type=entity,ID=wolf@luck=2
 
-type=command,ID="summon boat ~ ~ ~ {Type:"oak"}"@luck=0
+type=entity,ID=dragon_fireball@luck=2
 
-type=command,ID="summon ender_pearl ~ ~ ~"@luck=0
+type=entity,ID=lightning_bolt@luck=2
 
-type=command,ID="summon evoker_fangs ~ ~ ~"@luck=1
+type=entity,ID=boat@luck=0
 
-type=command,ID="summon vex ~ ~ ~"@luck=0
+type=entity,ID=ender_pearl@luck=0
 
-type=command,ID="summon creeper ~ ~ ~ {CustomName:'{"text":"Creeper aw man"}'}"@luck=0
+type=entity,ID=evoker_fangs@luck=-2
 
-type=command,ID="summon llama_spit ~ ~ ~ {Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit",Passengers:[{id:"minecraft:llama_spit"}]}]}]}"@luck=0
+type=entity,ID=vex,amount=2,NBTTag=(CustomName="ghosts")@luck=-2
+
+type=entity,ID=creeper,amount=2,NBTTag=(CustomName="Creeper aw man")@luck=0
+
+type=entity,ID=llama_spit,amount=8,@luck=-2

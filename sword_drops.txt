@@ -16,14 +16,16 @@ type=entity,ID=dragon_fireball@luck=2
 
 type=entity,ID=lightning_bolt@luck=2
 
-type=entity,ID=boat@luck=0
+type=entity,ID=minecraft:boat,NBTTag=(Type:"oak")@luck=0
 
 type=entity,ID=ender_pearl@luck=0
 
 type=entity,ID=evoker_fangs@luck=-2
 
-type=entity,ID=vex,amount=2,NBTTag=(CustomName="ghosts")@luck=-2
+type=entity,ID=vex,NBTTag=(CustomName=#jsonStr(text="ghost") ,CustomNameVisible=true)@luck=0
 
-type=entity,ID=creeper,amount=2,NBTTag=(CustomName="Creeper aw man")@luck=0
+
+type=entity,ID=creeper,NBTTag=(CustomName=#jsonStr(text="Creeper aw man") ,CustomNameVisible=true)@luck=0
+
 
 type=entity,ID=llama_spit,amount=8,@luck=-2

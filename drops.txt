@@ -331,8 +331,10 @@ group(
         ID=dirt,amount=32,posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=inc_sacks,amount=64,posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=dirt,amount=25,posY='#'bPosY+20,posOffset='#'circleOffset(2)
-    )"])
+    ))"])
 )@luck=0
+
+
 
 group(
     type=structure,ID=wishing_well;
@@ -345,7 +347,7 @@ group(
         ID=chaosawakens:wasp,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=chaosawakens:wasp,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=chaosawakens:wasp,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2)
-    )"])
+    ))"])
 )@luck=0
 
 group(
@@ -373,7 +375,7 @@ group(
         ID=bee,amount=26,posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=bee,amount=8,posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=bee,amount=4,posY='#'bPosY+20,posOffset='#'circleOffset(2)
-    )"])
+    ))"])
 )@luck=0
 
 group(
@@ -514,10 +516,6 @@ type=command,ID="/particle lava ~ ~2 ~ 0 0 0 5 200 normal"@luck=0
 type=entity,ID=firework_rocket,amount=50@luck=0@chance=0.6
 /diamond gear
 group(ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_sword;ID=diamond_hoe)@luck=2
-
-type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:4b,id:"minecraft:nether_star",Count:1b},{Slot:13b,id:"minecraft:stick",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}}]} replace"@luck=0
-type=command,ID="/setblock ~ ~ ~ chest{Items:[{Slot:0b,id:"minecraft:cake",Count:1b},{Slot:1b,id:"minecraft:cake",Count:1b},{Slot:2b,id:"minecraft:cake",Count:1b},{Slot:3b,id:"minecraft:cake",Count:1b},{Slot:4b,id:"minecraft:cake",Count:1b},{Slot:5b,id:"minecraft:cake",Count:1b},{Slot:6b,id:"minecraft:cake",Count:1b},{Slot:7b,id:"minecraft:cake",Count:1b},{Slot:8b,id:"minecraft:cake",Count:1b},{Slot:9b,id:"minecraft:cake",Count:1b},{Slot:10b,id:"minecraft:cake",Count:1b},{Slot:11b,id:"minecraft:chest",Count:1b},{Slot:12b,id:"minecraft:chest",Count:1b},{Slot:13b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Candle"}'}}},{Slot:14b,id:"minecraft:cake",Count:1b},{Slot:15b,id:"minecraft:cake",Count:1b},{Slot:16b,id:"minecraft:cake",Count:1b},{Slot:17b,id:"minecraft:cake",Count:1b},{Slot:19b,id:"minecraft:cake",Count:1b},{Slot:20b,id:"minecraft:cake",Count:1b},{Slot:21b,id:"minecraft:cake",Count:1b},{Slot:22b,id:"minecraft:cake",Count:1b,tag:{display:{Name:'{"text":"Happy Birthday!"}'}}},{Slot:23b,id:"minecraft:cake",Count:1b},{Slot:24b,id:"minecraft:cake",Count:1b},{Slot:26b,id:"minecraft:cake",Count:1b}],CustomName:'{"text":"Stampylonghead\'s s Secret chest "}'} replace"@luck=0
-
 /obsidan orb 
 type=command,ID="/give @p obsidian{display:{Name:'{"text":"Obsidan orb"}'},AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:20,Operation:0,UUID:[I;298669203,348026225,-2433868952,722027022]},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:20,Operation:0,UUID:[I;647203524,587550086,-2894937637,737224683]},{AttributeName:"generic.knockback_resistance",Name:"generic.knockback_resistance",Amount:4,Operation:0,UUID:[I;-2342022637,-2798027980,-2024666870,-624702469]}]} 2"@luck=3@luck=0.4
 
@@ -552,7 +550,7 @@ type=item,ID=enchantment_table@luck=0
 group(type=entity,ID=minecraft:elder_guardian,amount=20; type=message,ID="Get mining fatigue!"
 )
 /half transparent pants
-type=item,ID=chainmail_leggings,amount=2,NBTTag=(display=(Name=#jsonStr(text="Half transparent pants")),Lore=[#jsonStr(text="super sexy!")]))@luck=0
+type=item,ID=chainmail_leggings,amount=2,NBTTag=(display=(Name=#jsonStr(text="Half transparent pants")),Lore=[#jsonStr(text="super sexy!")])@luck=0
 
 / Fire sword
 type=item,ID=diamond_sword,amount=2,NBTTag=(display=(Name=#jsonStr(text="Fire sword")),Enchantments=[(id="minecraft:fire_aspect",lvl=30s)])@luck=2

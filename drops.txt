@@ -24,6 +24,17 @@ type=structure,ID=lava_lucky_temple,pos=#pPos@luck=2@chance=0.4
 / =================================== NORMAL DROPS FROM VINALLA BLOCK ==================================
 
 group(
+    ID=iron_ingot,amount=#rand(8,16);
+    ID=gold_ingot,amount=#rand(8,16);
+    ID=diamond,amount=#rand(8,16);
+    ID=emerald,amount=#rand(8,16);
+    ID=lapis_lazuli,amount=#rand(8,16);
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=20,posOffset=#circleOffset(0,2)
+)@luck=2
+
+group(
     type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";
     type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
     type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
@@ -62,7 +73,19 @@ group(
 type=structure,ID=giant_lucky_block_good,rotation=#pDirect@luck=2
 type=structure,ID=giant_lucky_block_bad,rotation=#pDirect@luck=-2
 
+/ lucky items
+type=item,ID=lucky:lucky_sword@chance=1.5@luck=2
+type=item,ID=lucky:lucky_bow@chance=1.5@luck=2
+type=item,ID=lucky:lucky_potion,NBTTag=(Luck=#randList(100,-100)),amount=#rand(10,15)@chance=1.5@luck=2
 
+group(
+    type=item,ID=lucky:lucky_sword;
+    type=item,ID=lucky:lucky_bow;
+    type=item,ID=lucky:lucky_potion,NBTTag=(Luck=#randList(100,-100)),amount=#rand(10,15);
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=20,posOffset=#circleOffset(0,2)
+)@luck=2
 
 
 / monster battle
@@ -235,7 +258,7 @@ group(
         type=message,ID=\"$bYour wish came true!\";
         type=block,ID=air,posY='#'bPosY+3;
         type=block,ID=beacon,posY='#'bPosY+2;
-        type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=2,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);
+type=entity,ID=fireworks_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=fireworks,Count=2,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);
         ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=diamond,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);
         ID=emerald,amount=#rand(20,30),posY='#'bPosY+20,posOffset='#'circleOffset(2);
@@ -487,6 +510,14 @@ group(
 / ====================== WELLS END=====================
 
 
+/ ====================== FIREWORK REWARDS START===============
+
+
+
+
+/==================== FIREWORK REWARDS END
+
+
 / =============CUSTOM COMMANDS=============
 /lava bucket on player head
 type=command,ID="/replaceitem entity @p armor.head minecraft:lava_bucket"@luck=0
@@ -507,8 +538,7 @@ type=command,ID="/gamemode creative @r"@luck=2
 type=command,ID="/gamemode adventure @r"@luck=-2
 type=command,ID="/gamemode adventure @e"@luck=-2
 type=command,ID="/gamemode creative @e"@luck=2
-/ipod
-type=command,ID="/give @p written_book{pages:['["",{"text":"Op book\\n\\n"},{"text":"weather","color":"aqua"},{"text":"\\n","color":"reset"},{"text":"Set time day","clickEvent":{"action":"run_command","value":"/time set day"}},{"text":"\\n"},{"text":"Set time night","clickEvent":{"action":"run_command","value":"/time set night"}},{"text":"\\n"},{"text":"Set Rain","clickEvent":{"action":"run_command","value":"/weather rain"}},{"text":"\\n"},{"text":"Weather clear","clickEvent":{"action":"run_command","value":"/weather clear"}},{"text":"\\n\\n\\nexplode\\n"},{"text":"x5 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:5}"}},{"text":"\\n","color":"red"},{"text":"x20 explode","color":"red","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n\\n ","color":"reset"}]','["",{"text":"x25 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:25}"}},{"text":"\\n"},{"text":"x20 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:20}"}},{"text":"\\n"},{"text":"x50 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:50}"}},{"text":"\\n"},{"text":"x200 explode","clickEvent":{"action":"run_command","value":"/summon fireball ~ ~2 ~ {ExplosionPower:200}"}},{"text":"\\n\\n"},{"text":"Lighting","clickEvent":{"action":"run_command","value":"/summon lightning_bolt ~3 ~2 ~"}},{"text":"\\n\\n\\nPotion effects\\n"},{"text":"speed","clickEvent":{"action":"run_command","value":"/effect /give @p speed 300"}},{"text":"\\n"},{"text":"slowness","clickEvent":{"action":"run_command","value":"/effect /give @p slowness 300"}},{"text":"\\n"},{"text":"haste","clickEvent":{"action":"run_command","value":"/effect /give @p haste 300"}},{"text":"\\n\\n "}]','["",{"text":"Mining \\u200bfatigue","clickEvent":{"action":"run_command","value":"/effect /give @p mining_fatigue 300"}},{"text":"\\n"},{"text":"strength","clickEvent":{"action":"run_command","value":"/effect /give @p strength 300"}},{"text":" \\n"},{"text":"Instant health","clickEvent":{"action":"run_command","value":"/effect /give @p instant_health 6000"}},{"text":"\\n"},{"text":"Instant damage","clickEvent":{"action":"run_command","value":"/effect /give @p instant_damage 6000"}},{"text":"\\n"},{"text":"Jump boost","clickEvent":{"action":"run_command","value":"/effect /give @p jump_boost 300"}},{"text":"\\n"},{"text":"Nausea","clickEvent":{"action":"run_command","value":"/effect /give @p nausea 300"}},{"text":" \\n"},{"text":"Regeneration","clickEvent":{"action":"run_command","value":"/effect /give @p regeneration 300"}},{"text":"\\n"},{"text":"Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p resistance 300"}},{"text":"\\n"},{"text":"Fire Resistance","clickEvent":{"action":"run_command","value":"/effect /give @p fire_resistance 300"}},{"text":"\\n"},{"text":"Water breathing","clickEvent":{"action":"run_command","value":"/effect /give @p water_breathing 300"}},{"text":"\\n"},{"text":"Invisibility","clickEvent":{"action":"run_command","value":"/effect /give @p invisibility 300"}},{"text":"\\n"},{"text":"Blindness","clickEvent":{"action":"run_command","value":"/effect /give @p blindness 300"}},{"text":"\\n"},{"text":"Night Vision","clickEvent":{"action":"run_command","value":"/effect /give @p night_vision 300"}}]','["",{"text":"hunger","clickEvent":{"action":"run_command","value":"/effect /give @p hunger 300"}},{"text":"\\n"},{"text":"weakness","clickEvent":{"action":"run_command","value":"/effect /give @p weakness 300"}},{"text":"\\n"},{"text":"Posion","clickEvent":{"action":"run_command","value":"/effect /give @p poison 300"}},{"text":"\\n"},{"text":"Wither","clickEvent":{"action":"run_command","value":"/effect /give @p wither 300"}},{"text":"\\n"},{"text":"Health Boost","clickEvent":{"action":"run_command","value":"/effect /give @p health_boost 300"}},{"text":"\\n"},{"text":"Asorption","clickEvent":{"action":"run_command","value":"/effect /give @p absorption 300"}},{"text":"\\n"},{"text":"Saturation","clickEvent":{"action":"run_command","value":"/effect /give @p saturation 6000"}},{"text":"\\n"},{"text":"Glowing","clickEvent":{"action":"run_command","value":"/effect /give @p glowing 300"}},{"text":"\\n"},{"text":"Levetation","clickEvent":{"action":"run_command","value":"/effect /give @p levitation 300"}},{"text":"\\n"},{"text":"Luck","clickEvent":{"action":"run_command","value":"/effect /give @p luck 300"}},{"text":"\\n"},{"text":"Bad lucky","clickEvent":{"action":"run_command","value":"/effect /give @p unluck 300"}},{"text":"\\n"},{"text":"Slow fall","clickEvent":{"action":"run_command","value":"/effect /give @p slow_falling 300"}},{"text":"\\n"},{"text":"Conduct Power","clickEvent":{"action":"run_command","value":"/effect /give @p conduit_power 300"}},{"text":"\\n\\n\\n\\n "}]','["",{"text":"Dolphins grace","clickEvent":{"action":"run_command","value":"/effect /give @p dolphins_grace 300"}},{"text":"\\n"},{"text":"Bad Omen","clickEvent":{"action":"run_command","value":"/effect /give @p bad_omen 300"}},{"text":"\\n"},{"text":"Hero Of the village","clickEvent":{"action":"run_command","value":"/effect /give @p hero_of_the_village 300"}},{"text":"\\n\\n"},{"text":"Kill a random player","clickEvent":{"action":"run_command","value":"/kill @r"}},{"text":"\\n\\n"},{"text":"diamond","clickEvent":{"action":"run_command","value":"/give @p diamond 2"}},{"text":"\\n"},{"text":"skydoesminecraft mode","clickEvent":{"action":"run_command","value":"/give @p gold_block{display:{Name:\'{\\"text\\":\\"Butter\\"}\'}} 64"}},{"text":"\\n\\n"},{"text":"Emerald","clickEvent":{"action":"run_command","value":"/give @p emerald 2"}},{"text":"\\n\\n"},{"text":"random player to the void","clickEvent":{"action":"run_command","value":"/tp @r ~ ~-999 ~"}}]'],title:Book,author:"http:/minecraft.tools/",display:{Lore:["an  ipod","","inspired by: the ipod mod:https:/bit.ly/3G33PfT"]}}"@luck=2@chance=0.1
+
 /lava flu
 type=command,ID="/effect @p wither 200 255"@luck=-2
 type=command,ID="/particle lava ~ ~2 ~ 0 0 0 5 200 normal"@luck=0

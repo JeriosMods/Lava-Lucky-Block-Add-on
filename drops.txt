@@ -511,6 +511,18 @@ group(
 
 
 / ====================== FIREWORK REWARDS START===============
+/ Spawns a 'quick time' firework reward as TNT with 80 tick fuse along with beacon,dragon, netherstar, diamond horse armor, and ender chest spawn.
+group(
+    ID=beacon,amount=#rand(8,16);
+    ID=dragon_egg,amount=#rand(8,16);
+    ID=nether_star,amount=#rand(8,16);
+    ID=ender_chest,amount=#rand(8,16);
+    ID=diamond_horse_armor,amount=#rand(8,16);
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=20,posOffset=#circleOffset(0,2);
+  type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20
+)@luck=2
 
 
 
@@ -1210,11 +1222,12 @@ type=entity,ID=minecraft:wither_skeleton,NBTTag=(CustomName=#jsonStr(text="Your 
 /blaze
 type=entity,ID=Blaze,amount=20,NBTTag=(CustomName="Fire drones")@luck=-0.5 
 /hoglin
-type=entity,ID=Hoglin,NBTTag=(CustomName="super mutated Pig")@luck=-2.5
+type=entity,ID=Hoglin,NBTTag=(CustomName="Super mutated Pig")@luck=-2.5
 /wither skeleton
-type=entity,ID=wither_skeleton,NBTTag=(CustomName="Mutated skeleton")@luck=-2
+type=entity,ID=wither_skeleton,NBTTag=(CustomName="Burnt skeleton")@luck=-2
 /mutated fire spider( Strider)
-type=entity,ID=Strider,NBTTag=(CustomName="mutated fire spider")@luck=2
+type=entity,ID=Strider,NBTTag=(CustomName="Comically large spider")@luck=2
+/ ========END MINECRAFT NAMED MOBS RENAMED============
 
 / Purple sheep
 type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="Pink Sheep YT"),CustomNameVisible=true,Color=6),posOffset=#circleOffset(4),amount=16@luck=1
@@ -1230,9 +1243,7 @@ type=entity,ID=skeleton,NBTTag=(CustomName=#jsonStr(text="Bob on drugs"),ArmorIt
 
 / Agressive Giant
 
-type=entity,ID=giant,NBTTag=(
-Passengers=[{id:"minecraft:enderman"}]
-,CustomName=#jsonStr(text="Jen's aggressive Mom"))@luck=-2
+type=entity,ID=giant,NBTTag=(Passengers=[{id:"minecraft:enderman"}],CustomName=#jsonStr(text="Jen's aggressive Mom"))@luck=-2
 
 / =============== MINECRAFTNAME MOBS RENAMED END====
 
@@ -1243,12 +1254,15 @@ type=entity,ID=chaosawakens:water_projectile,pos=#pPos,amount=50@luck=0
 
 / =============POTIONS=========
 
-/ Hardcoded POTIONS
+/ ========Hardcoded POTIONS===================================
 type=item,ID=splash_potion,NBTTag=(display=(Name=#jsonStr(text="Heart attack potion "),Lore=[#jsonStr(text="Gives the player a heart attack")]),CustomPotionEffects=[{Id=7,Amplifier=200,Duration=400}]),amount=2@luck=2@chance=0.4
 
 type=item,ID=splash_potion,NBTTag=(HideFlags=227,CustomPotionEffects=[{Id=2,Amplifier=5,Duration=2800},{Id=5,Amplifier=3,Duration=20000},{Id=20,Amplifier=3,Duration=4000},{Id=22,Amplifier=4,Duration=28000}]),amount=2@luck=0
 
 type=item,ID=splash_potion,NBTTag=(display=(Name=#jsonStr(text="drugs")),HideFlags=127,CustomPotionEffects=[{Id=2,Amplifier=4,Duration=8000},{Id=5,Amplifier=5,Duration=4600},{Id=9,Amplifier=2,Duration=39000},{Id=27,Amplifier=4,Duration=28000}]),amount=2@luck=0
+
+
+/ ========END Hardcoded POTIONS===================================
 
 ID=potion,NBTTag=(
     Potion="fire_resistance",

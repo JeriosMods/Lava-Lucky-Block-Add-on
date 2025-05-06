@@ -1,0 +1,12 @@
+metafileVersion: 2
+projectName: lava-lucky-block-forge-java
+version: 1.20.2-13.0
+dependencies:
+  "java":
+    minInclusive: "17"
+    maxInclusive: "21"
+  "minecraft":
+    minInclusive: 1.16.5
+    maxInclusive: 1.20.1
+revision: f246075
+datetime: 2022-01-23 05:25:05

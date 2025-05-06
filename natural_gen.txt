@@ -1,23 +1,29 @@
->surface
-/ house + lucky block
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-100),posX=#bPosX+1,posZ=#bPosZ-1)@chance=150
+>minecraft:overworld
 
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-80),posX=#bPosX+1,posZ=#bPosZ-1)@chance=200
+/ single block
+type=block,ID=lucky:lucky_block@chance=300
 
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-60),posX=#bPosX+1,posZ=#bPosZ-1)@chance=250
+/ lucky acropolis
+group(type=structure,ID=gen_acropolis;type=block,ID=lucky:lava_lucky_block,posY=#bPosY+1,tileEntity=(Luck=45))@chance=180
+group(type=structure,ID=gen_acropolis;type=block,ID=lucky:lava_lucky_block,posY=#bPosY+1,tileEntity=(Luck=65))@chance=140
+group(type=structure,ID=gen_acropolis;type=block,ID=lucky:lava_lucky_block,posY=#bPosY+1,tileEntity=(Luck=85))@chance=120
+group(type=structure,ID=gen_acropolis;type=block,ID=lucky:lava_lucky_block,posY=#bPosY+1,tileEntity=(Luck=100))@chance=80
 
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-40),posX=#bPosX+1,posZ=#bPosZ-1)@chance=300
+/ ==== unlucky ruins ====
+/ bottom layer
+group(type=block,ID=stone_bricks,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),damage=#rand(0,2),amount=#rand(20,30); \
+type=block,ID=netherrack,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),amount=#rand(20,30); \
+type=block,ID=obsidian,posY=#bPosY-1,posOffset=#circleOffset(#rand(0,3)),amount=#rand(10,15); \
+/ top layer
+type=block,ID=#randList(infested,cracked,mossy)_stone_bricks,posOffset=#circleOffset(#rand(0,2)),amount=#rand(2,5); \
+type=block,ID=netherrack,posOffset=#circleOffset(#rand(0,2)),amount=#rand(2,5); \
+type=block,ID=obsidian,posOffset=#circleOffset(#rand(0,2)),amount=#rand(0,2); \
+/ lucky block
+type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-75))@chance=600
 
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=-20),posX=#bPosX+1,posZ=#bPosZ-1)@chance=400
+>minecraft:the_nether
+type=block,ID=lucky:lava_lucky_block@chance=280
+type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=60))@chance=380
 
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=20),posX=#bPosX+1,posZ=#bPosZ-1)@chance=400
-
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=0),posX=#bPosX+1,posZ=#bPosZ-1)@chance=200
-
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=60),posX=#bPosX+1,posZ=#bPosZ-1)@chance=450
-
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=80),posX=#bPosX+1,posZ=#bPosZ-1)@chance=500
-
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=100),posX=#bPosX+1,posZ=#bPosZ-1)@chance=550
-
-group(type=structure,ID=house;type=block,ID=lucky:lava_lucky_block,tileEntity=(Luck=40),posX=#bPosX+1,posZ=#bPosZ-1)@chance=600
+>minecraft:the_end
+type=block,ID=lucky:lava_lucky_block@chance=25

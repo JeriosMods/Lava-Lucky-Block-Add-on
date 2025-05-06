@@ -1,0 +1,27 @@
+
+
+/mooshroom
+type=command,ID="/summon mooshroom ~ ~ ~ {CustomName:'{"text":"Red mutated cow"}'}"@luck=0
+
+
+
+// JOKE MOBS
+
+/nuke creeper
+type=command,ID="/summon creeper ~ ~ ~ {ExplosionRadius:200b,CustomName:'{"text":"Nuke creeper"}'}@luck=-2
+
+
+/jen dead mother
+type=command,ID="/summon giant ~ ~ ~ {CustomName:'{"text":"Jen\'s Dead rotting mother"}'}"@luck=0
+
+// OP STUFF
+/op lava wolf
+type=command,ID="/summon wolf ~ ~ ~ {CustomName:'{"text":"Very Lucky OP Lava wolf. Tame it!"}',HandItems:[{id:"minecraft:netherite_sword",Count:2b,tag:{Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:knockback",lvl:5s},{id:"minecraft:looting",lvl:5s},{id:"minecraft:sweeping",lvl:6s},{id:"minecraft:unbreaking",lvl:5s}]}},{id:"minecraft:shield",Count:2b}],ArmorItems:[{id:"minecraft:netherite_boots",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:feather_falling",lvl:6s},{id:"minecraft:thorns",lvl:6s}]}},{id:"minecraft:netherite_leggings",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}},{id:"minecraft:netherite_chestplate",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}},{id:"minecraft:netherite_helmet",Count:2b,tag:{Enchantments:[{id:"minecraft:protection",lvl:5s},{id:"minecraft:fire_protection",lvl:5s},{id:"minecraft:blast_protection",lvl:5s},{id:"minecraft:thorns",lvl:5s}]}}],Attributes:[{Name:generic.knockback_resistance,Base:2.0},{Name:generic.movement_speed,Base:2},{Name:generic.attack_damage,Base:20},{Name:generic.armor,Base:30},{Name:generic.armor_toughness,Base:20}]}"@luck=3
+
+== BAD DROPS MOBS ===========
+/ lots of gast ur screwed
+
+type=entity,ID=ghast,amount=30@luck=-2
+
+/ vex
+type=entity,ID=vex,amount=30@luck=-2

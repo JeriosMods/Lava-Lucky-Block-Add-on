@@ -1,1 +1,1 @@
-lll,lbl,lll,b,lucky:lucky_block,l,lava_bucket
+lll,lbl,lll,b,lucky:lava_lucky_block,l,minecraft:lava_bucket
